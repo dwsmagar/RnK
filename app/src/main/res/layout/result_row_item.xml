@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:minHeight="20dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/aboutRL"
+        android:layout_height="wrap_content">
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_box"
+            android:id="@+id/fieldtv"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/options"
+            android:text="Name"
+            android:gravity="top"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/secondary_text"
+            />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:id="@+id/datatv"
+            android:layout_marginRight="@dimen/margin_box"
+            android:text="This is college with a lot of potential. But, there's kinetic energy as well, but you all can harvest other forms of energy too. Have fun."
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/description"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/primary_text"
+            android:layout_toRightOf="@+id/fieldtv"
+            android:layout_toEndOf="@+id/fieldtv"
+            />
+
+    </RelativeLayout>
+
+
+
+   <com.susankya.schoolvalley.TextViewPlus
+       android:layout_width="match_parent"
+       android:layout_height="0.3dp"
+       android:layout_below="@id/aboutRL"
+       android:background="@color/divider"
+       />
+
+
+</RelativeLayout>

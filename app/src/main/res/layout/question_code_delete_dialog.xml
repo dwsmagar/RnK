@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.susankya.schoolvalley.askQuestionCodeDialogFragment"
+    android:padding="10dp"
+    android:background="#36FEF9F9">
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List of code"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/heading"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"/>
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/code_list"
+        />
+    <!--
+      <com.timex.greenland.TextViewPlus
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Enter the code or topic of questions set you want to delete"
+         android:textColor="#fff"
+          android:textSize="15sp"
+          android:gravity="center"
+          android:paddingBottom="15dp"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:padding="4dp"
+          android:id="@+id/ques_code"
+
+          android:background="@drawable/box"
+          android:gravity="center"
+          />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2"
+          android:padding="10dp">
+          <Button android:textAllCaps="false"
+              android:layout_width="0dp"
+              android:layout_height="50dp"
+              android:text="OK"
+              android:layout_weight="1"
+              android:background="@drawable/custom_selector"
+              android:layout_marginRight="10dp"
+              android:id="@+id/ok_button"
+              android:textColor="#fff"
+              />
+          <Button android:textAllCaps="false"
+              android:layout_width="0dp"
+              android:layout_height="50dp"
+              android:text="Cancel"
+              android:background="@drawable/custom_selector"
+              android:textColor="#fff"
+              android:layout_weight="1"
+              android:layout_marginLeft="10dp"
+              android:id="@+id/cancel_button"/>
+
+      </LinearLayout>-->
+  </LinearLayout>

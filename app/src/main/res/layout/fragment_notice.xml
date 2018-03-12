@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yellowboard"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:weightSum="100">
+
+    <LinearLayout
+        style="@style/NoticeGapStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: "
+            android:textColor="#ff5d11ff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/category_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/NoticeGapStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+
+            android:textColor="#ff5d11ff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/btn_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textSize="20sp"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/NoticeGapStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title: "
+            android:textColor="#ff5d11ff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/Title_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:id="@+id/description"
+        style="@style/NoticeGapStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notice:"
+        android:textColor="#ff5d11ff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/description_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:textSize="20sp"
+
+            />
+    </ScrollView>
+
+</LinearLayout>
+

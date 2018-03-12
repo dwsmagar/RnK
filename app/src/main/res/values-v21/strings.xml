@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nimas Edu.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_next">Next</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="no_internet">NO CONNECTION!</string>
+    <string name="action_finish">Finish</string>
+    <string name="locationtitle"><font color="#333333">LOCATION &amp;</font> <font color="#1CD36D">MORE INFO</font></string>
+
+    <array name="nav_drawer_icons_student">
+        <item>@drawable/profile_icon</item>
+        <item>@drawable/notice_icon</item>
+        <item>@drawable/event_icon</item>
+        <item>@drawable/check_icon</item>
+        <item>@drawable/appointment_icon</item>
+        <item>@drawable/online_icon</item>
+        <item>@drawable/chat_icon</item>
+        <item>@drawable/enquiry_icon</item>
+    </array>
+
+    <array name="nav_drawer_icons_admin">
+        <item>@drawable/notice_icon</item>
+        <item>@drawable/event_icon</item>
+        <item>@drawable/check_icon</item>
+        <item>@drawable/appointment_icon</item>
+        <item>@drawable/online_icon</item>
+        <item>@drawable/sms_icon</item>
+        <item>@drawable/enquiry_icon</item>
+        <item>@drawable/credit_icon</item>
+    </array>
+
+    <string-array name="nav_tiles_student">
+        <item>User Profile</item>
+        <item>Notices</item>
+        <item>Events</item>
+        <item>Check Eligibility</item>
+        <item>Make An Appointment</item>
+        <item>Apply Online</item>
+        <item>Chat</item>
+        <item>Inquiry</item>
+    </string-array>
+
+    <string-array name="nav_tiles_admin">
+        <item>Notices</item>
+        <item>Events</item>
+        <item>Eligibility Lists</item>
+        <item>Appointment Lists</item>
+        <item>Applied Users</item>
+        <item>Send Sms</item>
+        <item>Inquiry Lists</item>
+        <item>Check SMS Credit</item>
+    </string-array>
+
+    <string-array name="reportText">
+        <item>It has vulgar content.</item>
+        <item>This post is racist or insults a certain group of people.</item>
+        <item>This post is a spam.</item>
+        <item>It has endangered someone\'s privacy.</item>
+    </string-array>
+    <string name="chhalfal">छलफल</string>
+
+    <string-array name="more_tiles">
+        <item>Admin</item>
+        <item>About Us</item>
+        <item>Susankya Notice</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="faculty_list">
+        <item>Science</item>
+        <item>Commerce</item>
+        <item>Hotel and Management</item>
+    </string-array>
+
+    <string name="drawer_open">More</string>
+    <string name="drawer_close">Less</string>
+    <string name="roll">Roll number</string>
+
+    <string-array name="class_spinner_array">
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="title_activity_pager">pagerActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="company_name">Next App 1.0</string>
+    <string name="question">Question</string>
+    <string name="title_activity_question_pager">questionPagerActivity</string>
+
+    <string-array name="exam_list">
+        <item>First Terminal Exam</item>
+        <item>Second Terminal Exam</item>
+        <item>Third Terminal Exam</item>
+        <item>Final Terminal Exam</item>
+    </string-array>
+    <string-array name="category_list">
+        <item>General</item>
+        <item>Exams</item>
+        <item>Holiday</item>
+        <item>Result</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="morning_time">
+        <item>6:20\nAM</item>
+        <item>7:05\nAM</item>
+        <item>7:50\nAM</item>
+        <item>8:35\nAM</item>
+        <item>9:45\nAM</item>
+        <item>10:30\nAM</item>
+        <item>11:15\nAM</item>
+        <item>12:00\nPM</item>
+        <item>12:45\nPM</item>
+    </string-array>
+    <string-array name="day_time">
+        <item>10:30\nAM</item>
+        <item>11:15\nAM</item>
+        <item>12:00\nPM</item>
+        <item>12:45\nPM</item>
+        <item>1:50\nPM</item>
+        <item>2:35\nPM</item>
+        <item>3:20\nPM</item>
+        <item>4:05\nPM</item>
+
+    </string-array>
+
+    <string-array name="class_eleven_section">
+        <item>Pascal</item>
+        <item>Darwin</item>
+        <item>Hawking</item>
+        <item>Newton</item>
+        <item>Einstein</item>
+        <item>Faraday</item>
+        <item>Napier</item>
+        <item>Buffon</item>
+        <item>Galileo</item>
+        <item>Heldane</item>
+        <item>Maxwell</item>
+        <item>Otto Hahn</item>
+        <item>Kelvin</item>
+        <item>Alexander</item>
+        <item>Babbage</item>
+
+    </string-array>
+    <string-array name="class_twelve_section">
+        <item>Euclid</item>
+        <item>Mendel</item>
+        <item>Dalton</item>
+        <item>Nobel</item>
+        <item>Aristotle</item>
+        <item>Steve</item>
+        <item>Leibniz</item>
+        <item>Neumann</item>
+        <item>Boyle</item>
+        <item>Curie</item>
+        <item>Watson</item>
+    </string-array>
+
+    <string-array name="day">
+        <item>Hawking</item>
+        <item>Aristotle</item>
+        <item>Steve</item>
+        <item>Alexander</item>
+        <item>Babbage</item>
+        <item>Neumann</item>
+        <item>Otto Hahn</item>
+        <item>Heldane</item>
+        <item>Napier</item>
+    </string-array>
+    <string name="appwidget_text">Routine - nExt</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_second">Result</string>
+    <string name="title_activity_third">Question</string>
+    <string name="title_activity_main">Add Question</string>
+    <string name="title_activity_delete_question">DeleteQuestion</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+
+    <string name="like">Like</string>
+    <string name="unlike">Unlike</string>
+    <string name="title_activity_first_time">FirstTimeActivity</string>
+    <string name="title_activity_test_tab">TestTabActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_post_from_profile">PostFromProfile</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="link"><a href="https://www.susankya.com/">www.susankya.com</a></string>
+    <string name="title_activity_user_list">UserListActivity</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_enter_code">EnterCodeActivity</string>
+
+    <string name="slogan">\"Think for the development and start doing it\"</string>
+</resources>

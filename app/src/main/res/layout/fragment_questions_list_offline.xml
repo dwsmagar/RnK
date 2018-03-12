@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+android:layout_height="match_parent">
+<ListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/list"
+    android:background="@color/background"
+    android:layout_height="match_parent" tools:context="com.susankya.schoolvalley.showResultListOffline"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="30sp"
+    />
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Questions Saved"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:id="@+id/emptyView"
+        />
+    </LinearLayout>

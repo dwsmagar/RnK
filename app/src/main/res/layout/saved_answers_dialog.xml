@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="4dp"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/grey_light"
+        android:layout_height="wrap_content">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved answers"
+            android:id="@+id/title"
+            android:textSize="18dp"
+
+            android:textColor="#fff"
+            />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear_answers"
+            android:text="Clear"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="You have not saved any of your answers."
+        android:id="@+id/emptyListAnswers"
+        android:textSize="18dp"
+        android:visibility="gone"
+
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:divider="#000"
+        android:dividerHeight="1dp"
+        android:id="@+id/answersList"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

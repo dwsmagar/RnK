@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/loadingProfile"
+
+
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#fff"
+
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="60dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:id="@+id/progress"/>
+
+    </RelativeLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/profileLL"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_routine" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_user_listview"/>
+</LinearLayout>
+</LinearLayout>

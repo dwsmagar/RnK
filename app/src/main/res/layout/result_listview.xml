@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/result_item_selector"
+    android:minHeight="60dp"
+    android:layout_height="match_parent"
+    >
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+
+        android:layout_centerHorizontal="true"
+        android:text="Check"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:id="@+id/subject"
+        />
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/subject"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="21"
+        android:id="@+id/marks"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/result_icon"
+        android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"/>
+</RelativeLayout>

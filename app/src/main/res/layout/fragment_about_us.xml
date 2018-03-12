@@ -1,0 +1,434 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/ll">
+
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/v5"
+        android:layout_gravity="center"
+        android:text="Susankya Team"
+        android:textColor="@color/colorPrimary"
+        foo:customFont="Cabin-Regular-TTF.ttf"
+        android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/v7"
+                android:layout_height="wrap_content"
+                android:background="@drawable/about_us_selector"
+                >
+                <ImageView
+                    style="@style/AboutUsImageViewStyle"
+                    android:id="@+id/arr2"
+                    />
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abhinav Dev"
+                    android:layout_marginLeft="5dp"
+                     android:id="@+id/aviText"
+                    android:layout_toRightOf="@id/arr2"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/down_arrow"/>
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/avi_ko_boli_ll"
+                android:layout_below="@id/v7"
+                android:background="@drawable/box"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                >
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="I am an Android programmer but if I were you, it would be boring for me to read someone else's saying. So I won't say anything much. No one is perfect in this world but you can make yourself perfect at something, obviously at the thing where your interest lies. If my interest in programming can be proven helpful to you in any way, contact me via Facebook or you can also call me. Thank you."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/avi_ko_boli"/>
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/fbicon"
+                    android:id="@+id/aviFB" />
+                    <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@android:drawable/ic_menu_call"
+                    android:id="@+id/avicall" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="10dp"
+                android:id="@+id/v8"
+                android:background="@drawable/about_us_selector"
+                android:layout_height="wrap_content"
+               >
+                <ImageView
+                    style="@style/AboutUsImageViewStyle"
+                    android:id="@+id/arr3"
+                    />
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aditya Shah"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/arr3"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:id="@+id/adiName"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/down_arrow"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/box"
+                android:layout_below="@id/v8"
+                android:visibility="gone"
+                android:padding="4dp"
+                android:id="@+id/adi_ko_boli_ll"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="I am an Android programmer and devotee of Eminem, but I know you don't care. I eat a lot, yet the gravitational pull of Earth on me is just about 500 Newtons. I believe living a life is meaningless if you don't try to realize your biggest ambition, however unreal it may be. I can write a book about me, but knowing it won't even sell one copy, you can contact me via Facebook or call me for further information which is obviously boring. Thanks for wasting your 35 seconds."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/adi_ko_boli"/>
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/fbicon"
+                        android:id="@+id/adiFB" />
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@android:drawable/ic_menu_call"
+                        android:id="@+id/adicall" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/piyush_RL"
+                android:layout_height="wrap_content"
+                android:background="@drawable/about_us_selector"
+                >
+                <ImageView
+                    style="@style/AboutUsImageViewStyle"
+
+                    android:id="@+id/piyushimage"
+                    />
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Piyush Jaiswal"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/piyushimage"
+                    android:id="@+id/piyush_text"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/down_arrow"/>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/piyush_ko_boli_ll"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:layout_below="@id/piyush_RL"
+                android:background="@drawable/box"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="18sp"
+
+                    android:text="If you have the very will to do something, you will do it. Success is in front of you, all you have to do is see it the right way, which may take a lot of time, and it will. I run Smiley Cafe and Restaurant in Biratnagar, but I want to achieve more and give even more. I have the strong will to bring a change -- one that will benefit everyone. I plan to change the scope of IT in Nepal as Susankya Team builds and produces more in coming days."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/piyush_ko_boli"/>
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/fbicon"
+                        android:id="@+id/piyushFB" />
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@android:drawable/ic_menu_call"
+                        android:id="@+id/piyushcall" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/v6"
+                android:layout_height="wrap_content"
+                android:background="@drawable/about_us_selector"
+                >
+                <ImageView
+                    style="@style/AboutUsImageViewStyle"
+
+                    android:id="@+id/arr1"
+                    />
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Sanjog Dhakal"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/arr1"
+                    android:id="@+id/sanjogText"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/down_arrow"/>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/sanjog_ko_boli_ll"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:layout_below="@id/v6"
+                android:background="@drawable/box"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="18sp"
+
+                    android:text="&quot;It always seems impossible until it's done&quot; -Nelson Mandela \n I am a server-side web developer. I was 17 years, 2 months and 18 days old when we finished developing this app, but I wish I were younger. We have about 55 years in our lifetime to do something for this world, but this time period seems very small for my ambitions. You are the one who is going to develop this world. It's not too early, it's not too late; so think for the development and start doing it."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/sanjog_ko_boli"/>
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/fbicon"
+                        android:id="@+id/sandyFB" />
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@android:drawable/ic_menu_call"
+                        android:id="@+id/sandycall" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        </LinearLayout>
+        <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+            foo:customFont="Sofia Pro Regular.otf"
+        android:id="@+id/v9"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        />
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/link"
+            android:autoLink="web"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            foo:customFont="manksans.ttf"
+            android:textColor="#fff"
+            android:textColorLink="#fff"
+            android:layout_marginBottom="6dp"
+            android:textStyle="bold"
+            android:textSize="22dp"/>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Though it took us three months to develop this application, still there may be some bugs and lack of some features. If you have any suggestion or feedback, please click here and help us make the app even better!"
+        android:gravity="center"
+        android:visibility="gone"
+android:background="@drawable/about_us_selector"
+        android:id="@+id/v10"
+        android:textColor="#ff4b5355"
+        android:textSize="15sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/feedback"
+        android:layout_margin="5dp"
+        android:background="@color/grey_dialog">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="80dp"
+
+            android:nextFocusForward="@+id/feedbackEditText"
+            android:paddingLeft="4dp"
+            android:imeOptions="actionNext"
+            android:hint="Your name"
+            android:background="@drawable/edit_routine"
+            android:id="@+id/nameEditText"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:maxHeight="80dp"
+            android:imeOptions="actionSend"
+            android:hint="Your feedback"
+          android:layout_below="@id/nameEditText"
+            android:background="@drawable/edit_routine"
+            android:id="@id/feedbackEditText"/>
+        <Button android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginTop="2dp"
+            android:textColor="#fff"
+            android:layout_below="@id/feedbackEditText"
+            android:background="@drawable/custom_selector"
+            android:layout_alignParentRight="true"
+            android:id="@+id/sendFeedback"/>
+        </RelativeLayout>
+
+</LinearLayout></ScrollView>

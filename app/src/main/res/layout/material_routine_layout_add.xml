@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/unedit_mode"
+        android:background="@drawable/routine_topic_round"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:gravity="center"
+            android:layout_height="75dp"
+            android:id="@+id/timecircle"
+            android:background="@drawable/routine_circle"
+            android:orientation="vertical">
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:customFont="robotoregular.ttf"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:textSize="12dp"
+                android:id="@+id/start_time"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:text="10:15 AM"
+                />
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:customFont="robotoregular.ttf"
+                android:textSize="10dp"
+                android:id="@+id/timeseparator"
+                android:layout_height="wrap_content"
+                android:text="TO"
+                />
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textSize="12dp"
+                app:customFont="robotoregular.ttf"
+                android:id="@+id/end_time"
+                android:layout_height="wrap_content"
+                android:text="10:15 AM"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/timecircle"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+
+                android:text="Basic Electrical"
+                android:textSize="18dp"
+
+                android:textStyle="bold"
+
+                android:textColor="#000"
+                android:id="@+id/routine_subject"
+
+                android:layout_height="wrap_content"
+                />
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+
+
+                android:textColor="@color/secondary_text"
+
+                android:textSize="16dp"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/teacher_name"
+                android:text="BP"
+                />
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_button"
+            android:src="@drawable/ic_action_close"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:visibility="gone"
+        android:id="@+id/edit_mode"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/routine_topic_round"
+            android:textSize="22dp"
+            android:layout_marginLeft="-34dp"
+            android:gravity="center"
+            android:textColor="@color/very_light_grey"
+            android:id="@+id/routine_subject_edittext"
+            android:layout_height="60dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

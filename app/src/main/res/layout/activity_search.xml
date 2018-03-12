@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SearchableActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyMaterialTheme.AppBarOverlay">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/MyMaterialTheme.PopupOverlay" >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/et_box"
+                android:layout_height="40dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/divider"
+                android:padding="4dp"
+                android:textSize="14dp"
+                android:hint="Search schools and colleges"
+                android:id="@+id/searchboy"/>
+            </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/search_lv"
+        android:background="#fff"
+        android:layout_below="@id/appbar"
+        android:visibility="gone"
+        android:dividerHeight="0.5dp"
+        android:divider="@color/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/search_holder_ll"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/appbar"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/search_holder"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/appbar"
+            android:text="Type the name of a school or a college to start your search"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/searching_process_ll"
+    android:visibility="gone"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/appbar"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        style="?android:attr/progressBarStyle"
+        android:indeterminate="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/appbar"
+        android:text="Searching..."/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/no_search_results_ll"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/appbar"
+        android:layout_height="wrap_content">
+      <ImageView
+          android:layout_width="90dp"
+          android:background="@drawable/no_search_results"
+          android:layout_height="80dp" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/appbar"
+            android:text="We couldn't find any institution with that name."/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

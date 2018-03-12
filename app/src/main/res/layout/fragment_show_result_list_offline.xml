@@ -1,0 +1,39 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/lists"
+            android:layout_height="match_parent"
+            tools:context="com.susankya.schoolvalley.showResultListOffline"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="30sp"/>
+    </ScrollView>
+
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Results Saved"
+        android:gravity="center"
+         android:textColor="#000"
+        android:textSize="20sp"
+        android:id="@+id/emptyView"
+        />
+</RelativeLayout>

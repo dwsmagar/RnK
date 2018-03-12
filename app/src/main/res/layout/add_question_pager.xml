@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/previous"
+            android:text="Previous"
+            android:textColor="@color/grey_dialog"
+            android:layout_gravity="left"
+            android:gravity="left|center"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/ic_action_go_left"
+            android:background="@drawable/list_selector"
+            />
+
+
+        <Button android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/next"
+            android:layout_weight="1"
+            android:text="Next"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/grey_dialog"
+            android:background="@drawable/list_selector"
+            android:layout_gravity="end|right"
+            android:gravity="right|center"
+            android:drawableRight="@drawable/ic_action_go_right"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

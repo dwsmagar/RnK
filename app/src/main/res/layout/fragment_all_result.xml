@@ -1,0 +1,41 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+        android:orientation="vertical"
+            android:layout_height="match_parent">
+        <include layout="@layout/result_row"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_result"/>
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/floating_add_button"
+                     android:layout_gravity="bottom|right"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="306dp"
+                    android:layout_marginStart="306dp"
+                    android:layout_marginBottom="37dp"
+                    android:src="@android:drawable/ic_menu_search"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+<!-- From: file:/D:/Greenland%20october%203/app/src/main/res/layout/fragment_all_result.xml -->

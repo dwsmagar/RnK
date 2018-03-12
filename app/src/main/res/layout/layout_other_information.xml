@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorGrey"
+        android:gravity="center"
+        android:text="Other Information"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/form_box"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="How did you first learn about NIMAS Education programs?"/>
+
+    <EditText
+        android:id="@+id/qsOne"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textbox"
+        android:gravity="top"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@id/qsTwo"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="5dp"
+        android:textSize="@dimen/small_txt_size" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Fair or Exhibition. Which one?"/>
+
+    <EditText
+        android:id="@+id/qsTwo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textbox"
+        android:gravity="top"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@id/qsThree"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="5dp"
+        android:textSize="@dimen/small_txt_size" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Advertising in the press. Which Newspaper/Magazine?"/>
+
+    <EditText
+        android:id="@+id/qsThree"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textbox"
+        android:gravity="top"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@id/qsFour"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="5dp"
+        android:textSize="@dimen/small_txt_size" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Recommendation from former student? Name?"/>
+
+    <EditText
+        android:id="@+id/qsFour"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textbox"
+        android:gravity="top"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@id/qsFive"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="5dp"
+        android:textSize="@dimen/small_txt_size" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Internet? Which Website / Search Engine?"/>
+
+    <EditText
+        android:id="@+id/qsFive"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textbox"
+        android:gravity="top"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@id/qsSix"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="5dp"
+        android:textSize="@dimen/small_txt_size" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Social Network. Which one?"/>
+
+    <EditText
+        android:id="@+id/qsSix"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textbox"
+        android:gravity="top"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@id/qsSeven"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="5dp"
+        android:textSize="@dimen/small_txt_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="TV Network. Which one?"/>
+
+    <EditText
+        android:id="@+id/qsSeven"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textbox"
+        android:gravity="top"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@id/qsEight"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="5dp"
+        android:textSize="@dimen/small_txt_size" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Other. Please specify"/>
+
+    <EditText
+        android:id="@+id/qsEight"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textbox"
+        android:gravity="top"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="5dp"
+        android:textSize="@dimen/small_txt_size" />
+    </LinearLayout>
+</LinearLayout>

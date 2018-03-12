@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="1dp"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:background="@drawable/list_item_selected"
+    >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/list_item_selected"
+        android:padding="10dp"
+        >
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_result"
+        android:id="@+id/ll"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+         >
+      <!--  <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/image"
+            android:src="@drawable/ic_action_result"
+            android:fadingEdge="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/custom_selector"/>
+        --><ImageView
+
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:layout_below="@id/image"
+            android:src="@drawable/deletefeed"
+            android:id="@+id/delete_button"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/shouldClick"
+            android:layout_toLeftOf="@id/ll"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NAME:"
+                    android:typeface="monospace"
+                    android:textSize="20sp"
+                    android:textColor="@color/grey_dialog"
+                    />
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name_s"
+                    android:typeface="serif"
+                    android:textSize="20dp"
+                    />
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_dialog"
+
+                    android:typeface="monospace"
+                    android:text="Class:"
+                    android:textSize="20sp"
+                    />
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/classes"
+                    android:typeface="serif"
+                    android:textSize="20dp"
+                    />
+
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_dialog"
+
+                    android:typeface="monospace"
+                    android:textSize="20sp"
+                    android:text="Terminal:"
+                    />
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/terminal_s"
+                    android:typeface="serif"
+                    android:textSize="20dp"
+                    />
+           </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:id="@+id/displayResult"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@color/background"
+        >
+
+        <GridView
+
+            android:layout_marginTop="4dp"
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="100dp"
+            android:numColumns="2"
+            android:padding="4dp"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl"
+           android:background="@drawable/result_item_selector"
+            android:orientation="vertical"
+            >
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Check"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:id="@+id/subject"
+                />
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="21"
+                android:id="@+id/marks"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/result_icon"
+                android:layout_gravity="end"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

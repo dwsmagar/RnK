@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button android:textAllCaps="false"
+            android:background="@drawable/custom_selector"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/allResult"
+            android:padding="5dp"
+            android:text="Result list of terminal exam"
+            android:textColor="#fff"
+            android:textSize="20dp"
+
+            android:layout_height="50dp"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/select11_12">
+            <Button android:textAllCaps="false"
+                android:background="@drawable/custom_selector"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/allResult11"
+
+                android:padding="5dp"
+                android:text="Class 11"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_height="50dp"/>
+            <Button
+                android:background="@drawable/custom_selector"
+                android:layout_width="0dp"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:id="@+id/allResult12"
+                android:padding="5dp"
+                android:text="Class 12"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button
+            android:background="@drawable/custom_selector"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+
+            android:id="@+id/monthlyTestResult"
+            android:padding="5dp"
+            android:text="Result list of monthly test"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_height="50dp"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/select11_12MT">
+            <Button android:textAllCaps="false"
+                android:background="@drawable/custom_selector"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/MTResult11"
+                android:padding="5dp"
+                android:text="Class 11"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_height="50dp"/>
+            <Button android:textAllCaps="false"
+                android:background="@drawable/custom_selector"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:id="@+id/MTResult12"
+                android:padding="5dp"
+                android:text="Class 12"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:textAllCaps="false"
+        android:background="@drawable/custom_selector"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/objectiveResult"
+        android:padding="5dp"
+        android:text="Result list of objective test"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_height="50dp"/>
+
+
+</LinearLayout>

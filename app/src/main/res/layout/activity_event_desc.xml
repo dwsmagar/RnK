@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin"
+    android:background="@color/white">
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mindhsare" />
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/eventDay"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/eventMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eventDay"
+                android:text="Dec"
+                android:textColor="@color/red"
+                android:textSize="@dimen/small_txt_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dateLayout"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/eventName"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Discussion on choosing the right abroad education"
+                android:textColor="@color/black" />
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/organizedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nimas Education"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/small_txt_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:id="@+id/eventFee"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organized By : "
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text"/>
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:id="@+id/organizer"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organizer"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/topLayout"
+        android:background="@color/light_grey"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/horizontalLine"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/txtFav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/interested"
+            android:textColor="@color/colorGrey" />
+
+        <View
+            android:id="@id/verticalLine"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/horizontalLine" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/txtShare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/going"
+            android:textColor="@color/colorGrey" />
+
+        <View
+            android:id="@+id/verticalLine2"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/horizontalLine" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/txtWishlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/share"
+            android:textColor="@color/colorGrey" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/topLayout"
+        android:background="@color/horizontalLine"
+        android:visibility="visible" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/timePicker"
+                android:textColor="@color/colorGrey" />
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/date"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Wed 24 Feb"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/at"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="at"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/eventTime"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="4pm-6pm"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/map"
+                android:textColor="@color/colorGrey" />
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/eventLocation"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Nepal Communitere"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/topLayout"
+        android:background="@color/horizontalLine"
+        android:visibility="visible" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Details"
+            android:layout_marginTop="8dp"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_txt_size"/>
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/eventDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/accept_terms"
+            android:textColor="@color/colorGrey"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:text="Fee : "
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_txt_size"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Rs."
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="@dimen/small_txt_size"/>
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/eventPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="100"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

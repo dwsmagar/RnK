@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar" />
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:id="@+id/infotv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/code_et"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="Your school must have provided a code to you for your access on this app. Please enter the given code here in order to log in to your school account."
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@id/code_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/et_box"
+        android:hint="Enter the code provided by your school"
+        android:inputType="text"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/code_confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/code_et"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/btn_selector"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+</RelativeLayout>

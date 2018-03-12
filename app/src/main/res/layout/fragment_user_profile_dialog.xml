@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="900dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="250dp"
+    android:orientation="vertical"
+    android:minWidth="900dp"
+    android:padding="24dp"
+    tools:context="com.susankya.schoolvalley.UserProfileDialog">
+
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:customFont="robotobold.ttf"
+        android:textColor="@color/colorPrimary"
+        android:text="User Details"
+        android:textSize="18dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:text="Name: "
+            app:customFont="robotoregular.ttf"
+            android:textSize="16dp"
+            android:textColor="@color/aptTitle"
+            android:layout_height="wrap_content" />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:text="Abc Xyz"
+            app:customFont="robotoregular.ttf"
+            android:textSize="16dp"
+            android:id="@+id/name"
+            android:textColor="@color/aptValue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:text="Roll no.: "
+            app:customFont="robotoregular.ttf"
+            android:textSize="16dp"
+            android:textColor="@color/aptTitle"
+            android:layout_height="wrap_content" />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:text="Abc Xyz"
+            android:textSize="16dp"
+            app:customFont="robotoregular.ttf"
+            android:id="@+id/roll"
+            android:textColor="@color/aptValue"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:text="Section: "
+            app:customFont="robotoregular.ttf"
+            android:textSize="16dp"
+            android:textColor="@color/aptTitle"
+            android:layout_height="wrap_content" />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:text="Abc Xyz"
+            app:customFont="robotoregular.ttf"
+            android:textSize="16dp"
+            android:id="@+id/section"
+            android:textColor="@color/aptValue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:text="Email: "
+            app:customFont="robotoregular.ttf"
+            android:textSize="16dp"
+            android:textColor="@color/aptTitle"
+            android:layout_height="wrap_content" />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            app:customFont="robotoregular.ttf"
+            android:text="Abc Xyz"
+            android:textSize="16dp"
+            android:id="@+id/email"
+            android:textColor="@color/aptValue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:text="Mobile.: "
+            app:customFont="robotoregular.ttf"
+            android:textSize="16dp"
+            android:textColor="@color/aptTitle"
+            android:layout_height="wrap_content" />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            app:customFont="robotoregular.ttf"
+            android:text="Abc Xyz"
+            android:textSize="16dp"
+            android:id="@+id/mobile"
+            android:textColor="@color/aptValue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

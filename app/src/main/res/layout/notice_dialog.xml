@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:minHeight="200dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+
+    android:background="@drawable/result_item_selector">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notice #11"
+            android:textColor="#000"
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:textSize="26sp"/>
+        </LinearLayout>
+
+    <View android:id="@+id/primerdivisor"
+        android:layout_height="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_width="fill_parent"
+        android:background="@color/drawerHighlighted" />
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:layout_marginTop="4dp"
+        android:textColor="#FFEEEEEE"
+        android:id="@+id/date"
+        android:textSize="15dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:scrollbarSize="10dp"
+        android:background="@drawable/box_transparent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="jpt"
+        android:padding="5dp"
+android:textColor="#fff"
+        android:id="@+id/notice"
+
+        android:textSize="20dp"
+
+        />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="2dp">
+<CheckBox
+    android:id="@+id/image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_alignParentRight="true"
+    android:padding="4dp"
+    android:focusable="false"
+    android:enabled="false"/>
+<com.susankya.schoolvalley.TextViewPlus
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@id/image"
+    android:textStyle="bold"
+    android:textColor="#f00"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:text="Notice Title"
+    />
+<com.susankya.schoolvalley.TextViewPlus
+    android:id="@+id/description"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_below="@id/title"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:text="Notice description"/>
+
+</RelativeLayout>

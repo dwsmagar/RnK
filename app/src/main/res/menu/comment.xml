@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_vote_up"
+        android:title="Vote up"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/action_best"
+        android:title="Award as best"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/action_delete"
+        android:title="Delete"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/action_report"
+        android:title="Report"
+        app:showAsAction="never"
+        />
+</menu>

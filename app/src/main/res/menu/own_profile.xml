@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_change_pic"
+        android:title="Change profile picture"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/action_password"
+        android:title="Change password"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/action_refresh"
+        android:title="Refresh"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/action_logout"
+        android:title="Log out"
+        app:showAsAction="never"
+        />
+
+</menu>

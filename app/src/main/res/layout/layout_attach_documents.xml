@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="Please Attach Your Document Here"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/form_box"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/photograph"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/chose_file">
+            <TextView
+                android:id="@+id/txtPhotoChoose"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/choose_file"
+                android:background="@drawable/chose_file"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/primary_text"/>
+            <TextView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_file_chosen"
+                android:paddingLeft="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/resume"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/chose_file">
+            <TextView
+                android:id="@+id/chooseResume"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/choose_file"
+                android:background="@drawable/chose_file"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/primary_text"/>
+            <TextView
+                android:id="@+id/resume"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_file_chosen"
+                android:paddingLeft="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/passport_copy"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/chose_file">
+            <TextView
+                android:id="@+id/choosePassport"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/choose_file"
+                android:background="@drawable/chose_file"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/primary_text"/>
+            <TextView
+                android:id="@+id/passport"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_file_chosen"
+                android:paddingLeft="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/citizenship_copy"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/chose_file">
+            <TextView
+                android:id="@+id/chooseCitizenship"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/choose_file"
+                android:background="@drawable/chose_file"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/primary_text"/>
+            <TextView
+                android:id="@+id/citizenship"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_file_chosen"
+                android:paddingLeft="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/school_certificate"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/chose_file">
+            <TextView
+                android:id="@+id/chooseSchoolCertificate"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/choose_file"
+                android:background="@drawable/chose_file"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/primary_text"/>
+            <TextView
+                android:id="@+id/schoolCertificate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_file_chosen"
+                android:paddingLeft="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/high_school_cert"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/chose_file">
+            <TextView
+                android:id="@+id/chooseHighSchoolCertificate"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/choose_file"
+                android:background="@drawable/chose_file"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/primary_text"/>
+            <TextView
+                android:id="@+id/highSchoolCertificate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_file_chosen"
+                android:paddingLeft="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/undergrad_cert"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/chose_file">
+            <TextView
+                android:id="@+id/chooseUnderGradCertificate"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/choose_file"
+                android:background="@drawable/chose_file"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/primary_text"/>
+            <TextView
+                android:id="@+id/underGradCertificate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_file_chosen"
+                android:paddingLeft="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/grad_cert"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/chose_file">
+            <TextView
+                android:id="@+id/chooseGradCertificate"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/choose_file"
+                android:background="@drawable/chose_file"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/primary_text"/>
+            <TextView
+                android:id="@+id/gradCertificate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_file_chosen"
+                android:paddingLeft="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/test_cert"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/chose_file">
+            <TextView
+                android:id="@+id/chooseTest"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/choose_file"
+                android:background="@drawable/chose_file"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/primary_text"/>
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_file_chosen"
+                android:paddingLeft="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="Do you need more attachment?"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/choose_file"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/chose_file">
+            <TextView
+                android:id="@+id/chooseMoreFile"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/choose_file"
+                android:background="@drawable/chose_file"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/primary_text"/>
+            <TextView
+                android:id="@+id/moreFile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_file_chosen"
+                android:paddingLeft="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/small_txt_size"/>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="2dp">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/add_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_plus"
+                android:textSize="@dimen/small_txt_size" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/remove_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/test_minus"
+                android:textSize="@dimen/small_txt_size"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

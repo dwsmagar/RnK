@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_height="match_parent"
+
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/ll"
+            android:layout_height="wrap_content"
+            >
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="nExt Ads"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="200dp"
+                android:id="@+id/post"
+                android:hint="Ad description"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/box"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:minHeight="150dp"
+                android:padding="4dp"
+                android:layout_margin="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/toolsLL"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/views_highlight_selector"
+                    android:id="@+id/add_image_rl"
+                    >
+                    <ImageButton
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/add_image"
+                        android:id="@+id/imgadd"/>
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Image"
+                        android:id="@+id/tv1"
+                        android:layout_below="@id/imgadd"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/views_highlight_selector"
+                    android:layout_marginLeft="4dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/paste_from_clipboard"
+                    >
+                    <ImageButton
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+
+                        android:background="@drawable/ic_action_paste"
+                        android:id="@+id/imgpaste"/>
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paste from \n clipboard"
+                        android:id="@+id/tv2"
+                        android:layout_below="@id/imgpaste"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="100dp"
+                android:background="@drawable/placeholdernew"
+                android:layout_height="100dp"
+                android:id="@+id/image"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                />
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:textSize="16dp"
+                android:text="Category"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/category_text"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:id="@+id/category_spinner"
+                android:background="@drawable/spinnerbox"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                />
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Level"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/level_text"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Loading..."
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/level_loading"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:id="@+id/level_spinner"
+                android:background="@drawable/spinnerbox"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="40dp"
+                android:hint="Website URL"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/website_et"
+                android:background="@drawable/box"/>
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Priority"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:id="@+id/priority_spinner"
+                android:background="@drawable/spinnerbox"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_selector"
+        android:text="Post ad"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0"
+
+        android:textColor="#fff"
+        android:layout_below="@id/ll"
+        android:layout_gravity="center|bottom"
+
+        android:id="@+id/post_button"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>

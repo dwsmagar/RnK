@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/sale1"/>
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginLeft="8dp">
+            <TextView
+                android:id="@+id/eventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dec"
+                android:layout_below="@id/eventDate"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@id/dateLayout"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/productName"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Discussion on choosing the right abroad education"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/organizedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Nimas Education"
+                android:textColor="@color/colorGrey"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/eventFee"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price:"
+                    android:textSize="@dimen/small_txt_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text"/>
+                <TextView
+                    android:id="@+id/txtRs"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs."
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/small_txt_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:id="@+id/txtQty"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:textSize="@dimen/small_txt_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/topLayout"
+        android:background="@color/horizontalLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/horizontalLine"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/txtFav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/interested"
+            android:textColor="@color/colorGrey" />
+
+        <View
+            android:id="@id/verticalLine"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/horizontalLine" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/txtShare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/going"
+            android:textColor="@color/colorGrey" />
+
+        <View
+            android:id="@+id/verticalLine2"
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/horizontalLine" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/txtWishlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/share"
+            android:textColor="@color/colorGrey" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/horizontalLine1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/topLayout"
+        android:background="@color/horizontalLine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/timePicker"
+            android:textColor="@color/colorGrey"/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/date"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Wed 24 Feb"
+            android:textColor="@color/primary_text"/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/at"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="at"
+            android:textColor="@color/primary_text"/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/eventTime"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="4pm-6pm"
+            android:textColor="@color/primary_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/map"
+                android:textColor="@color/colorGrey"/>
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/eventLocation"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Nepal Communitere"
+                android:textColor="@color/primary_text"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/horizontalLine2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/topLayout"
+        android:background="@color/horizontalLine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Details"
+            android:textStyle="bold"
+            android:textColor="@color/colorGrey"/>
+
+        <TextView
+            android:id="@+id/eventDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/accept_terms"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="@color/primary_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:text="Price"
+            android:textStyle="bold"
+            android:textColor="@color/colorGrey"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Rs."
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="100"
+                android:textStyle="normal"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

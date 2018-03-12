@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/widget_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/my_textbox">
+
+                <ImageView
+                    android:id="@+id/eventBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/editBanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/grey"
+                    android:drawableTop="@drawable/ic_photo_camera_white_24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:text="Add Event Banner"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="top"
+                    android:text=" Add Event Details "
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Title :  "
+                        android:textColor="@color/eventText"
+                        android:textSize="@dimen/small_txt_size"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/event_title"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/my_textbox"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:fontFamily="sans-serif"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:nextFocusForward="@+id/fragment_login_password"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/eventText"
+                        android:textColorHint="@color/grey_light"
+                        android:textSize="@dimen/small_txt_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Date :  "
+                        android:textColor="@color/eventText"
+                        android:textSize="@dimen/small_txt_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/event_date"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/my_textbox"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:drawableRight="@drawable/ic_today_black_24dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:nextFocusForward="@+id/fragment_login_password"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/eventText"
+                        android:textColorHint="@color/grey_light"
+                        android:textSize="@dimen/small_txt_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Time :  "
+                        android:textColor="@color/eventText"
+                        android:textSize="@dimen/small_txt_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/event_time"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/my_textbox"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:drawableRight="@drawable/ic_access_time_black_24dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:nextFocusForward="@+id/fragment_login_password"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/eventText"
+                        android:textColorHint="@color/grey_light"
+                        android:textSize="@dimen/small_txt_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Location :  "
+                        android:textColor="@color/eventText"
+                        android:textSize="@dimen/small_txt_size"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/event_location"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/my_textbox"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:fontFamily="sans-serif"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:nextFocusForward="@+id/fragment_login_password"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/eventText"
+                        android:textColorHint="@color/grey_light"
+                        android:textSize="@dimen/small_txt_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Price :  "
+                        android:textColor="@color/eventText"
+                        android:textSize="@dimen/small_txt_size"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/event_price"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/my_textbox"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:fontFamily="sans-serif"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:nextFocusForward="@+id/fragment_login_password"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/eventText"
+                        android:textColorHint="@color/grey_light"
+                        android:textSize="@dimen/small_txt_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Organized by :  "
+                        android:textColor="@color/eventText"
+                        android:textSize="@dimen/small_txt_size"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/event_organized_by"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/my_textbox"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:fontFamily="sans-serif"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:nextFocusForward="@+id/fragment_login_password"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/eventText"
+                        android:textColorHint="@color/grey_light"
+                        android:textSize="@dimen/small_txt_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Description :  "
+                        android:textColor="@color/eventText"
+                        android:textSize="@dimen/small_txt_size"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/event_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/my_textbox"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"
+                        android:fontFamily="sans-serif"
+                        android:gravity="top"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:nextFocusForward="@+id/fragment_login_password"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/eventText"
+                        android:textColorHint="@color/grey_light"
+                        android:textSize="@dimen/small_txt_size" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/event_publish"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/next_button"
+                    android:elevation="16dp"
+                    android:text="Publish"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

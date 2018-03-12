@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:customFont="robotoregular.ttf"
+        android:textSize="17dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Enter the section name"/>
+<EditText
+    android:layout_width="280dp"
+    android:layout_height="35dp"
+    android:id="@+id/sectionName"
+    android:padding="4dp"
+    android:textSize="15dp"
+    android:background="@drawable/et_box_2"
+    android:hint="Example: Computer 11A"
+    android:layout_gravity="center"
+
+    android:layout_marginTop="10dp"/>
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="@dimen/btn_height_s"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/ok"
+            android:background="@drawable/btn_selector_2"
+            android:text="Ok"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="@dimen/btn_height_s"
+            android:layout_alignParentRight="true"
+            android:id="@+id/cancel"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/btn_selector_2"
+
+            android:text="Cancel"/>
+    </RelativeLayout>
+</LinearLayout>

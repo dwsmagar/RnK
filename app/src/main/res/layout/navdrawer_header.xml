@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/fb_link"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/fbicon"
+
+        android:layout_gravity="right"
+        />
+
+    <ImageView
+        android:id="@+id/img_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+       android:layout_gravity="center"
+         />
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Arniko Feather 1.2"
+        android:textSize="18dp"
+        android:textColor="@color/TabUnSelectedTextColor"
+        android:layout_gravity="center"
+
+        />
+    <com.susankya.schoolvalley.TextViewPlus
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:text="  Developed by \nSusankya Team\n  • Abhinav Dev\n  • Aditya Shah \n  • Sanjog Dhakal"
+        android:textColor="@color/TabUnSelectedTextColor"
+        android:layout_gravity="center"
+
+       />
+
+
+
+
+</LinearLayout>

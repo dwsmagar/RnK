@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question #"
+            android:id="@+id/questionNumber"
+            android:layout_weight="0"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/very_light_grey"
+            android:layout_below="@id/llForcategory"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:maxHeight="165dp"
+            android:layout_weight="0"
+            android:background="@drawable/et_box"
+            android:id="@+id/question"
+            android:inputType="textLongMessage"
+            android:gravity="top|left"
+            android:hint="Write the question here"
+            android:outlineProvider="paddedBounds"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/option1"
+
+            android:layout_margin="10dp"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/very_light_grey"
+            android:layout_below="@id/llForcategory"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:weightSum="100"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+                          <EditText
+                    android:hint="Option 1"
+                    android:layout_width="fill_parent"
+                    android:gravity="top|left"
+                    android:inputType="textAutoCorrect"
+                    android:textSize="20dp"
+                      android:layout_height="wrap_content"
+                    android:maxHeight="50dp"
+                    android:background="@drawable/et_box"
+                    android:nextFocusDown="@+id/option2"
+                    android:imeOptions="actionNext"
+                    android:padding="2dp"
+                    android:id="@id/option1"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_grey"
+                android:layout_below="@id/llForcategory"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                android:layout_margin="5dp">
+                             <EditText
+                    android:hint="Option 2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_box"
+                    android:gravity="top|left"
+                android:maxHeight="50dp"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+android:padding="2dp"
+                    android:nextFocusDown="@+id/option3"
+                    android:id="@id/option2"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_grey"
+                android:layout_below="@id/llForcategory"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_margin="5dp"
+                android:orientation="horizontal">
+                         <EditText
+                    android:padding="2dp"
+                    android:hint="Option 3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_box"
+                    android:gravity="top|left"
+                    android:maxHeight="50dp"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@+id/option4"
+                    android:inputType="text"
+                    android:id="@id/option3"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_grey"
+                android:layout_below="@id/llForcategory"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_box"
+                    android:nextFocusDown="@+id/correct_option"
+                    android:maxHeight="50dp"
+                    android:gravity="top|left"
+                    android:inputType="text"
+                    android:hint="Option 4"
+                    android:padding="2dp"
+                    android:imeOptions="actionNext"
+                    android:id="@id/option4"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_grey"
+                android:layout_below="@id/llForcategory"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct option:"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:padding="2dp"
+                app:customFont="robotobold.ttf"
+                />
+          <Spinner
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/options"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

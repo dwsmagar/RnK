@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAME: "
+            android:textSize="20sp"
+            android:textColor="#ff5d11ff"/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="-- -- --"
+            android:textColor="#ff5d11ff"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grade"/>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/terminal"/>
+
+    <GridLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginTop="10dp"
+        android:rowCount="4"
+        >
+
+        <Button android:textAllCaps="false"
+            android:id="@+id/phybutton"
+            style="@style/ResultSubStyle"
+            android:text="--"
+
+
+            />
+        <Space
+            android:layout_width="10dp"
+            />
+        <Button android:textAllCaps="false"
+            android:id="@+id/chebutton"
+            style="@style/ResultSubStyle"
+            android:text="--"
+            android:layout_gravity="right"
+            />
+        <Button android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:id="@+id/matbutton"
+            style="@style/ResultSubStyle"
+            android:text="--"
+
+
+            />
+        <Space
+            android:layout_width="10dp"
+            />
+        <Button android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:id="@+id/engbutton"
+            style="@style/ResultSubStyle"
+            android:text="--"
+            android:layout_gravity="right"
+            />
+
+        <Button android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:id="@+id/biocompbutton"
+            style="@style/ResultSubStyle"
+            android:text="--"
+
+
+            />
+        <Space
+            android:layout_width="10dp"
+            />
+        <Button android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nepbutton"
+            style="@style/ResultSubStyle"
+            android:text="--"
+            android:layout_gravity="right"
+            />
+
+
+
+
+        <Button android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:id="@+id/totalbutton"
+            style="@style/ResultSubStyle"
+            android:text="--"
+
+
+            />
+        <Space
+            android:layout_width="10dp"
+            />
+        <Button android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:id="@+id/percentbutton"
+            style="@style/ResultSubStyle"
+            android:text="--"
+            android:layout_gravity="right"
+            />
+
+    </GridLayout>
+
+    <Button android:textAllCaps="false"
+        android:background="#11AAFF"
+        android:layout_height="80dp"
+        android:id="@+id/rankbutton"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:text="--"
+        android:textColor="#fff"/>
+</LinearLayout>
+

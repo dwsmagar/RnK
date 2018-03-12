@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Oops, there's nothing to load!"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:id="@+id/empty_list"
+        />
+</LinearLayout>

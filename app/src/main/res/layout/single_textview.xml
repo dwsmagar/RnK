@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.susankya.schoolvalley.TextViewPlus
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        style="@style/result_row"
+        android:textSize="20sp"
+   android:padding="3dp"
+        android:id="@+id/textView"/>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:fontFamily="@font/roboto_slab"
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_above="@id/main_container"/>
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_slab"
+            android:textStyle="bold"
+            android:text="Choose Account Type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/typechooser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/student"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ac_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/user"
+                android:textColor="@color/colorPrimary" />
+
+            <RadioButton
+                android:id="@+id/teacher"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/ac_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/admin"
+                android:textColor="@color/colorPrimary" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/main_container"
+        android:layout_gravity="right"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/next_button1"
+        android:drawablePadding="@dimen/padding_normal"
+        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>

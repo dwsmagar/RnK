@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorGrey"
+        android:gravity="center"
+        android:text="Statement Of Purpose"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/form_box"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="@string/statement_of_purpose"/>
+
+        <EditText
+            android:id="@+id/statement_of_purpose"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/my_textbox"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="5dp"
+            android:textSize="@dimen/small_txt_size" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="180dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headerRL"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:background="@color/white"
+            android:elevation="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/header_imageview"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/schoolCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="3dp"
+            android:text="code"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/logout_header"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/views_highlight_selector"
+            android:src="@drawable/logout"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/trans_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="2dp">
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/circle_head_tv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/navheadercircle"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/instname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Test name"
+                android:textColor="#ffffff"
+                style="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/username"
+                android:textColor="#ffffff"
+                style="@style/Base.TextAppearance.AppCompat.Small"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full name"
+                android:textColor="#ffffff"
+                style="@style/Base.TextAppearance.AppCompat.Small"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_home"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/text_bg"
+        android:drawableLeft="@drawable/home_icon"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:shadowColor="@color/black"
+        android:text="Home"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+</LinearLayout>

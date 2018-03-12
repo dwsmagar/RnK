@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/ll">
+
+
+
+   <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+       android:background="@color/background"
+       xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.susankya.schoolvalley.TextViewPlus
+                android:typeface="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="ARNIKO AWASIYA HIGHER SECONDARY SCHOOL"
+                android:textSize="20sp"
+                android:background="@color/grey_dialog"
+                android:textColor="#fff"
+                android:id="@+id/b1"/>
+            <com.susankya.schoolvalley.TextViewPlus
+                android:typeface="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="+2 Science Programme,Biratnagar       "
+                android:textSize="20sp"
+                android:background="@color/grey_dialog"
+                android:textColor="#fff"
+                android:id="@+id/b2"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/placeholdernew"
+                android:id="@+id/image"/>
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/b3"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ff4b5355"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+
+                android:layout_height="wrap_content"
+                android:text="STREAMS"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_routine"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:id="@+id/b4"
+                    android:textSize="15sp"
+                    android:textColor="@color/grey_light"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Science"/>
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:id="@+id/b5"
+                    android:textSize="15sp"
+                    android:textColor="@color/grey_light"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Computer science"/>
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:id="@+id/b6"
+                    android:textSize="15sp"
+                    android:textColor="@color/grey_light"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Management"/>
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:id="@+id/b7"
+                    android:textSize="15sp"
+                    android:textColor="@color/grey_light"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Hotel management"/>
+            </LinearLayout>
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:id="@+id/b8"
+                android:textSize="20sp"
+                android:textColor="#ff4b5355"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="CONTACT US"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+              android:background="@drawable/edit_routine"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:id="@+id/b9"
+                    android:textSize="20sp"
+                    android:textColor="@color/grey_light"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="021-470149"/>
+
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:id="@+id/b11"
+                    android:textSize="20sp"
+                    android:textColor="@color/grey_light"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Noticeboard: 1618 021 470149"/>
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:id="@+id/b12"
+                    android:textSize="20sp"
+                    android:textColor="@color/grey_light"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Arniko Path, Biratnagar-13"/>
+            </LinearLayout>
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+               android:text="Our Extended Programmes-T.U. Affiliated"
+                android:textColor="#ff4b5355"
+                   android:textSize="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_routine"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
+              <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                  android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                  android:textColor="@color/grey_light"
+               android:text="B.Tech. Food Technology-4 Years"
+                android:textSize="15dp"/>
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="@color/grey_light"
+                android:layout_gravity="center"
+              android:text="S.Sc. Microbiology-4 Years"
+                     android:textSize="15dp"/>
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="fill_parent"
+                android:textColor="@color/grey_light"
+               android:text="B.Sc. CSIT-4 Years"
+                        android:textSize="15dp"
+               />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>

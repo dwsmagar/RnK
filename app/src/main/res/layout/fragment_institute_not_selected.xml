@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.susankya.schoolvalley.InstituteNotSelected">
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Institution not selected"
+
+        android:textSize="22dp"
+        android:textColor="@color/colorPrimaryDark"
+      />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/white_line"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorAccent"/>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:text="You must select an institution to use this feature."
+     android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:padding="1dp"
+        />
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/spinnerbox"
+    android:id="@+id/instituteSpinner"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_marginTop="25dp"
+        >
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:text="Select"
+    android:textColor="#fff"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_selector"
+    android:id="@+id/ok_button"/>
+
+        <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimaryDark"
+    android:text="My institute is not listed"
+    android:background="@drawable/views_highlight_selector"
+
+    android:id="@+id/notListed_button"/>
+    </LinearLayout>
+</LinearLayout>

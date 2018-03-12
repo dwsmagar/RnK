@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:padding="3dp"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:id="@+id/answer_container"
+    android:paddingLeft="4dp"
+    android:layout_height="wrap_content">
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Award as best answer"
+        android:textSize="16dp"
+        android:padding="4dp"
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/award_best_tv"
+        android:textColor="@drawable/textview_selector"
+        android:gravity="right"/>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:textColor="#cf1836"
+        android:layout_marginBottom="2dp"
+        android:visibility="gone"
+        android:id="@+id/best_answer_tv"
+        android:textSize="20dp"
+        android:text="Awarded as Best Answer"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_centerVertical="true"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:id="@+id/profile_pic_comment"
+            android:src="@drawable/placeholdernew"/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="King Birendra"
+            android:background="@drawable/views_highlight_selector"
+
+            android:layout_toRightOf="@id/profile_pic_comment"
+            android:id="@+id/fullname"
+            android:textSize="15dp"
+
+            android:textColor="#FF260B1F"/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/birendrabro"
+            android:id="@+id/username"
+            android:layout_toRightOf="@id/profile_pic_comment"
+            android:layout_below="@id/fullname"
+            android:capitalize="none"
+            android:background="@drawable/views_highlight_selector"
+            android:textStyle="italic"
+            android:textSize="14dp"
+
+            android:textColor="#d3d3d3"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@mipmap/verified"
+            android:layout_marginLeft="4dp"
+            android:visibility="gone"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/verified"
+            android:layout_toRightOf="@id/fullname"
+            />
+
+
+
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:id="@+id/overflow"
+            android:layout_alignParentRight="true"
+            android:layout_height="32dp"
+            android:background="@drawable/overflow_icon"/>
+
+        </RelativeLayout>
+
+
+
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15.5dp"
+        android:text="Comment"
+        android:id="@+id/comment" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <com.susankya.schoolvalley.BlockingImageView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="300dp"
+            android:id="@+id/comment_imageview"
+            android:adjustViewBounds="true"
+            android:src="@drawable/placeholdernewloading"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progress" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/voteups"
+            android:textSize="14dp"
+            android:textColor="#d3d3d3"/>
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="•"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/textdivider"
+            android:textSize="14dp"
+            android:textColor="#d3d3d3"/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentDate"
+            android:textSize="14dp"
+            android:textColor="#d3d3d3"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_light"/>
+    </LinearLayout>

@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.susankya.schoolvalley.NewAboutUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvp1"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/ic_launcher"
+            android:foregroundGravity="center_horizontal" />
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <com.susankya.schoolvalley.TextViewPlus xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/tvp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="School Valley is a platform developed to make the communication of daily activities of a school and its students efficient and real-time. Not only the schools, but also the students are benefitted from this. Students can quickly receive notices, notifications announced by their school and view their class routines. In addition to this, they can also take MCQ tests in the app and prepare themselves for objective entrance exams."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:customFont="robotoregular.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvp1"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.susankya.schoolvalley.TextViewPlus xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered by"
+                android:textColor="@color/grey_light"
+                android:textSize="15dp"
+                app:customFont="robotolight.ttf" />
+
+            <com.susankya.schoolvalley.TextViewPlus xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Susankya Tech"
+                android:textColor="@color/grey_light"
+                android:textSize="15dp"
+                app:customFont="robotobold.ttf" />
+        </LinearLayout>
+
+        <com.susankya.schoolvalley.TextViewPlus xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/views_highlight_selector"
+            android:text="www.susankya.com"
+            android:textColor="@color/link_blue"
+            android:textSize="15dp"
+            app:customFont="robotolight.ttf" />
+    </LinearLayout>
+</RelativeLayout>

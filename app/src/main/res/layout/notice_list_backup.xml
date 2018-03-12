@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:background="@drawable/notice_item_selector"
+    android:id="@+id/main"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:id="@+id/title_content"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:text="contend"
+            />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="contend"
+            android:textColor="#fff"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/date_content"
+            android:layout_gravity="right"
+            />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/description_content"
+            android:textColor="#fff"
+            android:layout_marginTop="4dp"
+            android:text="contend"
+            android:textSize="18sp"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/detail">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            android:scrollbarSize="10dp"
+            android:background="@drawable/box_transparent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="jpt"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:id="@+id/notice"
+                android:textSize="20dp"
+                />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

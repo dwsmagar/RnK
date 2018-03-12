@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:background="@drawable/custom_selector"
+    android:padding="10dp">
+<RelativeLayout
+    android:layout_width="50dp"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_centerVertical="true"
+        android:layout_height="50dp"
+        android:src="@drawable/download_question_set"
+        android:id="@+id/download_questions_set"
+        android:layout_gravity="center"/>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/textForFont"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:background="@drawable/notice_ph_circle"
+        android:textColor="#fff"
+        android:textSize="26dp"
+        android:text="C"
+        android:visibility="gone"
+        />
+</RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+
+        style="?android:attr/progressBarStyleSmall"
+        android:id="@+id/downloading_progress"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+           android:layout_marginBottom="4dp"
+            >
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:text="PHYSIcS"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:id="@+id/code"
+                android:textSize="20dp"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_dot_menu"
+                android:id="@+id/popup"
+                />
+        </RelativeLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff4b5355"
+            android:text="No. of Questions: "
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:typeface="monospace"
+            />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/num"
+
+            android:text=""
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout >
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

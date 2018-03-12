@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Certification"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/form_box">
+
+        <CheckBox
+            android:id="@+id/ch_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_txt_size"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/accept_terms"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="@string/your_signature"/>
+
+    <EditText
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/my_textbox"
+        android:gravity="top"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@id/date_of_sign"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:minLines="1"
+        android:padding="5dp"
+        android:textSize="@dimen/small_txt_size" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/date_of_sign"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/date_of_sign"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:background="@drawable/my_textbox"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableRight="@drawable/ic_today_black_24dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:nextFocusForward="@+id/fragment_login_password"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/eventText"
+            android:textColorHint="@color/grey_light"
+            android:textSize="@dimen/small_txt_size" />
+    </LinearLayout>
+
+</LinearLayout>

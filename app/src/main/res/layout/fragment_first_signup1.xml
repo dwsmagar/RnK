@@ -1,0 +1,290 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/et_box_2"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <EditText
+                    android:id="@+id/fragment_signup_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#fff"
+                    android:fontFamily="sans-serif"
+                    android:hint="Email address"
+                    android:imeOptions="actionNext|flagNoFullscreen"
+                    android:inputType="textEmailAddress"
+                    android:nextFocusForward="@+id/fragment_signup_firstname"
+                    android:padding="4dp"
+                    android:textSize="13.5dp" />
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@id/fragment_signup_firstname"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:hint="First name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:nextFocusForward="@+id/fragment_signup_lastname"
+                        android:padding="4dp"
+                        android:textSize="13.5dp" />
+
+                    <EditText
+                        android:id="@id/fragment_signup_lastname"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:hint="Last name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:nextFocusForward="@+id/roll_number"
+                        android:padding="4dp"
+                        android:textSize="13.5dp" />
+
+                </LinearLayout>
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/divider" />
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:id="@+id/college_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/views_highlight_selector"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Tap to select your school or college"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp" />
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/divider" />
+
+                <EditText
+                    android:id="@id/roll_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#fff"
+                    android:hint="Roll number"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/field1"
+                    android:padding="4dp"
+                    android:textSize="13.5dp" />
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/divider" />
+
+                <EditText
+                    android:id="@id/field1"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#fff"
+                    android:hint="Field1"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/field2"
+                    android:padding="4dp"
+                    android:textSize="13.5dp" />
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:id="@+id/field2line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/divider"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@id/field2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#fff"
+                    android:hint="Field2"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/mobileNum"
+                    android:padding="4dp"
+                    android:textSize="13.5dp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:visibility="gone">
+
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="14dp" />
+
+                    <RadioGroup
+                        android:id="@+id/genderRadio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="Female" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.susankya.schoolvalley.TextViewPlus
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="+977"
+                        android:textSize="14dp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@id/mobileNum"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="10"
+                        android:background="#fff"
+                        android:hint="Mobile number"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:nextFocusForward="@+id/fragment_signup_password"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/divider" />
+
+                <EditText
+                    android:id="@id/fragment_signup_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#fff"
+                    android:fontFamily="sans-serif"
+                    android:hint="Password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textWebPassword"
+                    android:nextFocusForward="@+id/fragment_signup_confirm_password"
+                    android:textSize="13.5dp" />
+
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/divider" />
+
+                <EditText
+                    android:id="@id/fragment_signup_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#fff"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:hint="Re-enter password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textWebPassword"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fragment_signup_signup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_selector_2"
+                android:shadowColor="#fff"
+                android:text="Create account"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/gobacktv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/views_highlight_selector"
+                android:text="Go back"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15dp"
+                app:customFont="robotobold.ttf" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,168 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:orientation="vertical"
+            android:background="@color/background">
+            <Button android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Physics"
+                android:gravity="start|center"
+                android:id="@+id/physics"
+                android:textColor="#fff"
+                android:background="@drawable/notice_item_selector"
+                android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+                android:layout_marginBottom="1dp"
+                />
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@android:color/transparent"
+                android:id="@+id/list_physics"
+                />
+            <Button android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginBottom="1dp"
+                android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+                android:background="@drawable/notice_item_selector"
+
+                android:text="Chemistry"
+                android:id="@+id/chemistry"
+                android:gravity="start|center"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@android:color/transparent"
+                android:id="@+id/list_chemistry"
+                /><Button android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="Mathematics"
+            android:id="@+id/mathematics"
+            android:textColor="#fff"
+            android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+            android:background="@drawable/notice_item_selector"
+
+            android:gravity="start|center"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@android:color/transparent"
+                android:id="@+id/list_maths"
+                /><Button android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biology"
+            android:layout_marginBottom="1dp"
+            android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+            android:gravity="start|center"
+            android:textColor="#fff"
+            android:id="@+id/biology"
+            android:background="@drawable/notice_item_selector"
+            />
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@android:color/transparent"
+                android:id="@+id/list_biology"
+                />
+
+
+            <Button android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:layout_marginBottom="1dp"
+                android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+                android:gravity="start|center"
+                android:textColor="#fff"
+                android:id="@+id/english"
+                android:background="@drawable/notice_item_selector"
+                />
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@android:color/transparent"
+                android:id="@+id/list_english"
+                />
+
+            <Button android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nepali"
+                android:layout_marginBottom="1dp"
+                android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+                android:gravity="start|center"
+                android:textColor="#fff"
+                android:id="@+id/nepali"
+                android:background="@drawable/notice_item_selector"
+                />
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@android:color/transparent"
+                android:id="@+id/list_nepali"
+                />
+
+            <Button android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Computer"
+                android:layout_marginBottom="1dp"
+                android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+                android:gravity="start|center"
+                android:textColor="#fff"
+                android:id="@+id/computer"
+                android:background="@drawable/notice_item_selector"
+                />
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@android:color/transparent"
+                android:id="@+id/list_computer"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/contributor"
+        android:background="@color/grey_dialog"
+        android:textColor="#fff"
+        android:text="Data  collected by Mst. Saurav Singh Karki"
+        android:gravity="center"/>
+</LinearLayout>

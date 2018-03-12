@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/very_light_grey" android:state_pressed="true" />
+    <item android:drawable="@color/white" android:state_selected="false" />
+    <item android:drawable="@drawable/thin_outline_selected" android:state_selected="true" />
+</selector>

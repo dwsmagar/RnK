@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorGrey"
+        android:gravity="center"
+        android:text="Current Employment(If Any):"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/form_box"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/currentEmployer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="@string/current_employer"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@+id/ceFieldOfActivity"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/ceFieldOfActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/field_of_activity"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapSentences"
+                    android:nextFocusForward="@+id/cePosition"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/cePosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="@string/position"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@+id/ceDepartment"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/ceDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/department"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@+id/ceResponsibilities"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/start_date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ceStartDate"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.8"
+                android:background="@drawable/my_textbox"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:drawableRight="@drawable/ic_today_black_24dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:nextFocusForward="@+id/fragment_login_password"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/eventText"
+                android:textColorHint="@color/grey_light"
+                android:textSize="@dimen/small_txt_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/employment_type"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:layout_weight="1"
+                android:id="@+id/ceEmploymentType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/appointment" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="2dp"
+            android:text="@string/describe_ur_responsibility"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ceResponsibilities"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/my_textbox"
+            android:gravity="top"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/prev_employer"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="5dp"
+            android:textSize="@dimen/small_txt_size"/>
+    </LinearLayout>
+</LinearLayout>

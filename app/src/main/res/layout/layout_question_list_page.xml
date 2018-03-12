@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="90"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3sp"
+        android:id="@+id/list"
+        />
+    <Button android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/save"
+        android:text="Save"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_weight="10"
+        android:background="@drawable/custom_selector"/>
+</LinearLayout>

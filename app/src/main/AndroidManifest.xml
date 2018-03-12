@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.susankya.schoolvalley">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens= "true"
+        android:anyDensity="true"
+        />
+
+    <application
+        android:name=".ImmortalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".RoutineListService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="nAqck08CoAj2mTn7CYa4ZzzEeQN112AGlQLMu6zS" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="u9RhntqziIB8wM4hPyCj7e3pRx0QNkdnfCxymZwk" />
+
+        <activity
+            android:name=".StartActivity"
+            android:label="छलफल"
+            android:parentActivityName=".NavDrawerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".NavDrawerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoticeViewActivity"
+            android:label="Notice"
+            android:parentActivityName=".NavDrawerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".RoutineWidget">
+            <intent-filter>
+
+                <!--
+    This widget provider receives broadcast with following action
+    name or simply onUpdate of AppWidgetProvider is called
+                -->
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <!-- linking up xml file of appwidget-provider to AppWidgetProvider -->
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/routine_widget_info" />
+        </receiver>
+        <receiver android:name=".BroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".NewNoticeService" />
+
+        <activity
+            android:name=".ActivityForFragment"
+            android:label="@string/app_name"
+            android:parentActivityName=".NavDrawerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TestResultActivity"
+            android:label="Test Result" />
+        <activity
+            android:name=".AccountTypeActivity"
+            android:label="Choose your account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultActivity"
+            android:parentActivityName=".NavDrawerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help"
+            android:parentActivityName=".NavDrawerActivity" />
+        <activity
+            android:name=".StudentInActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".AdminInActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".SchoolProfileActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".SearchableActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".NavDrawerActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".AddRoutineActivity"
+            android:parentActivityName=".NavDrawerActivity" />
+        <activity android:name=".GalleryViewActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".AddNoticeActivity"
+            android:parentActivityName=".NavDrawerActivity" />
+        <activity
+            android:name=".ViewQuestionActivity"
+            android:parentActivityName=".NavDrawerActivity" />
+        <activity
+            android:name=".EnterCodeActivity"
+            android:label="@string/title_activity_enter_code"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:screenOrientation="portrait" android:name=".Activities.EventDescActivity" />
+        <activity android:screenOrientation="portrait" android:name=".Activities.ForgotPasswordActivity"/>
+        <activity android:screenOrientation="portrait" android:name=".Activities.AddEventActivity"/>
+        <activity android:screenOrientation="portrait" android:name=".Activities.AppliedUserDetailActivity"/>
+        <!-- for taking photo from camera -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.susankya.schoolvalley.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+    </application>
+
+</manifest>

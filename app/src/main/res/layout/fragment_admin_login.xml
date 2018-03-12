@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    >
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/featherlogo_drawable"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"/>
+    <EditText
+
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Enter username"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:nextFocusForward="@+id/password"
+        android:imeOptions="actionNext"
+        android:id="@+id/username"
+        />
+
+
+    <EditText
+
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:hint="Enter password"
+        android:id="@id/password"
+        android:inputType="textWebPassword"/>
+    <CheckBox
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Stay logged in"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/checkbox"/>
+    <Button android:textAllCaps="false"
+        android:layout_width="200dp"
+
+        android:layout_height="50dp"
+        android:background="@drawable/custom_selector"
+        android:layout_marginTop="30dp"
+        android:id="@+id/login"
+        android:text="Log in"
+
+        android:textColor="#fff"
+        android:layout_gravity="center"/>
+    </LinearLayout>

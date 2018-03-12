@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:clickable="false">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/white_line"
+        android:layout_marginTop="2dp"
+        android:background="#000"/>
+<com.susankya.schoolvalley.TextViewPlus
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:padding="2dp"
+    android:text="header"
+    android:textSize="15dp"
+    android:textColor="#000"
+    android:id="@+id/header"
+    android:layout_gravity="left"
+    android:typeface="serif"/>
+
+</LinearLayout>

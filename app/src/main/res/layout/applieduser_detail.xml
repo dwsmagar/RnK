@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorGrey"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="Personal Information"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/form_box"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Year: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="year"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Intake: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/intake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Full name"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Course: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address value"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Country: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Country"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="First Name: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/firstName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="first name"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/middleLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Middle Name: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/middleName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile number"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Last Name: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/last_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Last Name"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Purpose"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Place of Birth: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/pob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Place of Birth"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sex: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sex"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nationality: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/nationality"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nationality"
+                            android:textColor="@color/aptValue" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Marital Status: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/marital_stat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Marital status"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Citizenship No: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/citizenshipNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="citizensip no"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Passport No: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/passport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="passport no"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Issue: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dateofissue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of issue"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Expiry: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dateofexpiry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of expiry"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Place of Issue: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/placeofissue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Place of issue"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGrey"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="Mailing Address"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/form_box"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Street Name, Number: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/street_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Street name and number"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State|Province: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/stateorprovince"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State n province"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mail_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="country"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGrey"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="School Education Certificate"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/form_box"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="School Name: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/school_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="School Name"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/school_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State|Province: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/school_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="School state"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/school_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qualification obtained: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/school_qualification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qualification"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CGPA|GPA|Grade|%: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/school_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date of completion: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/school_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGrey"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="High School Education Certificate"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/form_box"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="High School Name: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/highschool_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="School Name"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/highschool_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State|Province: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/highschool_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="School state"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/highschool_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qualification obtained: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/highschool_qualification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qualification"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CGPA|GPA|Grade|%: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/highschool_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date of completion: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/highschool_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGrey"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="Undergraduate Certificate"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/form_box"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="University: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/university"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="School Name"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/undergrad_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State|Province: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/undergrad_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="School state"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/undergrad_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Degree obtained: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/undergrad_qualification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Degree"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Major Subject: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/undergrad_major"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Degree"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CGPA|GPA|Grade|%: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/undergrad_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date of completion: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/undergrad_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date of completion"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGrey"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="Graduate Certificate"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/form_box"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="University: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/graduate_university"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="School Name"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/graduate_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State|Province: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/graduate_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="School state"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/graduate_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Degree obtained: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/graduate_qualification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qualification"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Major Subject: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/graduate_major"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qualification"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CGPA|GPA|Grade|%: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/graduate_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date of completion: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/graduate_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:text="Tests"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorGrey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/form_box"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/testtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:id="@+id/ielts_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IELTS: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ielts_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="citizensip no"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/toefl_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TOEFL: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/toefl_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="citizensip no"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gmat_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GMAT: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/gmat_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="citizensip no"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gre_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GRE: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/gre_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="citizensip no"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sat_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SAT: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sat_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="citizensip no"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pte_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PTE: "
+                            android:textColor="@color/aptTitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/pte_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="citizensip no"
+                            android:textColor="@color/aptValue" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGrey"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="Current Employment"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/form_box"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Employer: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/current_employer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Field of Activity: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fieldofactivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Position: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Position"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Date: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/current_startdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start date"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Department: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/current_department"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employment Type: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/current_empType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGrey"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="Previous Job Experience"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/form_box"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employer: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pre_employer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Job Location: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pre_job_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Job Title: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pre_jobTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Position"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Date: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pre_startdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start date"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End Date: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pre_endDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employment Type: "
+                        android:textColor="@color/aptTitle"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pre_empType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citizensip no"
+                        android:textColor="@color/aptValue" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGrey"
+                android:drawableRight="@drawable/attach"
+
+                android:paddingLeft="4dp"
+                android:text="Attachments"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/form_box"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click on the text to preview the document."
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photograph (Passport Size)"
+                    android:textColor="@color/aptValue" />
+
+                <TextView
+                    android:id="@+id/resume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resume"
+                    android:textColor="@color/aptValue" />
+
+                <TextView
+                    android:id="@+id/passport_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passport Copy"
+                    android:textColor="@color/aptValue" />
+
+                <TextView
+                    android:id="@+id/citizenship_coopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Citizenship Copy"
+                    android:textColor="@color/aptValue" />
+
+                <TextView
+                    android:id="@+id/school_cert_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="School Education Certificate"
+                    android:textColor="@color/aptValue" />
+
+                <TextView
+                    android:id="@+id/high_school_cert_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="High School Certificate"
+                    android:textColor="@color/aptValue" />
+
+                <TextView
+                    android:id="@+id/undergrad_cert_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Undergraduate Certificate"
+                    android:textColor="@color/aptValue" />
+
+                <TextView
+                    android:id="@+id/grad_cert_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Graduate Certificate"
+                    android:textColor="@color/aptValue" />
+
+                <TextView
+                    android:id="@+id/test_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test Certificate"
+                    android:textColor="@color/aptValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signature : "
+                    android:textColor="@color/aptTitle"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signature"
+                    android:textColor="@color/aptValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Signature: "
+                    android:textColor="@color/aptTitle"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/signature_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Signature: "
+                    android:textColor="@color/aptValue" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimary"
+                android:text="Dismiss"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

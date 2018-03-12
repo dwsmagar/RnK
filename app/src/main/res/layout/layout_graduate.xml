@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Graduate Certificate"
+        android:textColor="@color/colorGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/form_box"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/gradUniversityName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="@string/university"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@id/gradCity"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/gradCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/city"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@+id/gradState"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/gradState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="@string/province"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@+id/gradCountry"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/gradCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/country_opt"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@+id/gradDegreeObtained"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/gradDegreeObtained"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="@string/degree_obtained"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@+id/gradMajorSubject"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/gradMajorSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/major_subject"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@+id/gradGpa"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/gradGpa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/gpa"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@+id/gradDateOfCompletion"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/date_of_completion"
+                android:textStyle="bold"
+                android:textSize="@dimen/small_txt_size"/>
+
+            <TextView
+                android:id="@+id/gradDateOfCompletion"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.8"
+                android:background="@drawable/my_textbox"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:drawableRight="@drawable/ic_today_black_24dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:nextFocusForward="@+id/fragment_login_password"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/eventText"
+                android:textColorHint="@color/grey_light"
+                android:textSize="@dimen/small_txt_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

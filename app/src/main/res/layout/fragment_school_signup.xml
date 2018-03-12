@@ -1,0 +1,182 @@
+<LinearLayout
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"
+            />
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:background="#fff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/et_box_2"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:hint="Username"
+            android:padding="4dp"
+            android:textSize="13.5dp"
+            android:background="#fff"
+            android:inputType="text"
+            android:fontFamily="sans-serif"
+            android:imeOptions="actionNext|flagNoFullscreen"
+            android:nextFocusForward="@+id/school_name"
+            android:id="@+id/fragment_signup_username"/>
+
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/divider"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#fff"
+        android:padding="4dp"
+        android:id="@id/school_name"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/location"
+        android:textSize="13.5dp"
+        android:hint="Name of school"/>
+
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/divider"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#fff"
+        android:padding="4dp"
+        android:id="@id/location"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/mobileNum"
+        android:textSize="13.5dp"
+        android:hint="Address of school"/>
+
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="+977"
+                android:textColor="@color/black"
+                android:textSize="13.5dp"
+                android:clickable="false"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:textSize="13.5dp"
+                android:inputType="phone"
+                android:layout_marginLeft="6dp"
+                android:background="#fff"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/email_address"
+                android:id="@id/mobileNum"
+                android:layout_height="35dp"
+                android:hint="Mobile number"/>
+        </LinearLayout>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/divider"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#fff"
+        android:id="@id/email_address"
+        android:hint="Email address"
+        android:textSize="13.5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="textWebEmailAddress"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/fragment_signup_password"/>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/divider"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#fff"
+            android:id="@id/fragment_signup_password"
+            android:hint="Password"
+            android:textSize="13.5dp"
+            android:fontFamily="sans-serif"
+            android:inputType="textWebPassword"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/fragment_signup_confirm_password"/>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/divider"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:id="@id/fragment_signup_confirm_password"
+            android:hint="Re-enter password"
+            android:textSize="14dp"
+            android:fontFamily="sans-serif"
+            android:inputType="textWebPassword"
+            android:imeOptions="actionDone"
+            />
+
+
+
+        </LinearLayout>
+    <Button android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:shadowColor="#fff"
+        android:layout_marginTop="5dp"
+        android:text="Submit"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/btn_selector_2"
+        android:id="@+id/fragment_signup_signup"/>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

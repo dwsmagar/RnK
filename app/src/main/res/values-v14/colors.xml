@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tabsScrollColor">#8a140e</color>
+    <color name="drawerHighlighted">#73C1F6FF</color>
+    <drawable name="very_light_grey">#1e000000</drawable>
+    <color name="light_grey">#78909C</color>
+    <color name="drawerColor">#FF26FD96</color>
+    <color name="background">#ffffffff</color>
+    <drawable name="back">#fff</drawable>
+    <color name="blue">#00f</color>
+    <color name="dialog">#5f2</color>
+    <color name="drawergreen">#689F38</color>
+    <color name="passed">#A6D785</color>
+    <color name="TabSelectedTextColor">#FFF</color>
+    <color name="TabUnSelectedTextColor">#61252525</color>
+    <color name="failed">#EE6363</color>
+    <color name="green_selector">#769F5F</color>
+    <color name="black">#000</color>
+    <color name="grey_light">#616161</color>
+    <color name="grey_dialog">#424242</color>
+    <color name="blue_grey">#455A64</color>
+    <drawable name="blue_grey_drawable">#455A64</drawable>
+    <color name="light_blue_grey">#B0BEC5</color>
+    <color name="rotator_color">#8b9dc3</color>
+</resources>

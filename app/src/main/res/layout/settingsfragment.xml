@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/changepwRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_selector">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/pwimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:src="@drawable/changepw"
+            android:text="{entypo-key}"
+            android:textColor="@color/colorGrey"/>
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/pw_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/pwimage"
+            android:paddingLeft="15dp"
+            android:text="Change password"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            app:customFont="robotobold.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/pwimage"
+            android:layout_marginTop="15dp"
+
+            android:background="@color/light_grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logoutRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_selector">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/image"
+            android:textColor="@color/colorGrey"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_logout"
+            android:text="{fa-power-off}" />
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/title_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/image"
+            android:paddingLeft="15dp"
+            android:text="Log out"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            app:customFont="robotobold.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/image"
+            android:layout_marginTop="15dp"
+            android:background="@color/light_grey" />
+    </RelativeLayout>
+
+</LinearLayout>

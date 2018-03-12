@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@drawable/custom_selector"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:gravity="center"
+    android:paddingBottom="8dp">
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:id="@+id/textForFont"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle_with_white_background"
+        android:gravity="center"
+        android:text="C"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHYSIcS"
+            android:textColor="@color/black"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:textSize="16sp" />
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:id="@+id/chatMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="physics"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrey" />
+    </LinearLayout>
+</LinearLayout>

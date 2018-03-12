@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#36FEF9F9">
+<com.susankya.schoolvalley.TextViewPlus
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="List of saved questions"
+    android:textColor="#000"
+    android:id="@+id/header"
+    android:textSize="20dp"
+    android:textAllCaps="false"
+  />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/very_light_grey"
+        android:layout_marginBottom="3dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_weight="1"
+        android:id="@+id/codeList"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add another set"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/add_question_set_button"
+        android:background="@drawable/btn_selector_2"
+        />
+</LinearLayout>

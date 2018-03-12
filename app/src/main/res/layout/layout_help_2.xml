@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/routine_color">
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+  >
+<com.susankya.schoolvalley.TextViewPlus
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:textColor="#fff"
+    android:textSize="20dp"
+    android:text="Just one more step to go"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/placeholdernewloading"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:id="@+id/nav_drawer_text"
+                android:layout_marginTop="10dp"
+                android:text="To use this app, you must first create an account which doesn't take more than a minute. Most of the features of the app require you to select the institution you are studying in. Tap Next to create an account."/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:id="@+id/next_button"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:background="@drawable/custom_selector"
+            android:text="Next"/>
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/login_tv"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:background="@drawable/views_highlight_selector"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Already have an account? Log in here"
+            />
+
+</LinearLayout></ScrollView>

@@ -1,0 +1,143 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+
+        android:layout_gravity="top|center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Username"
+
+                android:inputType="text"
+                android:imeOptions="actionNext|flagNoFullscreen"
+                android:nextFocusForward="@+id/fragment_signup_firstname"
+                android:id="@+id/fragment_signup_username"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="First name"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/fragment_signup_lastname"
+                android:id="@id/fragment_signup_firstname"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Last name"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/fragment_signup_password"
+                android:id="@id/fragment_signup_lastname"/>
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Select the institution you are currently in"
+                android:layout_marginTop="20dp"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:id="@+id/college_spinner"
+                android:background="@drawable/spinnerbox"/>
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Gender"
+                android:layout_marginTop="10dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/genderRadio"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/male"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/female"/>
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="+977"
+                    android:editable="false"
+                    android:clickable="false"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:inputType="phone"
+                    android:id="@+id/mobileNum"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile number"/>
+            </LinearLayout>
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="We require your mobile number only for verification purpose. Your information is always safe and private."/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@id/fragment_signup_password"
+                android:hint="Password"
+                android:inputType="textWebPassword"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/fragment_signup_confirm_password"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@id/fragment_signup_confirm_password"
+                android:hint="Re-enter password"
+                android:inputType="textWebPassword"
+                android:imeOptions="actionDone"
+                />
+
+            <Button android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:text="Sign Up"
+                android:textColor="#fff"
+                android:background="@drawable/custom_selector"
+                android:id="@+id/fragment_signup_signup"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

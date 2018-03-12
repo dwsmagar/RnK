@@ -1,0 +1,174 @@
+<resources>
+
+    <style name="ResultSubStyle">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:background">#11AAFF</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="NoticeGapStyle">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/button_color</item>
+    </style>
+
+    <style name="MyDialogFragmentStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FragmentTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ff5d11ff</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ff5d11ff</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_height">22dp</item>
+    </style>
+
+    <style name="widgetitem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">#94d190dd</item>
+        <item name="android:layout_marginLeft">8sp</item>
+        <item name="android:layout_marginRight">8sp</item>
+    </style>
+
+    <style name="WidgetName">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">@string/appwidget_text</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="result_row">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">16.5dp</item>
+        <item name="android:background">@drawable/result_item_selector</item>
+    </style>
+
+    <style name="image_button_dimens">
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">32dp</item>
+    </style>
+
+    <style name="result_row_objective">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@drawable/result_item_selector</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@color/TabSelectedTextColor</item>
+    </style>
+
+    <style name="routine_item">
+        <item name="android:padding">1dp</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/box</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="routine_item_edit">
+        <item name="android:padding">1dp</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/routine_selector</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="SpinnerCustomStyle" parent="android:Widget.ListView.DropDown">
+        <item name="android:divider">#fff</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="AboutUsImageViewStyle">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_width">80dp</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">@dimen/tab_max_width</item>
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MyMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:minWidth">0dip</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+    </style>
+</resources>
+
+

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_gravity="center">
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_gravity="center"
+    android:layout_height="100dp"
+   android:src="@drawable/featherlogo_drawable"
+    android:textSize="20dp"
+    android:layout_weight="1"
+    android:gravity="center"
+   />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical"
+        android:layout_weight="9">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/fragment_login_password"
+            android:id="@+id/fragment_login_username"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@id/fragment_login_password"
+            android:hint="Password"
+            android:inputType="textWebPassword"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay logged in"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/fragment_login_checkbox"
+            />
+        <Button android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Log in"
+            android:background="@drawable/custom_selector"
+            android:textColor="#fff"
+            android:id="@+id/fragment_login_login"/>
+        </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBarForum</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Example</item>
+        <item name="android:actionBarTabTextStyle">@style/TabSelectedUnselectedTextStyle</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBarForum</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Example</item>
+        <item name="actionBarTabTextStyle">@style/TabSelectedUnselectedTextStyle</item>
+        <item name="actionBarSplitStyle">@style/TabSplitStyle</item>
+
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBarForum"
+        parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:backgroundSplit">@null</item>
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/tab_indicator</item>
+        <item name="backgroundSplit">@null</item>
+
+    </style>
+    <style name="ActionBarTabStyle.Example" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_example</item>
+        <item name="background">@drawable/tab_indicator_ab_example</item>
+
+    </style>
+
+    <style name="TabSelectedUnselectedTextStyle" parent="Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@drawable/text_color_selected</item>
+
+
+    </style>
+
+    <style name="TabSplitStyle" parent="Widget.AppCompat.ActionBar.TabBar">
+       <item name="divider">@drawable/line_divide</item>
+        <item name="dividerPadding">16dp</item>
+        <item name="showDividers">middle</item>
+
+    </style>
+
+    <style name="NewsListItemsButtons">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:background">@drawable/feed_button_selector</item>
+    </style>
+    <style name="txt">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+
+    </style>
+   </resources>

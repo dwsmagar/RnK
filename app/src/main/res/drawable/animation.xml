@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@color/grey_dialog" android:duration="500"/>
+    <item android:duration="500" android:drawable="@color/green_selector"/>
+    <item android:duration="500" android:drawable="@color/accent_material_dark"/>
+    <item android:drawable="@color/tabsScrollColor" android:duration="500">
+    </item>
+</animation-list>

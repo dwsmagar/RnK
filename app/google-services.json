@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "78659383633",
+    "firebase_url": "https://school-valley.firebaseio.com",
+    "project_id": "school-valley",
+    "storage_bucket": "school-valley.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78659383633:android:f26f4025a29bca82",
+        "android_client_info": {
+          "package_name": "com.susankya.schoolvalley"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78659383633-5ccot2mnafv5vevehdhvdfq1tqg7g8vi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSaVasBfvyOniqeHef8w2ua54r1B31zk8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78659383633-5ccot2mnafv5vevehdhvdfq1tqg7g8vi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <include layout="@layout/layout_personal_info"/>
+
+        <include layout="@layout/layout_mailing_address"/>
+
+        <include layout="@layout/layout_education"/>
+
+        <include layout="@layout/layout_high_school"/>
+
+        <include layout="@layout/layout_undergraduate"/>
+
+        <include layout="@layout/layout_graduate"/>
+
+        <include layout="@layout/layout_more_qualification"/>
+
+        <include layout="@layout/layout_current_employment"/>
+
+        <include layout="@layout/layout_previous_job_experience"/>
+
+        <include layout="@layout/layout_other_information"/>
+
+        <include layout="@layout/layout_statement_of_purpose"/>
+
+        <include layout="@layout/layout_attach_documents"/>
+
+        <include layout="@layout/layout_certification"/>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/submit"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+

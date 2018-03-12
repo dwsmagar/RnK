@@ -1,0 +1,106 @@
+ <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card_selector"
+        android:orientation="vertical"
+
+        android:padding="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_above="@+id/bottomLL"
+         android:layout_marginBottom="15dp"
+         android:layout_alignParentTop="true"
+         android:layout_height="wrap_content">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 >
+                 <com.susankya.schoolvalley.TextViewPlus
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/primary_text"
+                     android:textSize="16dp"
+
+                     android:id="@+id/title_content"
+                     android:textStyle="bold"
+                     android:text="contend"
+                     />
+                 <com.susankya.schoolvalley.TextViewPlus
+                     android:layout_width="wrap_content"
+                     android:layout_below="@id/title_content"
+                     android:layout_marginTop="8dp"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/description_content"
+                     android:textColor="@color/primary_text"
+                     android:text="contend"
+                     android:textSize="14dp"
+
+                     />
+             </LinearLayout>
+
+
+
+
+     </ScrollView>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@id/bottomLL"
+         android:layout_marginTop="6dp"
+         android:layout_alignParentBottom="true"
+         android:orientation="vertical">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:id="@+id/dateRL"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:layout_width="@dimen/notice_icon"
+                 android:layout_height="@dimen/notice_icon"
+                 android:background="@drawable/ic_clock"
+                 android:layout_centerVertical="true"
+                 android:id="@+id/clock_icon"/>
+             <com.susankya.schoolvalley.TextViewPlus
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Sep 10, 4:50 PM"
+                 android:textColor="@color/secondary_text"
+
+                 android:layout_toRightOf="@id/clock_icon"
+
+
+                 android:layout_centerVertical="true"
+                 android:textSize="13dp"
+                 android:id="@+id/date_content"
+                 />
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:clickable="true"
+             android:layout_height="wrap_content"
+             android:id="@+id/fileRL"
+             android:background="@drawable/views_highlight_selector"
+
+             android:minHeight="30dp">
+             <ImageView
+                 android:layout_width="@dimen/notice_icon"
+                 android:layout_height="@dimen/notice_icon"
+                 android:layout_centerVertical="true"
+                 android:background="@drawable/ic_image"
+                 android:id="@+id/file_type"/>
+             <com.susankya.schoolvalley.TextViewPlus
+                 android:layout_width="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/secondary_text"
+                 android:textSize="13dp"
+                 android:id="@+id/file_info"
+                 android:layout_toRightOf="@id/file_type"
+                 android:text="Tap to view attachment: dec13.jpg (232KB)"/>
+         </RelativeLayout>
+     </LinearLayout>
+
+
+
+    </RelativeLayout>

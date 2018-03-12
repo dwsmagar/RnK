@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+   android:orientation="vertical"
+    android:layout_height="match_parent" tools:context="com.susankya.schoolvalley.ChhalfalOffline">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="30sp"
+        android:id="@+id/newslist"
+        android:clickable="true"
+        />
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/no_posts_saved_tv"
+        android:text="No Chhalfal posts saved yet"
+        android:textSize="18dp"
+      android:visibility="gone"
+        android:gravity="center"/>
+</LinearLayout>

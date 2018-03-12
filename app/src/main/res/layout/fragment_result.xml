@@ -1,0 +1,78 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+ <LinearLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.susankya.schoolvalley.ResultFragment"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:id="@+id/ll">
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Roll number"
+        android:id="@+id/roll"
+        android:inputType="number"
+
+        />
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Class"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+    <Spinner
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+    android:id="@+id/spinnerclass"
+        android:background="@drawable/spinnerbox"
+        android:layout_marginTop="10dp">
+</Spinner>
+     <com.susankya.schoolvalley.TextViewPlus
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:text="Terminal Exam"
+         android:textColor="#000"
+         android:textSize="20sp"/>
+     <Spinner
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:spinnerMode="dropdown"
+         style="@style/SpinnerCustomStyle"
+         android:id="@+id/spinnerterm"
+         android:background="@drawable/spinnerbox"
+         android:layout_marginTop="10dp">
+     </Spinner>
+       <Button android:textAllCaps="false"
+        android:background="@drawable/custom_selector"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:id="@+id/submit"
+        android:padding="5dp"
+        android:text="View Result"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"/>
+     <Button android:textAllCaps="false"
+         android:layout_width="250dp"
+         android:layout_height="50dp"
+         android:background="@drawable/custom_selector"
+         android:text="Results list of all students"
+         android:layout_gravity="center"
+         android:layout_marginTop="10dp"
+         android:id="@+id/other_results_button"
+         android:textSize="17sp"
+         android:textColor="#fff"/>
+
+</LinearLayout>
+</ScrollView>

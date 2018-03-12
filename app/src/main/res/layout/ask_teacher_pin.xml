@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.susankya.schoolvalley.askQuestionCodeDialogFragment"
+    android:padding="10dp"
+    android:background="@color/grey_dialog">
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter the confirmation pin:"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:padding="15dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/pin"
+        android:inputType="number"
+        android:padding="4dp"
+        android:background="@drawable/box"
+
+        />
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="15dp">
+        <Button android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="OK"
+            android:layout_weight="1"
+            android:id="@+id/ok_button"
+            android:background="@drawable/custom_selector"
+            android:textColor="#fff"
+            android:layout_marginRight="10dp"
+            />
+        <Button android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:background="@drawable/custom_selector"
+            android:textColor="#fff"
+            android:id="@+id/cancel_button"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorGrey"
+        android:gravity="center"
+        android:text="Previous Job Experience"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/form_box"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/prev_employer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="@string/employer"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapWords"
+                    android:nextFocusForward="@+id/prev_job_location"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/prev_job_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/text_location"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textCapSentences"
+                    android:nextFocusForward="@+id/prev_jobTitle"
+                    android:textSize="@dimen/small_txt_size" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/prev_jobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:hint="@string/job_title"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/qsOne"
+                android:inputType="text|textCapWords"
+                android:nextFocusDown="@+id/prev_start_date"
+                android:textSize="@dimen/small_txt_size" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/start_date"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/prev_job_start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1.8"
+                    android:background="@drawable/my_textbox"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:drawableRight="@drawable/ic_today_black_24dp"
+                    android:fontFamily="sans-serif"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:gravity="center_vertical"
+                    android:nextFocusForward="@+id/prev_job_end_date"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/eventText"
+                    android:textColorHint="@color/grey_light"
+                    android:textSize="@dimen/small_txt_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/end_date"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/prev_job_end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1.8"
+                    android:background="@drawable/my_textbox"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:drawableRight="@drawable/ic_today_black_24dp"
+                    android:fontFamily="sans-serif"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:gravity="center_vertical"
+                    android:nextFocusForward="@+id/prevEmploymentType"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/eventText"
+                    android:textColorHint="@color/grey_light"
+                    android:textSize="@dimen/small_txt_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/employment_type"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:layout_weight="1"
+                android:id="@+id/prevEmploymentType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/appointment" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="2dp"
+            android:layout_marginTop="8dp">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/add_prev_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_plus"
+                android:textSize="@dimen/small_txt_size" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/remove_prev_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/test_minus"
+                android:textSize="@dimen/small_txt_size"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

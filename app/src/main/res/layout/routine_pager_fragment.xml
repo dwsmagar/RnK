@@ -1,0 +1,102 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:background="@color/background"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/sectiontabll"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_back"
+                    android:id="@+id/backButton"/>
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/background"
+                    android:layout_marginTop="2dp"
+                    android:text="section"
+                    android:textSize="20dp"
+                    android:id="@+id/section"
+                    app:customFont="robotobold.ttf"
+                    android:padding="2dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    />
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background"
+                    android:text="Click here to select your section"
+                    android:background="@drawable/views_highlight_selector"
+                    android:textSize="13dp"
+                    android:id="@+id/sectionFooter"
+                    android:layout_below="@id/section"
+                    android:padding="2dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    app:elevation="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    android:layout_below="@id/sectionFooter"
+
+                    >
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:tabMode="scrollable"
+                        app:tabGravity="fill"/>
+                </android.support.design.widget.AppBarLayout>
+            </RelativeLayout>
+
+
+            <android.support.v4.view.ViewPager
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pager"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floating_add_button"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/floating_add_rgb"
+        app:layout_anchor="@id/main"
+        android:visibility="gone"
+        app:layout_anchorGravity="bottom|right|end"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
+

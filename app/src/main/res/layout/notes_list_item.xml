@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+<com.susankya.schoolvalley.TextViewPlus
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/title"
+    android:text="Title:"
+    android:textColor="@color/grey_dialog"
+    android:textSize="20dp"/>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="note"
+        android:textSize="18dp"
+        android:id="@+id/note"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/dateTime"
+        />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/deletefeed"
+        android:id="@+id/deleteNote"
+        android:layout_alignParentRight="true"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTime"
+        android:layout_toLeftOf="@id/deleteNote"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:layout_margin="5dp">
+        <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/date"
+        android:text="date"
+        />
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/time"
+        android:layout_below="@id/date"
+        android:text="time"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

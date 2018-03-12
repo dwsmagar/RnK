@@ -1,0 +1,36 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.susankya.schoolvalley.PublishedResultList">
+
+    <ProgressBar
+        android:layout_width="60dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="60dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:id="@+id/progress"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refresh"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_result"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/emptyView"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="Looks like your institute has not uploaded any result."/>
+</RelativeLayout>

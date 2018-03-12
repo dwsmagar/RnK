@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:id="@+id/resultLayout">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Question: "
+            android:id="@+id/questionCode"
+            android:textSize="20dp"
+            android:textColor="#fff"
+           android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Question: "
+            android:id="@+id/totalQuestion"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            />
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct Answers: "
+            android:id="@+id/correctAnswers"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_alignBottom="@id/totalQuestion"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="?android:dividerHorizontal"
+            android:animateLayoutChanges="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/dummy_imageview_tick_unsure"
+            android:src="@drawable/tick_unsure"/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/dummy_imageview_tick_unsure"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+
+            android:text="The option you chose"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/dummy_imageview_tick_sure"
+            android:src="@drawable/tick_sure"/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/dummy_imageview_tick_sure"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+
+            android:text="The correct option"/>
+    </RelativeLayout>
+    <Button android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/start"
+        android:background="@drawable/custom_selector"
+        android:textColor="#fff"
+        android:text="Share in Chhalfal"
+        android:padding="3dp"
+        />
+</LinearLayout>
+

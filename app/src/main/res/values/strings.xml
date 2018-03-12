@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nimas Edu.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_next">Next</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="no_internet">NO CONNECTION!</string>
+    <string name="action_finish">Finish</string>
+    <string name="sad_emoji">{fa-frown-o}</string>
+
+
+    //event form
+    <string name="change_banner">Change Banner</string>
+
+    //reset password
+    <string name="reset_pw_details">Enter your email address and we will send you a link to reset your password.</string>
+    <string name="registered_email">Registered Email Address</string>
+    <string name="reset">Send me a link to reset</string>
+
+    //Introduction fragment
+    <string name="welcome_text"><font color="#1cd36d">Nimas Education</font></string>
+
+    //event layout
+    <string name="map">{mdi-map-marker 30px}</string>
+
+    //appointment full details
+    <string name="appointment_details">Appointment Full Details</string>
+    <string name="appointment_info">NIMAS Education has a policy of arranging crowd in a systematic way. In order to meet any staffs for official purpose, you should make an appointment in advance so that we can process your request quickly on time. We know your value of time and waiting is a tedious job! To avoid delay and long waiting in queue, please book your appointment today. If you have any problem in taking appointment, please <b>contact us</b> via email: <b>appointment@nimaseducation.com</b></string>
+
+    //eligibility full details
+    <string name="eligibility_details">Eligibility Full Details</string>
+    //apply now
+    //personal info
+    <string name="year">Year</string>
+    <string name="intake">Intake*</string>
+    <string name="course">Course*</string>
+    <string name="country">Country*</string>
+    <string name="country_opt">Country</string>
+    <string name="country_optional">Country(Optional)</string>
+    <string name="title">Title*</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="date_of_birth">Date Of Birth*</string>
+    <string name="place_of_birth">Place Of Birth*</string>
+    <string name="sex">Gender*</string>
+    <string name="nationality">Nationality*</string>
+    <string name="marital_status">Marital Status*</string>
+    <string name="citizenship_no">Citizenship No*</string>
+    <string name="passport_no">Passport No</string>
+    <string name="date_of_issue">Date Of Issue</string>
+    <string name="date_of_expiry">Date Of Expiry</string>
+    <string name="place_of_issue">Place Of Issue</string>
+
+    //apply now
+    //mailing address
+    <string name="permanent_address">Permanent Address</string>
+    <string name="street_name">Street Name  Number</string>
+    <string name="city">City</string>
+    <string name="province">State | Province</string>
+    <string name="mobile">Mobile*</string>
+    <string name="email_address">Email*</string>
+    <string name="is_permanent_address">Is This Your Permanent Address? *</string>
+
+    //apply now
+    //Education
+    <string name="school_name">School Name</string>
+    <string name="qualification_obtained">Qualification Obtained</string>
+    <string name="gpa">CGPA | GPA | Grade | %</string>
+    <string name="date_of_completion">Date Of Completion</string>
+
+    //apply now
+    //high school certificate
+    <string name="high_school_name">High School Name</string>
+
+    //apply now
+    //undergraduate certificate
+    <string name="university">University</string>
+    <string name="degree_obtained">Degree Obtained</string>
+    <string name="major_subject">Major Subject</string>
+
+    <string name="more_qualification">Do You Have More Qualification?</string>
+    <string name="test_taken">Test Taken</string>
+    <string name="test_score">Test Score</string>
+    <string name="test_notice">Please indicate the date(s) and the score of the test(s) taken.</string>
+
+    //apply now
+    //Current Employment
+    <string name="current_employer">Current Employer</string>
+    <string name="field_of_activity">Field Of Activity</string>
+    <string name="position">Position</string>
+    <string name="text_location">Location</string>
+    <string name="start_date">Start Date</string>
+    <string name="department">Department</string>
+    <string name="employment_type">Employment Type</string>
+    <string name="describe_ur_responsibility">Describe Your Responsibilities</string>
+
+    //apply now
+    //Previous Job Experience
+    <string name="employer">Employer</string>
+    <string name="job_title">Job Title</string>
+    <string name="end_date">End Date</string>
+    <string name="statement_of_purpose">Please write in brief describing why you want to study, chosen course and your future career plan. *</string>
+
+    //apply now
+    //Attach Document
+    <string name="photograph">Photograph ( Passport Size) *</string>
+    <string name="resume">Resume *</string>
+    <string name="passport_copy">Passport Copy ( Front and Back Page Only )</string>
+    <string name="citizenship_copy">Citizenship Copy ( Front and Last Page Only</string>
+    <string name="school_certificate">School Education Certificate</string>
+    <string name="high_school_cert">High School Certificate</string>
+    <string name="undergrad_cert">Undergraduate Certificate</string>
+    <string name="grad_cert">Graduate Certificate</string>
+    <string name="test_cert">Test</string>
+    <string name="choose_file">Choose File</string>
+    <string name="change_file">Change File</string>
+    <string name="no_file_chosen">No file chosen</string>
+    <string name="your_signature">Your Signature</string>
+    <string name="date_of_sign">Date Of Signature</string>
+    <string name="attachment_note">Please indicate the date(s) and score of the test(s) taken.</string>
+
+    <string name="accept_terms">I understand and accept the terms and conditions that govern the admissions procedure and participation in any program at <b>NIMAS Education</b>. I certify that the information I have provided in the application is complete and accurate and attached my documents are genuine and honestly presented. </string>
+
+    //eligibility layout
+    <string name="qualification">Qualification*</string>
+    <string name="test">Test*</string>
+    <string name="test1">Test</string>
+    <string name="score">Score*</string>
+    <string name="score1">Score</string>
+    <string name="priority_country">Priority Country</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="test_plus">{md-add-circle-outline 40px}</string>
+    <string name="test_minus">{md-remove-circle-outline 40px}</string>
+    <string name="remarks">Remarks</string>
+
+    //activity check account
+    <string name="user">I am a User</string>
+    <string name="admin">I am an Admin</string>
+
+    //event layout
+    <string name="interested">{fa-star-o 30px}&#160; Interested</string>
+    <string name="share">{typcn-arrow-forward-outline 35px}&#160; Share</string>
+    <string name="going">Going</string>
+
+    //make an appointment
+    <string name="hint_first_name">First Name*</string>
+    <string name="hint_last_name">Last Name*</string>
+    <string name="hint_address">Address*</string>
+    <string name="hint_telephone">Telephone No*</string>
+    <string name="hint_mobile">Mobile No*</string>
+    <string name="purpose_of_visit">Purpose of Visit :</string>
+    <string name="hint_evidence_of_id">Evidence of ID* :</string>
+    <string name="hint_evidence_of_id_no">Evidence of ID Number*</string>
+    <string name="appointment">Appointment :</string>
+    <string name="hint_date">Date*</string>
+    <string name="hint_time">Time*</string>
+    <string name="message">Message</string>
+    <string name="captcha">Captcha</string>
+    <string name="submit">Submit</string>
+    <string name="date">Date*</string>
+    <string name="time">Time*</string>
+    <string name="datePicker">{fa-calendar}</string>
+    <string name="timePicker">{md-access-time 30px}</string>
+    <string-array name="purpose_of_visit">
+        <item>Select</item>
+        <item>Business Partner</item>
+        <item>Student</item>
+        <item>Guardian</item>
+        <item>Marketing</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="appointment">
+        <item>Counselling</item>
+        <item>Accounting</item>
+        <item>Marketing</item>
+        <item>Parents|Guardian</item>
+        <item>Students</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="evidence_of_id">
+        <item>Passport</item>
+        <item>Citizenship</item>
+        <item>Driving License</item>
+        <item>Voter Card</item>
+        <item>PAN Card</item>
+        <item>Others</item>
+    </string-array>
+
+
+    //login
+    <string name="login_info">Log in to get a personalized experience &amp; quick checkout</string>
+    <string name="continue_with">- continue with -</string>
+    <string name="or_use">- or use email address -</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">&#160;Sign Up</string>
+    <string name="now">here</string>
+    <string name="facebook">{fa-facebook-square 22px} FACEBOOK</string>
+    <string name="google">GOOGLE</string>
+    <string name="log_in">log in</string>
+    <string name="hint_email">Email Address*</string>
+    <string name="hint_password">Password*</string>
+    <string name="hint_re_password">Re-enter your Password*</string>
+
+    <array name="nav_drawer_icons_student">
+        <item>@drawable/profile_icon</item>
+        <item>@drawable/notice_icon</item>
+        <item>@drawable/event_icon</item>
+        <item>@drawable/check_icon</item>
+        <item>@drawable/appointment_icon</item>
+        <item>@drawable/online_icon</item>
+        <item>@drawable/chat_icon</item>
+        <item>@drawable/enquiry_icon</item>
+    </array>
+
+    <array name="nav_drawer_icons_admin">
+        <item>@drawable/notice_icon</item>
+        <item>@drawable/event_icon</item>
+        <item>@drawable/check_icon</item>
+        <item>@drawable/appointment_icon</item>
+        <item>@drawable/online_icon</item>
+        <item>@drawable/sms_icon</item>
+        <item>@drawable/enquiry_icon</item>
+        <item>@drawable/credit_icon</item>
+    </array>
+
+    <string-array name="nav_tiles_student">
+        <item>User Profile</item>
+        <item>Notices</item>
+        <item>Events</item>
+        <item>Check Eligibility</item>
+        <item>Make An Appointment</item>
+        <item>Apply Online</item>
+        <item>Chat</item>
+        <item>Inquiry</item>
+    </string-array>
+
+    <string-array name="nav_tiles_admin">
+        <item>Notices</item>
+        <item>Events</item>
+        <item>Eligibility Lists</item>
+        <item>Appointment Lists</item>
+        <item>Applied Users</item>
+        <item>Send Sms</item>
+        <item>Inquiry Lists</item>
+        <item>Check SMS Credit</item>
+    </string-array>
+
+    <string-array name="reportText">
+        <item>It has vulgar content.</item>
+        <item>This post is racist or insults a certain group of people.</item>
+        <item>This post is a spam.</item>
+        <item>It has endangered someone\'s privacy.</item>
+    </string-array>
+    <string name="chhalfal">छलफल</string>
+
+    <string-array name="more_tiles">
+        <item>Admin</item>
+        <item>About Us</item>
+        <item>Susankya Notice</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="faculty_list">
+        <item>Science</item>
+        <item>Commerce</item>
+        <item>Hotel and Management</item>
+    </string-array>
+
+    <string name="drawer_open">More</string>
+    <string name="drawer_close">Less</string>
+    <string name="roll">Roll number</string>
+
+    <string-array name="class_spinner_array">
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="title_activity_pager">pagerActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="company_name">Next App 1.0</string>
+    <string name="question">Question</string>
+    <string name="title_activity_question_pager">questionPagerActivity</string>
+
+    <string-array name="exam_list">
+        <item>First Terminal Exam</item>
+        <item>Second Terminal Exam</item>
+        <item>Third Terminal Exam</item>
+        <item>Final Terminal Exam</item>
+    </string-array>
+    <string-array name="category_list">
+        <item>General</item>
+        <item>Exams</item>
+        <item>Holiday</item>
+        <item>Result</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="morning_time">
+        <item>6:20\nAM</item>
+        <item>7:05\nAM</item>
+        <item>7:50\nAM</item>
+        <item>8:35\nAM</item>
+        <item>9:45\nAM</item>
+        <item>10:30\nAM</item>
+        <item>11:15\nAM</item>
+        <item>12:00\nPM</item>
+        <item>12:45\nPM</item>
+    </string-array>
+    <string-array name="day_time">
+        <item>10:30\nAM</item>
+        <item>11:15\nAM</item>
+        <item>12:00\nPM</item>
+        <item>12:45\nPM</item>
+        <item>1:50\nPM</item>
+        <item>2:35\nPM</item>
+        <item>3:20\nPM</item>
+        <item>4:05\nPM</item>
+
+    </string-array>
+
+    <string-array name="class_eleven_section">
+        <item>Pascal</item>
+        <item>Darwin</item>
+        <item>Hawking</item>
+        <item>Newton</item>
+        <item>Einstein</item>
+        <item>Faraday</item>
+        <item>Napier</item>
+        <item>Buffon</item>
+        <item>Galileo</item>
+        <item>Heldane</item>
+        <item>Maxwell</item>
+        <item>Otto Hahn</item>
+        <item>Kelvin</item>
+        <item>Alexander</item>
+        <item>Babbage</item>
+
+    </string-array>
+    <string-array name="class_twelve_section">
+        <item>Euclid</item>
+        <item>Mendel</item>
+        <item>Dalton</item>
+        <item>Nobel</item>
+        <item>Aristotle</item>
+        <item>Steve</item>
+        <item>Leibniz</item>
+        <item>Neumann</item>
+        <item>Boyle</item>
+        <item>Curie</item>
+        <item>Watson</item>
+    </string-array>
+
+    <string-array name="day">
+        <item>Hawking</item>
+        <item>Aristotle</item>
+        <item>Steve</item>
+        <item>Alexander</item>
+        <item>Babbage</item>
+        <item>Neumann</item>
+        <item>Otto Hahn</item>
+        <item>Heldane</item>
+        <item>Napier</item>
+    </string-array>
+    <string name="appwidget_text">Routine - nExt</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_second">Result</string>
+    <string name="title_activity_third">Question</string>
+    <string name="title_activity_main">Add Question</string>
+    <string name="title_activity_delete_question">DeleteQuestion</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+
+    <string name="like">Like</string>
+    <string name="unlike">Unlike</string>
+    <string name="title_activity_first_time">FirstTimeActivity</string>
+    <string name="title_activity_test_tab">TestTabActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_post_from_profile">PostFromProfile</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="link"><a href="https://www.susankya.com/">www.susankya.com</a></string>
+    <string name="title_activity_user_list">UserListActivity</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_enter_code">EnterCodeActivity</string>
+
+    <string name="slogan">\"Think for the development and start doing it\"</string>
+
+    // Nimas
+    <string name="intro"><body style="\text-align:justify;\">NIMAS Education is a licensed and approved educational consultancy by the Government of Nepal, Ministery of Industry, Company of Registrar, Ministry of Education and Minstry of Finance, Inland Revenue Department as well
+as an ISO 9001:2008 certified company in Nepal who specializes in overseas education, immigration services and quality teaching in entrance perparation. Our specialized team has been advising students for their higher education
+        overseas plans since its establishment. We are located in Kathmandu- capital city and the educational hub of the country.</body> </string>
+    <string name="copyright_claim">Copyright © 2018 Nimas Education. All Rights Reserved Powered by Susankya Tech Pvt.Ltd</string>
+    <string name="location">Bagbazar, Kathmandu, Nepal <b>(Opposite to PK Campus)</b></string>
+    <string name="contact">+977-01-4167542</string>
+    <string name="email">info@nimaseducation.com</string>
+    <string name="skype">nimas.edu.np</string>
+    <string name="web">www.nimaseducation.com</string>
+    <string name="twitter">\@nimaseducation</string>
+    <string name="nima">nimas education</string>
+    <string name="iso_certified">An ISO 9001:2008 Certified Company</string>
+    <string name="servicetxt"></string>
+    <string name="locationtitle"><font color="#333333">LOCATION &amp;</font> <font color="#1CD36D">MORE INFO</font></string>
+    // checkbox tag
+    <string name="num">phone</string>
+    <string name="pos">position</string>
+</resources>

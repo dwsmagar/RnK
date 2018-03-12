@@ -1,0 +1,43 @@
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+            <LinearLayout  android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/primary_dark_material_light"
+                android:id="@+id/resultLayout">
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Question: "
+                    android:textColor="#fff"
+                    android:id="@+id/totalQuestion"
+                    android:textSize="25dp"
+                    android:layout_margin="10dp"/>
+                <com.susankya.schoolvalley.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:text="Correct Answers: "
+                    android:id="@+id/correctAnswers"
+                    android:textSize="25dp"
+                    android:layout_alignBottom="@id/totalQuestion"
+                    android:layout_margin="10dp"/>
+                </LinearLayout>
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+        <LinearLayout android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="?android:dividerHorizontal"
+            android:animateLayoutChanges="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+            </ScrollView>
+        </LinearLayout>
+

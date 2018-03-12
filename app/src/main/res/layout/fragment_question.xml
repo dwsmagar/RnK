@@ -1,0 +1,124 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:id="@+id/holder">
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/q_num"
+        android:text="1"
+app:customFont="robotobold.ttf"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"/>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_toRightOf="@id/q_num"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/question"
+       android:text="Question"
+       app:customFont="robotobold.ttf"
+        android:textColor="#ff4b5355"
+       android:textSize="15dp"
+       />
+</LinearLayout>
+
+    <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/options"
+        android:layout_below="@id/holder"
+      >
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:textColor="#ff4b5355"
+        android:textSize="15dp"
+        android:textAlignment="center"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/option1"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:textColor="#ff4b5355"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/option2"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:textColor="#ff4b5355"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/option3"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff4b5355"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:id="@+id/option4"/>
+    </RadioGroup>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultLL"
+        android:background="@drawable/views_highlight_selector"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/showResult"
+        android:src="@drawable/ic_submit_answer"/>
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:id="@+id/testtext"
+        android:text="Submit"
+        android:layout_gravity="right" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/views_highlight_selector"
+        android:id="@+id/sheetLL"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/showAnswer"
+android:layout_gravity="center"
+        android:src="@drawable/ic_answer_sheet"/>
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Answer Sheet"
+            android:id="@+id/textViewPlus" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+</RelativeLayout>

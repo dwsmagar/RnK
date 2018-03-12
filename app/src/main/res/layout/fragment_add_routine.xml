@@ -1,0 +1,79 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main">
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/empty_list_TV"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:text="You have not added any section\'sroutine.
+             Tap on the Add icon at the bottom right of the
+              screen to add routine."/>
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sections with routine"
+            android:textSize="18dp"
+            android:id="@+id/header"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="#000"
+            app:customFont="robotoregular.ttf"
+
+            android:layout_marginTop="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:id="@+id/divider"
+            android:visibility="invisible"
+            android:layout_below="@id/header"
+            android:layout_marginBottom="5dp"/>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/refresh"
+            android:layout_below="@id/divider"
+            android:layout_height="wrap_content">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/routine_set_list"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <com.susankya.schoolvalley.TextViewPlus
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider"
+            android:id="@+id/emptyView"
+            android:text="No Routines yet, click on the add button below to add one."
+            android:gravity="center"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floating_add_button"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/floating_add_rgb"
+        app:layout_anchor="@id/main"
+        app:layout_anchorGravity="bottom|right|end"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

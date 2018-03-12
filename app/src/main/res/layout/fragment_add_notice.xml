@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="16dp"
+    tools:context=".addNoticeFragment">
+
+    <LinearLayout
+        android:id="@+id/llForcategory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textColor="@color/primary_text"
+            android:visibility="visible"
+            android:paddingLeft="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnercategory_fixed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@id/llForcategory"
+        android:background="@color/light_grey" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llForcategory"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_box"
+        android:hint="Title"
+        android:minHeight="50dp"
+        android:padding="4dp"
+        android:inputType="textCapSentences"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text"
+        style="@style/Base.TextAppearance.AppCompat.Small"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@id/title"
+        android:background="@color/light_grey" />
+
+    <LinearLayout
+        android:id="@+id/llFordesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_box"
+            android:gravity="top|left"
+            android:hint="Description of Notice"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minHeight="100dp"
+            android:padding="4dp"
+            android:textColorHint="@color/secondaryText"
+            style="@style/Base.TextAppearance.AppCompat.Small"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewAttachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llFordesc"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fileTypeImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@color/red" />
+
+            <com.susankya.schoolvalley.TextViewPlus
+                android:id="@+id/filename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/fileTypeImage"
+                android:padding="2dp"
+                android:text="hello"
+                android:textColor="@color/grey_dialog"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_send_notice"
+        app:layout_anchor="@id/main"
+        android:layout_marginBottom="8dp"
+        app:layout_anchorGravity="bottom|right|end" />
+</RelativeLayout>

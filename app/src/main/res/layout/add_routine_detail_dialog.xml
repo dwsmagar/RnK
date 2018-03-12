@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="match_parent">
+
+    <com.susankya.schoolvalley.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:customFont="robotoregular.ttf"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Add period"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/first">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/subject"
+            android:textSize="15dp"
+            android:padding="3dp"
+            android:background="@drawable/et_box_2"
+            android:layout_weight="1"
+            android:hint="Enter subject"
+            android:selectAllOnFocus="true"
+            android:inputType="text"
+            android:nextFocusDown="@id/teacher"
+            android:layout_marginTop="30dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/first"
+        android:layout_marginTop="10dp"
+        android:id="@+id/second">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/teacher"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/et_box_2"
+            android:padding="3dp"
+            android:selectAllOnFocus="true"
+            android:layout_below="@id/subject"
+            android:hint="Enter teacher name"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/second"
+        android:layout_marginTop="10dp"
+        android:id="@+id/third">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:id="@+id/rlForStart"
+            android:background="@drawable/btn_selector_2">
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:id="@+id/start"
+                android:textSize="15dp"
+                app:customFont="robotoregular.ttf"
+                android:gravity="center"
+                />
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/startTimetv"
+                android:text="start"
+                android:textSize="15dp"
+                app:customFont="robotobold.ttf"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/start"
+                />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/startEdit"
+                android:src="@drawable/ic_select_time"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:layout_marginLeft="2dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/btn_selector_2"
+            android:padding="5dp"
+            android:id="@+id/rlForEnd"
+
+            >
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Time"
+                android:textSize="15dp"
+                android:id="@+id/end"
+                app:customFont="robotoregular.ttf"
+                android:gravity="center"
+                />
+            <com.susankya.schoolvalley.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/endTimetv"
+                android:text="end"
+                android:layout_below="@id/end"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                app:customFont="robotobold.ttf"
+                />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/endEdit"
+                android:src="@drawable/ic_select_time"
+                android:layout_alignParentRight="true"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/third"
+    android:layout_marginTop="10dp"
+
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:id="@+id/ok"
+        android:layout_marginRight="2dp"
+        android:textColor="@color/colorPrimary"
+
+    android:text="Ok"
+        android:background="@drawable/btn_selector_2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="2dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/cancel"
+        android:text="Cancel"
+
+        android:background="@drawable/btn_selector_2"/>
+</LinearLayout>
+</RelativeLayout>

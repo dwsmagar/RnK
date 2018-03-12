@@ -1,0 +1,22 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.susankya.schoolvalley.testFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+ <!--<ViewPager
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/pager"/>
+--><AutoCompleteTextView
+    android:layout_width="match_parent"
+    android:id="@+id/test"
+    android:layout_gravity="center"
+    android:text="hello"
+   android:textSize="25sp"
+    android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>
