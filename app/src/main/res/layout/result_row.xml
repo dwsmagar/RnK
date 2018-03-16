@@ -4,35 +4,35 @@
     android:layout_height="wrap_content"
     android:textDirection="ltr"
     >
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:gravity="center_horizontal|center_vertical"  style="@style/result_row"
 
         
         android:text="SN."
         android:id="@+id/sn"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:gravity="center_horizontal|center_vertical"
         style="@style/result_row"
         android:text="Roll no."
         android:id="@+id/rollno"/>
-<com.susankya.schoolvalley.TextViewPlus
+<com.susankya.rnk.TextViewPlus
     android:gravity="center_horizontal|center_vertical"
     android:layout_width="200dp"
     android:layout_height="35dp"
     style="@style/result_row"
         android:text="Name"
     android:id="@+id/name"/>
-<com.susankya.schoolvalley.TextViewPlus
+<com.susankya.rnk.TextViewPlus
     android:gravity="center_horizontal|center_vertical"
     style="@style/result_row"
     android:text="English"
     android:id="@+id/sub1"/>
-<com.susankya.schoolvalley.TextViewPlus
+<com.susankya.rnk.TextViewPlus
     android:gravity="center_horizontal|center_vertical"
   style="@style/result_row"
     android:text="Physics"
     android:id="@+id/sub2"/>
-<com.susankya.schoolvalley.TextViewPlus
+<com.susankya.rnk.TextViewPlus
     android:gravity="center_horizontal|center_vertical"
     style="@style/result_row"
   android:layout_height="35dp"
@@ -40,34 +40,34 @@
 
     android:text="comp/bio"
     android:id="@+id/sub3"/>
-<com.susankya.schoolvalley.TextViewPlus
+<com.susankya.rnk.TextViewPlus
     android:gravity="center_horizontal|center_vertical"
     style="@style/result_row"
     android:text="chemistry"
     android:id="@+id/sub4"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:gravity="center_horizontal|center_vertical"
         style="@style/result_row"
         android:text="maths"
         android:id="@+id/sub5"/>
-<com.susankya.schoolvalley.TextViewPlus
+<com.susankya.rnk.TextViewPlus
     android:gravity="center_horizontal|center_vertical"
     style="@style/result_row"
     android:text="Total"
     android:id="@+id/total"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:gravity="center_horizontal|center_vertical"
     style="@style/result_row"
         android:layout_width="70dp"
     android:text="%"
-    android:id="@+id/percentage"/><com.susankya.schoolvalley.TextViewPlus
+    android:id="@+id/percentage"/><com.susankya.rnk.TextViewPlus
     android:gravity="center_horizontal|center_vertical"
     android:layout_height="35dp"
     android:layout_width="60dp"
     style="@style/result_row"
     android:text="Result"
-    android:id="@+id/result"/><com.susankya.schoolvalley.TextViewPlus
+    android:id="@+id/result"/><com.susankya.rnk.TextViewPlus
     android:gravity="center_horizontal|center_vertical"
     android:layout_height="35dp"
     android:layout_width="60dp"

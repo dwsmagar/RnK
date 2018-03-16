@@ -4,7 +4,7 @@
     tools:context="com.example.administrator.nepalbanda.NewsDialog">
 
     <!-- TODO: Update blank fragment layout -->
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent" android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment" />
 

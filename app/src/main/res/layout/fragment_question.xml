@@ -9,7 +9,7 @@
     android:orientation="horizontal"
     android:layout_height="wrap_content"
     android:id="@+id/holder">
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/q_num"
@@ -17,7 +17,7 @@
 app:customFont="robotobold.ttf"
         android:layout_marginLeft="5dp"
         android:textSize="15dp"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_toRightOf="@id/q_num"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
@@ -84,7 +84,7 @@ app:customFont="robotobold.ttf"
         android:layout_gravity="center"
         android:id="@+id/showResult"
         android:src="@drawable/ic_submit_answer"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -108,7 +108,7 @@ app:customFont="robotobold.ttf"
 android:layout_gravity="center"
         android:src="@drawable/ic_answer_sheet"/>
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:gravity="center"
             android:textSize="16dp"

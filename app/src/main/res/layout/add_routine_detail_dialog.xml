@@ -6,7 +6,7 @@
     android:padding="8dp"
     android:layout_height="match_parent">
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -73,7 +73,7 @@
             android:gravity="center"
             android:id="@+id/rlForStart"
             android:background="@drawable/btn_selector_2">
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Start Time"
@@ -82,7 +82,7 @@
                 app:customFont="robotoregular.ttf"
                 android:gravity="center"
                 />
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/startTimetv"
@@ -112,7 +112,7 @@
             android:id="@+id/rlForEnd"
 
             >
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="End Time"
@@ -121,7 +121,7 @@
                 app:customFont="robotoregular.ttf"
                 android:gravity="center"
                 />
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/endTimetv"

@@ -6,7 +6,7 @@
 android:orientation="vertical"
     android:weightSum="100"
     android:background="@color/background"
-    tools:context="com.susankya.schoolvalley.addQuestionFragment">
+    tools:context="com.susankya.rnk.addQuestionFragment">
 <ListView
     android:layout_width="match_parent"
     android:layout_height="0dp"

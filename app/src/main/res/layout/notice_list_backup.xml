@@ -17,7 +17,7 @@
 
 
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#fff"
@@ -27,7 +27,7 @@
             android:textStyle="bold"
             android:text="contend"
             />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="contend"
@@ -37,7 +37,7 @@
             android:id="@+id/date_content"
             android:layout_gravity="right"
             />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/description_content"
@@ -62,7 +62,7 @@
             android:background="@drawable/box_transparent"
             android:layout_marginBottom="5dp"
             android:layout_height="wrap_content">
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="jpt"

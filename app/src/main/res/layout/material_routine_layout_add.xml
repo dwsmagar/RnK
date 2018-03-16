@@ -22,7 +22,7 @@
             android:id="@+id/timecircle"
             android:background="@drawable/routine_circle"
             android:orientation="vertical">
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="10:15 AM"
                 />
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:text="TO"
                 />
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
@@ -67,7 +67,7 @@
             android:layout_marginLeft="15dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
 
                 android:text="Basic Electrical"
@@ -80,7 +80,7 @@
 
                 android:layout_height="wrap_content"
                 />
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
 
 

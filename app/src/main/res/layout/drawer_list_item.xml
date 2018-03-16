@@ -1,28 +1,25 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawerlistlayout"
     android:layout_width="match_parent"
-    android:layout_height="45dp"
-    android:gravity="center_vertical"
-    android:layout_centerVertical="true"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:paddingBottom="14dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp">
+    android:paddingTop="14dp">
 
     <ImageView
         android:id="@+id/iconrow"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_centerVertical="true"/>
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_event" />
 
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/text1"
-        android:text="Navigation item"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_toRightOf="@id/iconrow"
-        android:layout_marginLeft="12dp"
-        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Navigation item"
         android:textColor="@color/primary_text"
-        android:textSize="14sp" />
-</RelativeLayout>
+        android:textSize="15sp" />
+</LinearLayout>

@@ -156,7 +156,7 @@
         </LinearLayout>
 
     </ScrollView>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"

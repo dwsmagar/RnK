@@ -15,7 +15,7 @@
     android:id="@+id/ll">
 
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                     style="@style/AboutUsImageViewStyle"
                     android:id="@+id/arr2"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Abhinav Dev"
@@ -74,7 +74,7 @@
                 android:visibility="gone"
                 android:layout_height="wrap_content"
                 >
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
@@ -119,7 +119,7 @@
                     style="@style/AboutUsImageViewStyle"
                     android:id="@+id/arr3"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Aditya Shah"
@@ -154,7 +154,7 @@
                 android:layout_height="wrap_content"
                 >
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
@@ -200,7 +200,7 @@
 
                     android:id="@+id/piyushimage"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -235,7 +235,7 @@
                 android:orientation="vertical"
                 android:layout_height="wrap_content"
                 >
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
@@ -279,7 +279,7 @@
 
                     android:id="@+id/arr1"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -314,7 +314,7 @@
                 android:orientation="vertical"
                 android:layout_height="wrap_content"
                 >
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
@@ -344,7 +344,7 @@
         </RelativeLayout>
 
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
@@ -356,7 +356,7 @@
         android:textSize="20sp"
         />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/link"
@@ -366,7 +366,7 @@
             android:layout_marginBottom="6dp"
             android:textStyle="bold"
             android:textSize="20dp"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_marginTop="20dp"
         android:layout_height="wrap_content"

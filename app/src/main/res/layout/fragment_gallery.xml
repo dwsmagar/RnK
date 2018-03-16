@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/main">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -34,7 +34,7 @@
             android:id="@+id/gallerygrid"
             android:layout_height="match_parent"
             android:scrollbars="vertical"
-            tools:context="com.susankya.schoolvalley.GalleryFragment"/>
+            tools:context="com.susankya.rnk.GalleryFragment"/>
     </RelativeLayout>
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"

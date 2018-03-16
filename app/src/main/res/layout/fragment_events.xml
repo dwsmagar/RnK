@@ -1,10 +1,10 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/very_light_grey"
-    tools:context="com.susankya.schoolvalley.Fragments.EventsFragment">
+    tools:context="com.susankya.rnk.Fragments.EventsFragment">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipeContainer"
@@ -18,27 +18,26 @@
     </android.support.v4.widget.SwipeRefreshLayout>
 
     <LinearLayout
-        android:visibility="gone"
         android:id="@+id/emptyTextLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:visibility="gone">
 
-        <com.joanzapata.iconify.widget.IconTextView
-            android:id="@+id/iconTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="{md-event-note}"
-            android:textSize="60sp" />
+        <ImageView
+            android:id="@+id/empty_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
 
         <TextView
             android:id="@+id/emtpyTextview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:fontFamily="serif"
             android:text="Empty Textview"
             android:textSize="22sp" />
     </LinearLayout>
@@ -51,7 +50,6 @@
         android:visibility="gone" />
 
     <android.support.design.widget.FloatingActionButton
-        android:visibility="gone"
         android:id="@+id/floating_add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,6 +57,9 @@
         android:layout_margin="16dp"
         android:elevation="2dp"
         android:src="@drawable/floating_add_rgb"
+        android:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        android:visibility="gone"
         app:layout_anchor="@id/ll"
         app:layout_anchorGravity="bottom|right|end" />
 </FrameLayout>

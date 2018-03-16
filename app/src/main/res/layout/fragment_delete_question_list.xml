@@ -16,7 +16,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/q_num"
@@ -24,7 +24,7 @@
             android:layout_margin="2dp"
             android:layout_marginRight="5dp"
             android:textSize="18dp"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_toRightOf="@id/q_num"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,28 +36,28 @@
             />
     </RelativeLayout>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Question"
         android:textColor="@color/question_option"
         android:textSize="15dp"
         android:id="@+id/option1"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/question"
         android:textColor="@color/question_option"
         android:textSize="15dp"
         android:id="@+id/option2"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/question"
         android:textColor="@color/question_option"
         android:textSize="15dp"
         android:id="@+id/option3"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/question"

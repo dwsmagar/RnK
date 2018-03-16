@@ -194,7 +194,7 @@
             android:gravity="center"
             android:text="@string/timePicker"
             android:textColor="@color/colorGrey"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/date"
             style="@style/Base.TextAppearance.AppCompat.Small"
             android:layout_width="wrap_content"
@@ -202,7 +202,7 @@
             android:layout_marginLeft="8dp"
             android:text="Wed 24 Feb"
             android:textColor="@color/primary_text"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/at"
             style="@style/Base.TextAppearance.AppCompat.Small"
             android:layout_width="wrap_content"
@@ -210,7 +210,7 @@
             android:layout_marginLeft="4dp"
             android:text="at"
             android:textColor="@color/primary_text"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/eventTime"
             style="@style/Base.TextAppearance.AppCompat.Small"
             android:layout_width="wrap_content"
@@ -230,7 +230,7 @@
                 android:gravity="center"
                 android:text="@string/map"
                 android:textColor="@color/colorGrey"/>
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/eventLocation"
                 style="@style/Base.TextAppearance.AppCompat.Small"
                 android:layout_width="wrap_content"

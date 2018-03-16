@@ -8,7 +8,7 @@
         android:orientation="vertical"
         android:background="@color/colorPrimary"
         android:id="@+id/resultLayout">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Question: "
@@ -17,7 +17,7 @@
             android:textColor="#fff"
            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Question: "
@@ -26,7 +26,7 @@
             android:layout_marginLeft="10dp"
             android:textColor="#fff"
             />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Correct Answers: "
@@ -61,7 +61,7 @@
             android:layout_height="24dp"
             android:id="@+id/dummy_imageview_tick_unsure"
             android:src="@drawable/tick_unsure"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_toRightOf="@id/dummy_imageview_tick_unsure"
             android:layout_centerVertical="true"
@@ -79,7 +79,7 @@
             android:layout_height="24dp"
             android:id="@+id/dummy_imageview_tick_sure"
             android:src="@drawable/tick_sure"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_toRightOf="@id/dummy_imageview_tick_sure"
             android:layout_centerVertical="true"

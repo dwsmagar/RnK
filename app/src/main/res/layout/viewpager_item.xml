@@ -19,7 +19,7 @@
             android:layout_centerHorizontal="true"
             android:scaleType="fitXY" />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/landing_txt_title"
             android:layout_width="fill_parent"
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -32,7 +32,7 @@
             android:textSize="22dp"
             android:textStyle="bold" />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/landing_txt_hint"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

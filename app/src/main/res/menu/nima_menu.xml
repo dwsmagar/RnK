@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/change_password"
-        app:showAsAction="never"
-        android:title="Change Password" />
-    <item android:id="@+id/logout"
-        android:title="Logout"
-        app:showAsAction="never" />
-    <item android:id="@+id/about"
-        app:showAsAction="never"
-        android:title="About Us"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/tool_profile"
+        android:id="@+id/profile"
+        android:title="User profile"
+        app:showAsAction="always" />
 </menu>

@@ -11,7 +11,7 @@
     android:paddingLeft="4dp"
     android:layout_height="wrap_content">
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Award as best answer"
@@ -22,7 +22,7 @@
         android:id="@+id/award_best_tv"
         android:textColor="@drawable/textview_selector"
         android:gravity="right"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_marginTop="2dp"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:layout_margin="4dp"
             android:id="@+id/profile_pic_comment"
             android:src="@drawable/placeholdernew"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="King Birendra"
@@ -53,7 +53,7 @@
             android:textSize="15dp"
 
             android:textColor="#FF260B1F"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/birendrabro"
@@ -92,7 +92,7 @@
 
 
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15.5dp"
@@ -102,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:layout_height="wrap_content">
-        <com.susankya.schoolvalley.BlockingImageView
+        <com.susankya.rnk.BlockingImageView
             android:layout_width="300dp"
             android:layout_gravity="center"
             android:layout_height="300dp"
@@ -125,14 +125,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/voteups"
             android:textSize="14dp"
             android:textColor="#d3d3d3"/>
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="•"
@@ -141,7 +141,7 @@
             android:id="@+id/textdivider"
             android:textSize="14dp"
             android:textColor="#d3d3d3"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/commentDate"

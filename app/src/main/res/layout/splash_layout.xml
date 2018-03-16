@@ -15,7 +15,7 @@
         android:stateListAnimator="@anim/abc_fade_in"
 
         />
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -26,7 +26,7 @@ android:layout_marginTop="20dp"
         android:text="@string/app_name"
         android:layout_below="@id/image"
         android:gravity="center_horizontal"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:textSize="18dp"
         android:textColor="#fff"
@@ -36,7 +36,7 @@ android:layout_marginTop="20dp"
         android:layout_marginTop="4dp"
         android:gravity="center"
         android:text="Taking education to the next level"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"

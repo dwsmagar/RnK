@@ -12,7 +12,7 @@ android:padding="2dp">
     android:padding="4dp"
     android:focusable="false"
     android:enabled="false"/>
-<com.susankya.schoolvalley.TextViewPlus
+<com.susankya.rnk.TextViewPlus
     android:id="@+id/title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -23,7 +23,7 @@ android:padding="2dp">
     android:paddingRight="4dp"
     android:text="Notice Title"
     />
-<com.susankya.schoolvalley.TextViewPlus
+<com.susankya.rnk.TextViewPlus
     android:id="@+id/description"
     android:layout_height="match_parent"
     android:layout_width="wrap_content"

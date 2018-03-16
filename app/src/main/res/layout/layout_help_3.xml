@@ -9,33 +9,33 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="22dp"
         android:text="In a bigger nutshell"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18dp"
         android:textStyle="bold"
         android:layout_marginTop="5dp"
         android:text="- Routine"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
 android:text="• Your section's routine will be downloaded from our database. You can also edit or change the routine yourself."
         android:textSize="15dp"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="• Use the Routine widget to quickly see the routine through Home screen. The Routine widget updates itself smartly according to the shift (Morning/Day). For example, for morning shift, if it's Monday, the routine of Monday is shown up to 7 AM and after that the routine of Tuesday is shown. The routine of Tuesday is shown up to 7 AM of Tuesday and then it is updated for Wednesday and so on. For day shift, the routine of the next day is updated at 10 AM. Your shift can be changed in Settings. "
 
         android:textSize="15dp"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18dp"
@@ -43,14 +43,14 @@ android:text="• Your section's routine will be downloaded from our database. Y
         android:textStyle="bold"
         android:text="- Notice"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
         android:text="• College notices such as notice of strike, exams, results and fees are published on our app by the college administration. You will receive push notification when a new notice is published."
         android:textSize="15dp"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:textSize="18dp"
@@ -58,24 +58,24 @@ android:text="• Your section's routine will be downloaded from our database. Y
     android:textStyle="bold"
     android:text="- Result"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
         android:text="• View your individual result simply by entering your roll number, selecting your class (11/12) and terminal exam. You will be notified when a result is published through Notice."
         android:textSize="15dp"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:text="• Results for monthly test and objective test can also be viewed on the app."
         android:layout_height="wrap_content"
         android:textSize="15dp"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:text="• View result list of all the students for terminal exam, monthly test or objective test."
         android:layout_height="wrap_content"
         android:textSize="15dp"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18dp"
@@ -83,23 +83,23 @@ android:text="• Your section's routine will be downloaded from our database. Y
         android:textStyle="bold"
         android:text="- Objective Questions Test"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:text="• Set of objective questions will be uploaded by the college administration. Each set will have a code or topic such as 'physics12' and 'mechanics11'. You can use the code and access the questions set."
         android:layout_height="wrap_content"
         android:textSize="15dp"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="• Take objective test for any questions set with Timer feature. A test for a questions set of 20 questions will be 20 minutes long and so on."
         android:textSize="15dp"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
 android:text="• Any questions set you load will be automatically saved. You can access them from Home section."
         android:layout_height="wrap_content"
         android:textSize="15dp"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18dp"
@@ -107,18 +107,18 @@ android:text="• Any questions set you load will be automatically saved. You ca
         android:textStyle="bold"
         android:text="- छलफल (Chhalfal)"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:text="• छलफल (Chhalfal) is a discussion group where you can create your account, make posts, share images, and like and comment on other posts."
         android:layout_height="wrap_content"
         android:textSize="15dp"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="• Get notification when someone likes or comments on your post or replies to your comment on their post."
         android:textSize="15dp"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"

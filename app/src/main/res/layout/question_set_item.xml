@@ -18,7 +18,7 @@
         android:src="@drawable/download_question_set"
         android:id="@+id/download_questions_set"
         android:layout_gravity="center"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/textForFont"
@@ -51,7 +51,7 @@
             android:orientation="horizontal"
            android:layout_marginBottom="4dp"
             >
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
        >
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#ff4b5355"
@@ -86,7 +86,7 @@
             android:visibility="gone"
             android:typeface="monospace"
             />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/num"

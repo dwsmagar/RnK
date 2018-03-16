@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
-    android:orientation="vertical">
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +20,7 @@
             android:layout_marginLeft="@dimen/margin_box"
             android:text="Name"
             android:textColor="@color/secondary_text"
-            android:textSize="@dimen/options" />
+            android:textSize="@dimen/description" />
 
         <RelativeLayout
             android:id="@+id/aboutRL"
@@ -31,26 +33,27 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="15dp"
                 android:ellipsize="end"
+                android:fontFamily="@font/open_sans"
                 android:gravity="center_vertical"
                 android:maxLines="1"
                 android:text="Value"
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/description" />
 
-
             <TextView
                 android:id="@+id/editBtn"
                 android:layout_width="50dp"
                 android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/nav_bottom_bg"
+                android:fontFamily="@font/open_sans"
                 android:gravity="center"
+                android:paddingBottom="2dp"
                 android:text="Edit"
                 android:textAllCaps="true"
-                android:paddingBottom="2dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/edit_btn"
-                android:layout_alignParentRight="true"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp" />
+                android:textColor="@color/white"
+                android:textSize="14sp" />
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

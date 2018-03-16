@@ -10,61 +10,51 @@
     android:paddingTop="10dp">
 
     <CheckBox
-        android:layout_centerInParent="true"
         android:id="@+id/checkbox"
-        android:layout_alignParentLeft="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
     <TextView
-        android:layout_marginLeft="8dp"
-        android:layout_toRightOf="@id/checkbox"
         android:id="@+id/user_name"
         style="@style/Base.TextAppearance.AppCompat.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/checkbox"
         android:text="Full name"
         android:textColor="@color/primary_text" />
 
     <TextView
-        android:visibility="gone"
-        android:layout_marginLeft="8dp"
-        android:layout_toRightOf="@id/checkbox"
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/user_name"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/checkbox"
         android:text="email address"
         android:textColor="@color/colorGrey"
         android:textSize="12sp" />
 
-    <TextView
-        android:layout_marginLeft="8dp"
-        android:layout_toRightOf="@id/checkbox"
-        android:id="@+id/status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/username"
-        android:text="date"
-        android:textColor="@color/secondary_text"
-        android:textSize="12sp" />
-
     <LinearLayout
+        android:visibility="gone"
         android:id="@+id/toggle_menu"
         android:layout_width="50dp"
         android:layout_height="40dp"
-        android:layout_marginTop="4dp"
-        android:layout_below="@id/date_content"
         android:layout_alignParentRight="true"
+        android:layout_below="@id/date_content"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
         android:gravity="right">
 
         <com.joanzapata.iconify.widget.IconTextView
             android:id="@+id/dot_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
             android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
             android:gravity="center_vertical|right"
             android:text="{entypo-dots-three-vertical}"
             android:textColor="@color/colorGrey"

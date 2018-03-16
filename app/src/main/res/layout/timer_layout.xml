@@ -17,7 +17,7 @@
             android:gravity="center"
             android:orientation="vertical" >
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/txtTimerHour"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#fff" />
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/txt_TimerHour"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:gravity="center"
             android:orientation="vertical" >
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/txtTimerMinute"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#fff" />
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/txt_TimerMinute"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             android:gravity="center"
             android:orientation="vertical" >
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/txtTimerSecond"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#fff" />
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/txt_TimerSecond"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

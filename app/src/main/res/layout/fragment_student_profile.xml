@@ -1,67 +1,58 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
-    android:layout_marginTop="8dp"
-    tools:context="com.susankya.schoolvalley.StudentProfileFragment">
+    android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/top_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:paddingTop="22dp">
 
-        android:orientation="vertical">
-
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/textForFont"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="22dp"
-            android:background="@drawable/notice_list_circle"
+            android:background="@drawable/notice_circle_bg"
+            android:elevation="5dp"
             android:gravity="center"
             android:text="C"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/secondary_text"
             android:textSize="50dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="-40dp"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="18dp"
             android:orientation="vertical">
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <TextView
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textForFont"
+                android:fontFamily="@font/open_sans"
                 android:gravity="center"
-                android:paddingBottom="8dp"
-                android:paddingTop="5dp"
+                android:padding="16dp"
                 android:text="Name OF Student"
                 android:textAllCaps="true"
                 android:textColor="#000"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:background="@color/very_light_grey"
-                android:visibility="gone"/>
-
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/student_detail_rv"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/student_profile_bg"/>
+                android:layout_height="match_parent" />
         </LinearLayout>
-    </LinearLayout>
-
-</RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

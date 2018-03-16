@@ -1,6 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.susankya.schoolvalley.ResultFragment"
+    android:layout_height="match_parent" tools:context="com.susankya.rnk.ResultFragment"
     android:background="@color/background"
     android:orientation="vertical"
     android:id="@+id/ll"
@@ -37,7 +37,7 @@
         android:weightSum="10"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
@@ -46,7 +46,7 @@
             android:textColor="#000"
             android:textSize="20sp"/>
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             
@@ -81,7 +81,7 @@
 
 
    
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

@@ -28,7 +28,7 @@
                 android:scaleType="fitXY"
                 android:layout_height="140dp"
                 android:id="@+id/coverpic"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:id="@+id/changeCover"
@@ -74,7 +74,7 @@ android:background="@drawable/text_selector"
                     android:id="@+id/gpsbtn"
                     android:background="@drawable/gps_icon"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAllCaps="true"

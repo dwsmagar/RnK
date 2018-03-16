@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Nimas Edu.</string>
+    <string name="app_name">R &amp; K Associates</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="action_next">Next</string>
@@ -136,8 +136,8 @@
     <string name="remarks">Remarks</string>
 
     //activity check account
-    <string name="user">I am a User</string>
-    <string name="admin">I am an Admin</string>
+    <string name="user">User</string>
+    <string name="admin">Admin</string>
 
     //event layout
     <string name="interested">{fa-star-o 30px}&#160; Interested</string>
@@ -205,47 +205,39 @@
     <string name="hint_re_password">Re-enter your Password*</string>
 
     <array name="nav_drawer_icons_student">
-        <item>@drawable/profile_icon</item>
-        <item>@drawable/notice_icon</item>
-        <item>@drawable/event_icon</item>
-        <item>@drawable/check_icon</item>
-        <item>@drawable/appointment_icon</item>
-        <item>@drawable/online_icon</item>
-        <item>@drawable/chat_icon</item>
-        <item>@drawable/enquiry_icon</item>
+        <item>@drawable/ic_home1</item>
+        <item>@drawable/ic_avatar</item>
+        <item>@drawable/ic_old_megaphone_with_button</item>
+        <item>@drawable/ic_calendar1</item>
+        <item>@drawable/ic_meeting</item>
+        <item>@drawable/ic_conversation_with_text_lines</item>
+        <item>@drawable/ic_reunion</item>
     </array>
 
     <array name="nav_drawer_icons_admin">
-        <item>@drawable/notice_icon</item>
-        <item>@drawable/event_icon</item>
-        <item>@drawable/check_icon</item>
-        <item>@drawable/appointment_icon</item>
-        <item>@drawable/online_icon</item>
-        <item>@drawable/sms_icon</item>
-        <item>@drawable/enquiry_icon</item>
-        <item>@drawable/credit_icon</item>
+        <item>@drawable/ic_home1</item>
+        <item>@drawable/ic_old_megaphone_with_button</item>
+        <item>@drawable/ic_calendar1</item>
+        <item>@drawable/ic_meeting</item>
+        <item>@drawable/ic_reunion</item>
     </array>
 
     <string-array name="nav_tiles_student">
-        <item>User Profile</item>
+        <item>Home</item>
+        <item>View Profile</item>
         <item>Notices</item>
         <item>Events</item>
-        <item>Check Eligibility</item>
         <item>Make An Appointment</item>
-        <item>Apply Online</item>
         <item>Chat</item>
         <item>Inquiry</item>
     </string-array>
 
     <string-array name="nav_tiles_admin">
+        <item>Home</item>
         <item>Notices</item>
         <item>Events</item>
-        <item>Eligibility Lists</item>
         <item>Appointment Lists</item>
-        <item>Applied Users</item>
-        <item>Send Sms</item>
         <item>Inquiry Lists</item>
-        <item>Check SMS Credit</item>
     </string-array>
 
     <string-array name="reportText">

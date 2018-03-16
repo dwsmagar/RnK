@@ -23,7 +23,7 @@
        android:layout_gravity="center"
          />
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         android:layout_gravity="center"
 
         />
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

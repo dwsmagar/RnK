@@ -11,7 +11,7 @@
 
 
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
@@ -21,7 +21,7 @@
             android:id="@+id/day"
             android:text="No day"
             />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -47,7 +47,7 @@
                     android:src="@android:drawable/ic_menu_edit"
                     android:id="@+id/edit_image"/>
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toLeftOf="@id/edit_image"
@@ -68,40 +68,40 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:orientation="vertical">
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:text="First"
                     style="@style/routine_item"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     style="@style/routine_item"
                     android:text="Second"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     style="@style/routine_item"
                     android:text="Third"
                     android:layout_marginTop="15dp"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     style="@style/routine_item"
                     android:text="Fourth"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     style="@style/routine_item"
                     android:text="Fifth"
                     android:layout_marginTop="15dp"
                     />
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:text="Sixth"
                     android:gravity="left"
                     style="@style/routine_item"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:text="Seventh"
                     android:layout_marginTop="15dp"
                     style="@style/routine_item"
                     />
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:text="Eighth"
                     style="@style/routine_item"
                     />
@@ -119,53 +119,53 @@
                     android:id="@+id/view"
                     android:orientation="vertical">
 
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         style="@style/routine_item"
                         android:text="--"
                         android:id="@+id/first"
                         android:gravity="right"
                         />
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         style="@style/routine_item"
                         android:text="--"
                         android:id="@+id/second"
                         android:gravity="right"
                         />
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         style="@style/routine_item"
                         android:text="--"
                         android:layout_marginTop="15dp"
                         android:id="@+id/third"
                         android:gravity="right"
                         />
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         android:text="--"
                         android:id="@+id/fourth"
                         android:gravity="right"
                         style="@style/routine_item"
                         />
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         android:text="--"
                         android:id="@+id/fifth"
                         style="@style/routine_item"
                         android:gravity="right"
                         android:layout_marginTop="15dp"
                         />
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         android:text="--"
                         android:id="@+id/sixth"
                         android:gravity="right"
                         style="@style/routine_item"
                         />
 
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         android:text="--"
                         android:id="@+id/seventh"
                         android:layout_marginTop="15dp"
                         style="@style/routine_item"
                         android:gravity="right"
                         />
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         style="@style/routine_item"
                         android:id="@+id/eighth"
                         android:text="--"

@@ -12,6 +12,32 @@
         android:layout_above="@id/sms_area"
         android:layout_marginBottom="5dp" />
 
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/emptyTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/empty_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+        <TextView
+            android:id="@+id/emtpyTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Empty Textview"
+            android:textSize="18sp" />
+    </LinearLayout>
+
     <include
         android:id="@+id/sms_area"
         layout="@layout/type_message_area" />

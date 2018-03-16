@@ -7,7 +7,7 @@
     android:layout_width="900dp"
     android:minHeight="160dp"
     android:layout_height="match_parent">
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:id="@+id/header"
         android:text="Enter Roll no./Symbol no. below"
         app:customFont="robotoregular.ttf"

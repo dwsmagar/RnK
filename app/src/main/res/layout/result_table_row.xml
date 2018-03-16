@@ -3,7 +3,7 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/result_item_drawable">
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:textColor="@color/background"
@@ -16,7 +16,7 @@
         android:textStyle="bold"
         android:id="@+id/placeholder"
         android:layout_weight="1"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:textColor="@color/background"

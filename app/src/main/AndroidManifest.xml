@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.susankya.schoolvalley">
+    package="com.susankya.rnk">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -20,23 +20,23 @@
         />
 
     <application
-        android:name=".ImmortalApplication"
+        android:name="com.susankya.rnk.ImmortalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/MyMaterialTheme">
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:name="com.susankya.rnk.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".MyFirebaseInstanceIDService">
+        <service android:name="com.susankya.rnk.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
         <service
-            android:name=".RoutineListService"
+            android:name="com.susankya.rnk.RoutineListService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
 
         <meta-data
@@ -47,9 +47,9 @@
             android:value="u9RhntqziIB8wM4hPyCj7e3pRx0QNkdnfCxymZwk" />
 
         <activity
-            android:name=".StartActivity"
+            android:name="com.susankya.rnk.StartActivity"
             android:label="छलफल"
-            android:parentActivityName=".NavDrawerActivity">
+            android:parentActivityName="com.susankya.rnk.NavDrawerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -62,17 +62,17 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name=".NavDrawerActivity"
+            android:name="com.susankya.rnk.NavDrawerActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".NoticeViewActivity"
+            android:name="com.susankya.rnk.NoticeViewActivity"
             android:label="Notice"
-            android:parentActivityName=".NavDrawerActivity"
+            android:parentActivityName="com.susankya.rnk.NavDrawerActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".Splash"
+            android:name="com.susankya.rnk.Splash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -81,7 +81,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".RoutineWidget">
+        <receiver android:name="com.susankya.rnk.RoutineWidget">
             <intent-filter>
 
                 <!--
@@ -95,50 +95,50 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/routine_widget_info" />
         </receiver>
-        <receiver android:name=".BroadcastReceiver">
+        <receiver android:name="com.susankya.rnk.BroadcastReceiver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
 
-        <service android:name=".NewNoticeService" />
+        <service android:name="com.susankya.rnk.NewNoticeService" />
 
         <activity
-            android:name=".ActivityForFragment"
+            android:name="com.susankya.rnk.ActivityForFragment"
             android:label="@string/app_name"
-            android:parentActivityName=".NavDrawerActivity"
+            android:parentActivityName="com.susankya.rnk.NavDrawerActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TestResultActivity"
+            android:name="com.susankya.rnk.TestResultActivity"
             android:label="Test Result" />
         <activity
-            android:name=".AccountTypeActivity"
+            android:name="com.susankya.rnk.AccountTypeActivity"
             android:label="Choose your account"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ResultActivity"
-            android:parentActivityName=".NavDrawerActivity"
+            android:name="com.susankya.rnk.ResultActivity"
+            android:parentActivityName="com.susankya.rnk.NavDrawerActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".IntroActivity"
+            android:name="com.susankya.rnk.IntroActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HelpActivity"
+            android:name="com.susankya.rnk.HelpActivity"
             android:label="@string/title_activity_help"
-            android:parentActivityName=".NavDrawerActivity" />
+            android:parentActivityName="com.susankya.rnk.NavDrawerActivity" />
         <activity
-            android:name=".StudentInActivity"
+            android:name="com.susankya.rnk.StudentInActivity"
             android:label="@string/app_name" />
         <activity
-            android:name=".AdminInActivity"
+            android:name="com.susankya.rnk.AdminInActivity"
             android:label="@string/app_name" />
         <activity
-            android:name=".SchoolProfileActivity"
+            android:name="com.susankya.rnk.SchoolProfileActivity"
             android:label="@string/app_name" />
         <activity
-            android:name=".SearchableActivity"
+            android:name="com.susankya.rnk.SearchableActivity"
             android:launchMode="singleTop"
-            android:parentActivityName=".NavDrawerActivity" />
+            android:parentActivityName="com.susankya.rnk.NavDrawerActivity" />
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -151,29 +151,29 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".AddRoutineActivity"
-            android:parentActivityName=".NavDrawerActivity" />
-        <activity android:name=".GalleryViewActivity" />
+            android:name="com.susankya.rnk.AddRoutineActivity"
+            android:parentActivityName="com.susankya.rnk.NavDrawerActivity" />
+        <activity android:name="com.susankya.rnk.GalleryViewActivity" />
         <activity
             android:screenOrientation="portrait"
-            android:name=".AddNoticeActivity"
-            android:parentActivityName=".NavDrawerActivity" />
+            android:name="com.susankya.rnk.AddNoticeActivity"
+            android:parentActivityName="com.susankya.rnk.NavDrawerActivity" />
         <activity
-            android:name=".ViewQuestionActivity"
-            android:parentActivityName=".NavDrawerActivity" />
+            android:name="com.susankya.rnk.ViewQuestionActivity"
+            android:parentActivityName="com.susankya.rnk.NavDrawerActivity" />
         <activity
-            android:name=".EnterCodeActivity"
+            android:name="com.susankya.rnk.EnterCodeActivity"
             android:label="@string/title_activity_enter_code"
             android:theme="@style/MyMaterialTheme"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:screenOrientation="portrait" android:name=".Activities.EventDescActivity" />
-        <activity android:screenOrientation="portrait" android:name=".Activities.ForgotPasswordActivity"/>
-        <activity android:screenOrientation="portrait" android:name=".Activities.AddEventActivity"/>
-        <activity android:screenOrientation="portrait" android:name=".Activities.AppliedUserDetailActivity"/>
+        <activity android:screenOrientation="portrait" android:name="com.susankya.rnk.Activities.EventDescActivity" />
+        <activity android:screenOrientation="portrait" android:name="com.susankya.rnk.Activities.ForgotPasswordActivity"/>
+        <activity android:screenOrientation="portrait" android:name="com.susankya.rnk.Activities.AddEventActivity"/>
+        <activity android:screenOrientation="portrait" android:name="com.susankya.rnk.Activities.AppliedUserDetailActivity"/>
         <!-- for taking photo from camera -->
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.susankya.schoolvalley.fileprovider"
+            android:authorities="com.susankya.rnk.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

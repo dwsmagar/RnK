@@ -18,7 +18,7 @@
             android:orientation="vertical" android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:typeface="serif"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
                 android:background="@color/grey_dialog"
                 android:textColor="#fff"
                 android:id="@+id/b1"/>
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:typeface="serif"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                 android:src="@drawable/placeholdernew"
                 android:id="@+id/image"/>
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/b3"
                 android:layout_width="wrap_content"
                 android:textSize="20sp"
@@ -66,7 +66,7 @@
                 android:orientation="vertical">
 
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:id="@+id/b4"
                     android:textSize="15sp"
@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:text="Science"/>
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:id="@+id/b5"
                     android:textSize="15sp"
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:text="Computer science"/>
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:id="@+id/b6"
                     android:textSize="15sp"
@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:text="Management"/>
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:id="@+id/b7"
                     android:textSize="15sp"
@@ -103,7 +103,7 @@
                     android:text="Hotel management"/>
             </LinearLayout>
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:id="@+id/b8"
                 android:textSize="20sp"
@@ -122,7 +122,7 @@
                 android:orientation="vertical">
 
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:id="@+id/b9"
                     android:textSize="20sp"
@@ -132,7 +132,7 @@
                     android:text="021-470149"/>
 
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:id="@+id/b11"
                     android:textSize="20sp"
@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:text="Noticeboard: 1618 021 470149"/>
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:id="@+id/b12"
                     android:textSize="20sp"
@@ -150,7 +150,7 @@
                     android:layout_height="wrap_content"
                     android:text="Arniko Path, Biratnagar-13"/>
             </LinearLayout>
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -165,7 +165,7 @@
                 android:background="@drawable/edit_routine"
                 android:layout_marginBottom="25dp"
                 android:orientation="vertical">
-              <com.susankya.schoolvalley.TextViewPlus
+              <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                   android:layout_gravity="center"
@@ -173,14 +173,14 @@
                   android:textColor="@color/grey_light"
                android:text="B.Tech. Food Technology-4 Years"
                 android:textSize="15dp"/>
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:textColor="@color/grey_light"
                 android:layout_gravity="center"
               android:text="S.Sc. Microbiology-4 Years"
                      android:textSize="15dp"/>
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
                 android:layout_height="fill_parent"

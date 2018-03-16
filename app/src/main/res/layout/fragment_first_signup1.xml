@@ -37,7 +37,7 @@
                     android:padding="4dp"
                     android:textSize="13.5dp" />
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/divider" />
@@ -78,13 +78,13 @@
 
                 </LinearLayout>
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
                     android:background="@color/divider" />
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:id="@+id/college_spinner"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -97,7 +97,7 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="14dp" />
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="4dp"
@@ -114,7 +114,7 @@
                     android:padding="4dp"
                     android:textSize="13.5dp" />
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="4dp"
@@ -131,7 +131,7 @@
                     android:padding="4dp"
                     android:textSize="13.5dp" />
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:id="@+id/field2line"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -159,7 +159,7 @@
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Gender"
@@ -187,7 +187,7 @@
                     </RadioGroup>
                 </LinearLayout>
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="4dp"
@@ -200,7 +200,7 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:layout_weight="1"
@@ -223,7 +223,7 @@
                         android:textSize="14dp" />
                 </LinearLayout>
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="4dp"
@@ -241,7 +241,7 @@
                     android:nextFocusForward="@+id/fragment_signup_confirm_password"
                     android:textSize="13.5dp" />
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="4dp"
@@ -274,7 +274,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary" />
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/gobacktv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

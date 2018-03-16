@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     >
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         android:textColor="#fff"
         android:id="@+id/subject"
         />
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 

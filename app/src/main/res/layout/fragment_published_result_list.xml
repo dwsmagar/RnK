@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.susankya.schoolvalley.PublishedResultList">
+    android:layout_height="match_parent" tools:context="com.susankya.rnk.PublishedResultList">
 
     <ProgressBar
         android:layout_width="60dp"
@@ -24,7 +24,7 @@
             android:id="@+id/list_result"/>
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"

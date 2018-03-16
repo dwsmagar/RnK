@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.susankya.schoolvalley.askQuestionCodeDialogFragment"
+    tools:context="com.susankya.rnk.askQuestionCodeDialogFragment"
     android:padding="10dp"
     android:background="@color/grey_dialog">
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Please enter the confirmation pin:"

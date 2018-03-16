@@ -6,7 +6,7 @@ android:layout_height="match_parent"
     android:background="@color/background"
     >
  <LinearLayout  android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.susankya.schoolvalley.ResultFragment"
+    android:layout_height="match_parent" tools:context="com.susankya.rnk.ResultFragment"
     android:background="@color/background"
     android:orientation="vertical"
     android:padding="5dp"
@@ -21,7 +21,7 @@ android:layout_height="match_parent"
         android:inputType="number"
 
         />
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -36,7 +36,7 @@ android:layout_height="match_parent"
         android:background="@drawable/spinnerbox"
         android:layout_marginTop="10dp">
 </Spinner>
-     <com.susankya.schoolvalley.TextViewPlus
+     <com.susankya.rnk.TextViewPlus
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_marginTop="10dp"

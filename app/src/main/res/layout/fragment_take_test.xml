@@ -8,7 +8,7 @@
                 android:orientation="vertical"
                 android:background="@color/primary_dark_material_light"
                 android:id="@+id/resultLayout">
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Total Question: "
@@ -16,7 +16,7 @@
                     android:id="@+id/totalQuestion"
                     android:textSize="25dp"
                     android:layout_margin="10dp"/>
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:layout_width="wrap_content"
                     android:textColor="#fff"
                     android:layout_height="wrap_content"

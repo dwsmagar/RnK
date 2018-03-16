@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:background="#36FEF9F9">
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="How many questions do you want to add?"
@@ -21,7 +21,7 @@
         android:padding="4dp"
         android:background="@drawable/box"
         />
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:textColor="#000"
         android:layout_height="wrap_content"

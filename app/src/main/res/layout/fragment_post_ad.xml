@@ -20,7 +20,7 @@
             android:id="@+id/ll"
             android:layout_height="wrap_content"
             >
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="17dp"
@@ -57,7 +57,7 @@
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/add_image"
                         android:id="@+id/imgadd"/>
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Add Image"
@@ -80,7 +80,7 @@
 
                         android:background="@drawable/ic_action_paste"
                         android:id="@+id/imgpaste"/>
-                    <com.susankya.schoolvalley.TextViewPlus
+                    <com.susankya.rnk.TextViewPlus
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Paste from \n clipboard"
@@ -100,7 +100,7 @@
                 android:layout_gravity="center"
                 />
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                android:textSize="16dp"
@@ -119,7 +119,7 @@
                 android:layout_gravity="bottom"
                 android:gravity="bottom"
                 />
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -131,7 +131,7 @@
                 android:textColor="@color/colorPrimaryDark"
                 />
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -161,7 +161,7 @@
                 android:id="@+id/website_et"
                 android:background="@drawable/box"/>
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16dp"

@@ -3,8 +3,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#fff"
-    tools:context="com.susankya.schoolvalley.InstituteNotSelected">
-    <com.susankya.schoolvalley.TextViewPlus
+    tools:context="com.susankya.rnk.InstituteNotSelected">
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Institution not selected"
@@ -18,7 +18,7 @@
         android:id="@+id/white_line"
         android:layout_marginTop="2dp"
         android:background="@color/colorAccent"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"

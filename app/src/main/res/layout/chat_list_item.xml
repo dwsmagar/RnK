@@ -10,14 +10,14 @@
     android:gravity="center"
     android:paddingBottom="8dp">
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:id="@+id/textForFont"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/circle_with_white_background"
         android:gravity="center"
         android:text="C"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/secondary_text"
         android:textSize="26sp" />
 
     <LinearLayout
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             style="@style/Base.TextAppearance.AppCompat.Small"
             android:textSize="16sp" />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/chatMsg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

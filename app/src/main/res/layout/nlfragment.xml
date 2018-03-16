@@ -1,9 +1,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     android:orientation="vertical">
+
+    <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
     <LinearLayout
         android:id="@+id/empty_layout"
@@ -14,28 +22,20 @@
         android:orientation="vertical"
         android:visibility="gone">
 
-        <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/progress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
+        <ImageView
+            android:id="@+id/empty_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_notes"
             android:visibility="gone" />
 
-        <com.joanzapata.iconify.widget.IconTextView
-            android:id="@+id/emptyIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="{md-assignment}"
-            android:textSize="60sp"
-            android:visibility="gone" />
-
-        <com.susankya.schoolvalley.TextViewPlus
+        <TextView
             android:id="@+id/emptyTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/emptyIcon"
             android:layout_marginTop="4dp"
             android:gravity="center"
+            android:padding="8dp"
             android:text="You have not uploaded any notices ple"
             android:textSize="22sp"
             android:typeface="serif"
@@ -62,6 +62,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
         android:elevation="2dp"
         android:src="@drawable/floating_add_rgb" />
 </RelativeLayout>

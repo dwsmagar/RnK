@@ -17,14 +17,14 @@
         android:layout_gravity="center"
         android:layout_marginLeft="4dp"
         android:orientation="vertical">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/full_name"
             android:textSize="16dp"
             android:textColor="@color/routine_color"
             android:text="Full name"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/user_name"
@@ -32,7 +32,7 @@
             android:textStyle="italic"
 
             android:text="/username"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/inst"

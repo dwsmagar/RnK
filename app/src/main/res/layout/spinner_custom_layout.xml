@@ -7,7 +7,7 @@
     android:orientation="horizontal"
     android:gravity="center_vertical">
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:id="@+id/textOfSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

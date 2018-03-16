@@ -26,7 +26,7 @@
             android:text="{entypo-key}"
             android:textColor="@color/colorGrey"/>
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/pw_change"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             android:src="@drawable/ic_logout"
             android:text="{fa-power-off}" />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/title_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

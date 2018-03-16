@@ -8,7 +8,7 @@
 
     <include layout="@layout/toolbar" />
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:id="@+id/infotv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

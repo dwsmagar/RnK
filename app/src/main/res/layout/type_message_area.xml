@@ -30,6 +30,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|center_vertical"
         android:text="{md-send}"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#27ae60"
         android:textSize="25sp" />
 </LinearLayout>

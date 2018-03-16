@@ -4,8 +4,7 @@ android {
     buildToolsVersion '26.0.2'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-
-        applicationId 'com.susankya.schoolvalley'
+        applicationId 'com.susankya.rnk'
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 26

@@ -12,7 +12,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -22,7 +22,7 @@
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -51,7 +51,7 @@
         android:background="@drawable/result_item_selector"
         >
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
            android:gravity="center_horizontal"
@@ -61,7 +61,7 @@
             android:textColor="#fff"
             android:id="@+id/subject"
             />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

@@ -3,18 +3,18 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         style="@style/result_row_objective"
         android:text="Roll no."
         android:layout_weight="3"
         android:id="@+id/rollno"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         style="@style/result_row_objective"
         android:text="Name"
         android:layout_weight="10"
         android:id="@+id/name"/>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         style="@style/result_row_objective"
         android:text="Marks"
         android:layout_weight="3"

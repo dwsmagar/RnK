@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#fff"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
     <include layout="@layout/toolbar" />
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:id="@+id/n_title"
         style="@style/Base.TextAppearance.AppCompat.Small"
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
         android:paddingTop="16dp"
         android:visibility="gone">
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/ph_tv"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -57,7 +57,7 @@
             android:textColor="#fff"
             android:textSize="26dp" />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/category_content"
             style="@style/Base.TextAppearance.AppCompat.Small"
             android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
             android:text="Holiday"
             android:textColor="@color/primary_text" />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/date_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
             android:layout_centerVertical="true"
             android:background="@drawable/ic_file" />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/attachment_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/small_txt_size" />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/sizetv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
             android:orientation="vertical"
             android:padding="8dp">
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/n_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -163,7 +163,7 @@
                 android:background="@drawable/my_textbox"
                 android:orientation="vertical">
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:id="@+id/clickimg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -220,7 +220,7 @@
                 android:text="{fa-thumbs-up}"
                 android:textColor="@color/colorAccent" />
 
-            <com.susankya.schoolvalley.TextViewPlus xmlns:app="http://schemas.android.com/apk/res-auto"
+            <com.susankya.rnk.TextViewPlus xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/liketv"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
@@ -251,7 +251,7 @@
                 android:text="{fa-eye}"
                 android:textColor="@color/colorGrey" />
 
-            <com.susankya.schoolvalley.TextViewPlus xmlns:app="http://schemas.android.com/apk/res-auto"
+            <com.susankya.rnk.TextViewPlus xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/seentv"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"

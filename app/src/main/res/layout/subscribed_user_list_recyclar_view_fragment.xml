@@ -7,49 +7,44 @@
     android:paddingBottom="8dp">
 
     <LinearLayout
-        android:gravity="center_horizontal"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp"
-        android:paddingRight="8dp"
-        android:paddingLeft="8dp"
-        android:orientation="vertical"
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp">
 
         <TextView
-            android:textColor="@color/black"
-            android:textSize="10sp"
             android:id="@+id/user_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Users" />
+            android:text="Users"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
 
         <Button
-            android:textAllCaps="true"
-            android:textStyle="bold"
-            android:textSize="10sp"
-            android:textColor="@color/white"
-            android:background="@drawable/check_btn"
             android:id="@+id/select_all"
             android:layout_width="wrap_content"
             android:layout_height="22dp"
-            android:text="Select All" />
+            android:background="@drawable/check_btn"
+            android:text="Select All"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/user_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom"
         android:layout_below="@id/top_layout"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:background="@color/white" />
-
-    <include
-        android:id="@+id/bottom"
-        layout="@layout/type_message_area" />
 
     <LinearLayout
         android:id="@+id/emptyTextLayout"
@@ -61,25 +56,25 @@
         android:padding="10dp"
         android:visibility="gone">
 
+        <ImageView
+            android:id="@+id/empty_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
-        <com.joanzapata.iconify.widget.IconTextView
-            android:id="@+id/icontText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="60sp" />
 
         <TextView
             android:id="@+id/emtpyTextview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:fontFamily="@font/open_sans"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:text="Empty Textview"
-            android:textSize="22sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 </RelativeLayout>

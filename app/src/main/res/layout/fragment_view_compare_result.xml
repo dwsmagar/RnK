@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.susankya.schoolvalley.ViewCompareResultFragment"
+    tools:context="com.susankya.rnk.ViewCompareResultFragment"
     android:background="@color/background"
     android:orientation="vertical">
 
@@ -17,20 +17,20 @@
        <TableRow
            android:background="@drawable/box"
            >
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="match_parent"
                
                android:text="SUBJECTS"
 
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="ROLL A"
                android:id="@+id/roll1"
                android:gravity="center"
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="ROLL B"
@@ -44,20 +44,20 @@
             android:background="@drawable/box"            android:layout_marginTop="5dp"  
 
             >
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="match_parent"
                
                android:text="PHYSICS"
 
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
                android:id="@+id/phy1"
                 android:gravity="center"
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
@@ -69,20 +69,20 @@
        </TableRow>
        <TableRow
           android:background="@drawable/box"           android:layout_marginTop="5dp">
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="match_parent"
                
                android:text="CHEMISTRY"
 
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
                android:id="@+id/che1"
                android:gravity="center"
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
@@ -95,20 +95,20 @@
 
        <TableRow
           android:background="@drawable/box"           android:layout_marginTop="5dp">
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="match_parent"
                
                android:text="MATHS"
 
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
                android:id="@+id/mat1"
                android:gravity="center"
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
@@ -121,20 +121,20 @@
 
        <TableRow
           android:background="@drawable/box"           android:layout_marginTop="5dp">
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="match_parent"
                
                android:text="ENGLISH"
 
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
                android:id="@+id/eng1"
                android:gravity="center"
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
@@ -147,20 +147,20 @@
 
        <TableRow
           android:background="@drawable/box"           android:layout_marginTop="5dp">
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="match_parent"
                
                android:text="BIO/COMP"
 
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
                android:id="@+id/biocomp1"
                android:gravity="center"
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
@@ -173,20 +173,20 @@
 
        <TableRow
           android:background="@drawable/box"           android:layout_marginTop="5dp">
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="match_parent"
                
                android:text="NEPALI"
 
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
                android:id="@+id/nep1"
                android:gravity="center"
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100"
@@ -199,20 +199,20 @@
 
        <TableRow
           android:background="@drawable/box"           android:layout_marginTop="5dp">
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="match_parent"
                
                android:text="TOTAL"
 
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                
                android:text="500"
                android:id="@+id/total1"
                android:gravity="center"
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="500"
@@ -225,20 +225,20 @@
 
        <TableRow
            android:background="@drawable/box"           android:layout_marginTop="5dp">
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="match_parent"
 
                android:text="AVERAGE"
 
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
 
                android:text="100%"
                android:id="@+id/avg1"
                android:gravity="center"
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="100%"
@@ -250,20 +250,20 @@
        </TableRow>
        <TableRow
           android:background="@drawable/box"           android:layout_marginTop="5dp">
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="match_parent"
                
                android:text="RESULT"
 
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="1st"
                android:id="@+id/result1"
                android:gravity="center"
                style="@style/TextViewStyle"/>
-           <com.susankya.schoolvalley.TextViewPlus
+           <com.susankya.rnk.TextViewPlus
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="2nd"

@@ -9,7 +9,7 @@
         android:id="@+id/loadmoreimage"
         android:layout_height="24dp"
         android:background="@drawable/loadmorecomments"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/loadmoretv"

@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:background="@color/grey_light"
         android:layout_height="wrap_content">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Saved answers"
@@ -18,7 +18,7 @@
 
             android:textColor="#fff"
             />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/clear_answers"
@@ -28,7 +28,7 @@
             android:layout_alignParentRight="true"/>
 
     </RelativeLayout>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:text="You have not saved any of your answers."

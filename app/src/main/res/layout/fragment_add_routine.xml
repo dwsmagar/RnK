@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/main">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -22,7 +22,7 @@
             android:text="You have not added any section\'sroutine.
              Tap on the Add icon at the bottom right of the
               screen to add routine."/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sections with routine"
@@ -55,7 +55,7 @@
 
         </android.support.v4.widget.SwipeRefreshLayout>
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/divider"

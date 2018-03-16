@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/landing_backgrond"
     android:layout_width="fill_parent"
+    android:fitsSystemWindows="true"
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
@@ -11,7 +12,7 @@
         android:layout_height="fill_parent"
         android:background="@null" />
 
-    <com.susankya.schoolvalley.CirclePageIndicator
+    <com.susankya.rnk.CirclePageIndicator
         android:id="@+id/indicator"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

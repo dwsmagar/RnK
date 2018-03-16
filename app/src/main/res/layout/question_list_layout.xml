@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:paddingRight="5dp"
         android:paddingLeft="5dp">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/q_num"
@@ -21,7 +21,7 @@
             android:layout_marginRight="5dp"
             android:textSize="18dp"
             app:customFont="robotobold.ttf"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_toRightOf="@id/q_num"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
             />
     </RelativeLayout>
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Question"
@@ -42,7 +42,7 @@
         android:id="@+id/option1"
         android:paddingRight="5dp"
         android:paddingLeft="5dp"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/question"
@@ -50,7 +50,7 @@
        android:textSize="15dp" android:paddingRight="5dp"
         android:paddingLeft="5dp"
         android:id="@+id/option2"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/question"
@@ -58,7 +58,7 @@
         android:textSize="15dp" android:paddingRight="5dp"
         android:paddingLeft="5dp"
         android:id="@+id/option3"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/question"

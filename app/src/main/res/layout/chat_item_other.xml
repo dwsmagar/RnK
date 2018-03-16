@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="3dp">
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/name"
@@ -21,7 +21,7 @@
         android:orientation="horizontal"
         android:layout_gravity="right">
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

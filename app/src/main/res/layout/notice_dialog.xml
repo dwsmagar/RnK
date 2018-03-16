@@ -12,7 +12,7 @@ android:minHeight="200dp"
         android:layout_width="match_parent"
         android:background="#fff"
         android:layout_height="wrap_content">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Notice #11"
@@ -27,7 +27,7 @@ android:minHeight="200dp"
         android:layout_marginTop="2dp"
         android:layout_width="fill_parent"
         android:background="@color/drawerHighlighted" />
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="date"
@@ -43,7 +43,7 @@ android:minHeight="200dp"
         android:background="@drawable/box_transparent"
         android:layout_marginBottom="5dp"
         android:layout_height="wrap_content">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="jpt"

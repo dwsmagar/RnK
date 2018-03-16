@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:textSize="16dp"
         android:textColor="#000"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Before you begin, please fill in the following information"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:textSize="16dp"
         android:layout_height="wrap_content"

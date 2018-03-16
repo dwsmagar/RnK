@@ -99,7 +99,7 @@
                 android:layout_height="50dp"
                 android:src="@color/red" />
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/filename"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -120,6 +120,8 @@
         android:layout_alignParentRight="true"
         android:layout_gravity="bottom|right"
         android:src="@drawable/ic_send_notice"
+        android:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
         app:layout_anchor="@id/main"
         android:layout_marginBottom="8dp"
         app:layout_anchorGravity="bottom|right|end" />

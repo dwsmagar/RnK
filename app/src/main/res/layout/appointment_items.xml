@@ -9,7 +9,7 @@
     android:paddingTop="8dp"
     android:paddingBottom="8dp">
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:id="@+id/ph_tv"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -44,7 +44,7 @@
             android:textColor="@color/primary_text"
             android:textSize="12sp" />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/created_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

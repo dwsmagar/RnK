@@ -3,175 +3,175 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/container">
-<com.susankya.schoolvalley.TextViewPlus
+<com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="abc"
     android:textSize="20dp"
     style="@style/result_row"/>
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
 android:visibility="gone"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

@@ -7,10 +7,10 @@
     android:orientation="vertical"
     android:minWidth="900dp"
     android:padding="24dp"
-    tools:context="com.susankya.schoolvalley.UserProfileDialog">
+    tools:context="com.susankya.rnk.UserProfileDialog">
 
 
-    <com.susankya.schoolvalley.TextViewPlus
+    <com.susankya.rnk.TextViewPlus
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:customFont="robotobold.ttf"
@@ -22,14 +22,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="horizontal">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:text="Name: "
             app:customFont="robotoregular.ttf"
             android:textSize="16dp"
             android:textColor="@color/aptTitle"
             android:layout_height="wrap_content" />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:text="Abc Xyz"
             app:customFont="robotoregular.ttf"
@@ -46,14 +46,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="horizontal">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:text="Roll no.: "
             app:customFont="robotoregular.ttf"
             android:textSize="16dp"
             android:textColor="@color/aptTitle"
             android:layout_height="wrap_content" />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:text="Abc Xyz"
             android:textSize="16dp"
@@ -68,14 +68,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="horizontal">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:text="Section: "
             app:customFont="robotoregular.ttf"
             android:textSize="16dp"
             android:textColor="@color/aptTitle"
             android:layout_height="wrap_content" />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:text="Abc Xyz"
             app:customFont="robotoregular.ttf"
@@ -91,14 +91,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="horizontal">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:text="Email: "
             app:customFont="robotoregular.ttf"
             android:textSize="16dp"
             android:textColor="@color/aptTitle"
             android:layout_height="wrap_content" />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             app:customFont="robotoregular.ttf"
             android:text="Abc Xyz"
@@ -114,14 +114,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="horizontal">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:text="Mobile.: "
             app:customFont="robotoregular.ttf"
             android:textSize="16dp"
             android:textColor="@color/aptTitle"
             android:layout_height="wrap_content" />
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             app:customFont="robotoregular.ttf"
             android:text="Abc Xyz"

@@ -24,7 +24,7 @@
             android:layout_height="65dp"
             android:src="@drawable/placeholdernewloading"
             android:id="@+id/profile_pic_thumbnail_profile"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/change_profile_pic"
@@ -34,7 +34,7 @@
             android:visibility="gone"
             android:layout_marginTop="3dp"
             android:textColor="@color/tabsScrollColor"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Marshall Mathers"
@@ -44,7 +44,7 @@
             android:layout_toRightOf="@id/profile_pic_thumbnail_profile"
             android:layout_marginLeft="4dp"
             android:id="@+id/full_name_profile"/>
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/eminem"

@@ -3,8 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     android:padding="@dimen/widget_margin"
     android:background="@color/white">
+
     <include layout="@layout/toolbar" />
 
     <ImageView
@@ -58,7 +60,7 @@
             android:paddingTop="8dp"
             android:paddingBottom="8dp">
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/eventName"
                 style="@style/Base.TextAppearance.AppCompat.Small"
                 android:layout_width="wrap_content"
@@ -67,7 +69,7 @@
                 android:text="Discussion on choosing the right abroad education"
                 android:textColor="@color/black" />
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/organizedBy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -82,7 +84,7 @@
                 android:orientation="horizontal"
                 android:visibility="visible">
 
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:id="@+id/eventFee"
                     style="@style/Base.TextAppearance.AppCompat.Small"
                     android:layout_width="wrap_content"
@@ -91,7 +93,7 @@
                     android:textSize="11sp"
                     android:textStyle="bold"
                     android:textColor="@color/primary_text"/>
-                <com.susankya.schoolvalley.TextViewPlus
+                <com.susankya.rnk.TextViewPlus
                     android:id="@+id/organizer"
                     style="@style/Base.TextAppearance.AppCompat.Small"
                     android:layout_width="wrap_content"
@@ -188,7 +190,7 @@
                 android:text="@string/timePicker"
                 android:textColor="@color/colorGrey" />
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/date"
                 style="@style/Base.TextAppearance.AppCompat.Small"
                 android:layout_width="wrap_content"
@@ -198,7 +200,7 @@
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/small_txt_size"/>
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/at"
                 style="@style/Base.TextAppearance.AppCompat.Small"
                 android:layout_width="wrap_content"
@@ -208,7 +210,7 @@
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/small_txt_size"/>
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/eventTime"
                 style="@style/Base.TextAppearance.AppCompat.Small"
                 android:layout_width="wrap_content"
@@ -232,7 +234,7 @@
                 android:text="@string/map"
                 android:textColor="@color/colorGrey" />
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/eventLocation"
                 style="@style/Base.TextAppearance.AppCompat.Small"
                 android:layout_width="wrap_content"
@@ -258,7 +260,7 @@
         android:paddingRight="16dp"
         android:paddingBottom="16dp">
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -269,7 +271,7 @@
             android:textStyle="bold"
             android:textSize="@dimen/small_txt_size"/>
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:id="@+id/eventDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -280,7 +282,7 @@
             android:textSize="12sp"
             android:textStyle="normal" />
 
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:gravity="bottom"
@@ -294,7 +296,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -303,7 +305,7 @@
                 android:textStyle="bold"
                 android:textSize="@dimen/small_txt_size"/>
 
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:id="@+id/eventPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

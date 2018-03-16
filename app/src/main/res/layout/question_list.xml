@@ -10,7 +10,7 @@
         android:weightSum="100"
         android:orientation="vertical"
         android:layout_height="wrap_content">
-        <com.susankya.schoolvalley.TextViewPlus
+        <com.susankya.rnk.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Question #"
@@ -143,7 +143,7 @@ android:padding="2dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
-            <com.susankya.schoolvalley.TextViewPlus
+            <com.susankya.rnk.TextViewPlus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Correct option:"

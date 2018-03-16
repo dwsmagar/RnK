@@ -46,10 +46,10 @@
     <color name = "eventText">@color/primary_text</color>
 
     //primary colors
-    <color name="colorPrimary">#3B5998</color>
+    <color name="colorPrimary">#af321e</color>
     <color name="colorPrimaryBU">#03A9F4</color>
-    <color name="colorPrimaryDark">#003069</color>
-    <color name="colorPrimaryLight">#6d85c9</color>
+    <color name="colorPrimaryDark">#790000</color>
+    <color name="colorPrimaryLight">#e76347</color>
     <color name="colorPrimaryDarkAlpha">#820288d1</color>
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="windowBackground">#FFFFFF</color>
