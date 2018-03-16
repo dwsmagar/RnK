@@ -28,9 +28,11 @@
         android:background="@drawable/views_highlight_selector"
         android:text="➔"
         android:textColor="#fff"
+        android:fontFamily="@font/open_sans"
         android:textSize="18dp" />
 
     <Button
+        android:fontFamily="@font/open_sans"
         android:id="@+id/skipPager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -499,7 +499,7 @@ public class NoticeListFragment extends android.support.v4.app.Fragment implemen
 
     public void GetNotices() {
         String link = NEW_HOST + "RetrieveNotice.php";
-        new PhpConnect(link, "Loading...", getActivity(), 0, new String[]{FragmentCodes.CMDXXX, "64", escape + "", Utilities.getUserNumber(getActivity()) + ""}, new String[]{"cmdxxx", "college_sn", "escape", "user_no"}).setListener(
+        new PhpConnect(link, "Loading...", getActivity(), 0, new String[]{FragmentCodes.CMDXXX, "65", escape + "", Utilities.getUserNumber(getActivity()) + ""}, new String[]{"cmdxxx", "college_sn", "escape", "user_no"}).setListener(
                 new PhpConnect.ConnectOnClickListener() {
                     @Override
                     public void onConnectListener(String result) {

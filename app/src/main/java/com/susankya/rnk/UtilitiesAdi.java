@@ -55,7 +55,7 @@ public class UtilitiesAdi implements FragmentCodes {
             Toast.makeText(c, e+"", Toast.LENGTH_LONG).show();
         }
         return "0";*/
-        return c.getSharedPreferences("userinfo", Context.MODE_PRIVATE).getString("sn", "0");
+        return c.getSharedPreferences("userinfo", Context.MODE_PRIVATE).getString("sn", "65");
     }
 
     public static boolean isProfileOfAdmin(Context context, String sn) {

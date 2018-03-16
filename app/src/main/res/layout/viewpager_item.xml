@@ -3,46 +3,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/landing_img_slide"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/admin_img_bg"
+        android:elevation="10dp"
+        android:scaleType="fitXY" />
+
     <LinearLayout
+        android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/landing_img_slide"
+        android:gravity="center"
         android:orientation="vertical"
-        android:layout_centerInParent="true"
         android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:gravity="center">
+        android:paddingRight="15dp">
 
-        <ImageView
-            android:id="@+id/landing_img_slide"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_centerHorizontal="true"
-            android:scaleType="fitXY" />
-
-        <com.susankya.rnk.TextViewPlus
+        <TextView
             android:id="@+id/landing_txt_title"
             android:layout_width="fill_parent"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:customFont="robotobold.ttf"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto"
             android:gravity="center"
             android:text=""
-            android:layout_marginTop="40dp"
             android:textColor="@android:color/white"
             android:textSize="22dp"
             android:textStyle="bold" />
 
-        <com.susankya.rnk.TextViewPlus
+        <TextView
             android:id="@+id/landing_txt_hint"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:lineSpacingExtra="3dp"
             android:text=""
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:customFont="robotoregular.ttf"
-            android:layout_marginTop="20dp"
-          android:textSize="16dp"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
     </LinearLayout>
 </RelativeLayout>

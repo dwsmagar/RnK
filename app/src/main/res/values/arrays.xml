@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="landing_bg">
-        <item>@color/colorPrimary</item>
-        <item>@color/result_color</item>
-        <item>@color/routine_color</item>
+        <item>#c0392b</item>
+        <item>#8e44ad</item>
+        <item>#22a6b3</item>
+        <item>#e67e22</item>
         <item>@color/notice_color</item>
-        <item>@color/light_question_color</item>
     </array>
 
     <array name="icons">
         <item>@drawable/logo</item>
-        <item>@drawable/white_notice_icon</item>
-        <item>@drawable/white_event_icon</item>
-        <item>@drawable/white_appointment_icon</item>
-        <item>@drawable/white_check_icon</item>
-        <item>@drawable/white_chat_icon</item>
+        <item>@drawable/ic_megaphone</item>
+        <item>@drawable/ic_calendar2</item>
+        <item>@drawable/ic_reunion1</item>
+        <item>@drawable/ic_communication</item>
     </array>
 
     <string-array name="titles" >
-        <item>NIMAS EDUCATION\n<small>An ISO Certified Company</small></item>
+        <item>R &amp; K \n<small>Associates Education Consultancy</small></item>
         <item>Notices</item>
         <item>Events</item>
         <item>Appointments</item>
-        <item>Eligibility</item>
         <item>Chat</item>
     </string-array>
 
@@ -31,6 +29,7 @@
         <item>Get real-time notifications for new notices. View the notices published by the consultancy with attachments.</item>
         <item>See the events list and participate with the real-time events with us.</item>
         <item>Make an appointment now with more easy and comfortable way with our app.</item>
+        <item>Real-time chat with friends. </item>
         <item>Check your eligibilty with more efficient way.</item>
         <item>Send your feedbacks, comments and support through chat service with easy way.</item>
     </string-array>

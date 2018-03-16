@@ -117,8 +117,8 @@ public class FirstLoginFragment extends android.support.v4.app.Fragment implemen
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String sn = "64";
-                        String sName = "Nimas Education";
+                        String sn = "65";
+                        String sName = "R&K Associates";
                         String dbName = "SusankyaNirajshah076@gmail.com";
                         String category = "Consultancy";
                         ((ImmortalApplication) getActivity().getApplication()).set(sn, sName, dbName, category);

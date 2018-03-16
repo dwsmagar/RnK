@@ -70,20 +70,17 @@ public class StartActivity extends AppCompatActivity {
     Fragment fragment;
 
     public void changeTab(int pos, UserInfo userInfo) {
-
         USERNAME = userInfo.getUserName();
         PASSWORD = userInfo.getPassword();
         LoginFragment.mUsername.setText(USERNAME);
         LoginFragment.mPassword.setText(PASSWORD);
         mPager.setCurrentItem(pos);
-
     }
 
     private void setupTabIcons() {
         for (int i = 0; i < tabIcons.length; i++) {
             //tabLayout.getTabAt(i).setIcon(tabIcons[i]);
         }
-
     }
 
     private boolean isLoggedIn() {
@@ -99,8 +96,6 @@ public class StartActivity extends AppCompatActivity {
         if (isLoggedIn()) {
             String userFullName = getSharedPreferences("userinfo", MODE_PRIVATE).getString("fullName", "0");
             Utilities.toaster("Welcome, " + userFullName, Toast.LENGTH_LONG, StartActivity.this);
-
-
             Intent i = new Intent(this, NavDrawerActivity.class);
             i.putExtra("usernumberho", getSharedPreferences("userinfo", MODE_PRIVATE).getInt("number", 0));
             startActivity(i);

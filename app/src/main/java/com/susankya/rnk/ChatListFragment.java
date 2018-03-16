@@ -1,6 +1,7 @@
 package com.susankya.rnk;
 
 import android.content.Context;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DividerItemDecoration;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,7 +41,11 @@ public class ChatListFragment extends Fragment {
     @BindView(R.id.recyclarView)
     RecyclerView recyclarView;
     @BindView(R.id.emtpyTextview)
-    TextView emptyView;
+    TextView emptyText;
+    @BindView(R.id.empty_img)
+    ImageView imageView;
+    @BindView(R.id.emptyTextLayout)
+    View emptyView;
     private ChatListAdapter ChatListAdapter;
     private LinearLayoutManager lm;
     private DividerItemDecoration mDividerItemDecoration;
@@ -106,7 +112,7 @@ public class ChatListFragment extends Fragment {
             } else {
                 //Log.d(TAG, "onCreateView: reached");
                 emptyView.setVisibility(View.VISIBLE);
-                emptyView.setText("No Internet Connection");
+                emptyText.setText("No Internet Connection");
             }
         }
       /*  if(mChatListDetail.size()!=0)
@@ -166,7 +172,7 @@ public class ChatListFragment extends Fragment {
         }
         String link = FragmentCodes.MAIN_DATABASE + "Firebase/chat_listing.php";
         new PhpConnect(link, "Loading...", getActivity(), 1,
-                new String[]{FragmentCodes.CMDXXX, "64", "0"},
+                new String[]{FragmentCodes.CMDXXX, "65", "0"},
                 new String[]{"cmdxxx", "college_sn", "escape"}).setListener(new PhpConnect.ConnectOnClickListener() {
             @Override
             public void onConnectListener(String res) {
@@ -183,8 +189,9 @@ public class ChatListFragment extends Fragment {
         try {
             JSONArray ja = new JSONArray(res);
             if (ja.length() == 0) {
-                emptyView.setText("No Chat History");
                 emptyView.setVisibility(View.VISIBLE);
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_communication));
+                emptyText.setText("No Inquiry List Found");
             } else {
                 emptyView.setVisibility(View.GONE);
                 Utilities.save(getActivity(), res, mFilenameOfChatList);

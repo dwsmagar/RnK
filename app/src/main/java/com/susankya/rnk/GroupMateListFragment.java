@@ -174,7 +174,7 @@ public class GroupMateListFragment extends android.support.v4.app.Fragment {
         String link = FragmentCodes.NEW_HOST + "Edit/blockUser.php";
         //Log.d("TAG", "onCreateView: "+link);
         new PhpConnect(link, "Loading user list...", getActivity(), 1, new String[]{FragmentCodes.CMDXXX,
-                "view_users", "64", escape + ""}
+                "view_users", "65", escape + ""}
                 , new String[]{"cmdxxx", "action", "college_sn", "escape"}).setListener(new PhpConnect.ConnectOnClickListener() {
             @Override
             public void onConnectListener(String res) {
@@ -187,7 +187,7 @@ public class GroupMateListFragment extends android.support.v4.app.Fragment {
                         emptyView.setVisibility(View.VISIBLE);
                         empty.setImageDrawable(getResources().getDrawable(R.drawable.ic_graduates));
                         progress.setVisibility(View.GONE);
-                        emptyText.setText("No students have registered yet.");
+                        emptyText.setText("No students have registered yet");
                     } else {
                         getActivity().setTitle("Users(" + ja.length() + ")");
                         emptyView.setVisibility(View.GONE);

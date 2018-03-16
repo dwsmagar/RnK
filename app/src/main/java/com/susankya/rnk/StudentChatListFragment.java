@@ -216,7 +216,7 @@ public class StudentChatListFragment extends Fragment {
             if (ja.length() == 0) {
                 emptyView.setVisibility(View.VISIBLE);
                 empty.setImageDrawable(getResources().getDrawable(R.drawable.ic_communication));
-                emptyText.setText("No Chat History");
+                emptyText.setText("No chat history found");
             } else {
                 emptyView.setVisibility(View.GONE);
                 //Utilities.save(getActivity(),res,mFilenameOfChatList);

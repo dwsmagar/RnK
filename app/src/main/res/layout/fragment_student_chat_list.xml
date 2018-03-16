@@ -48,6 +48,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
+        android:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
         android:layout_margin="16dp"
         android:src="@drawable/ic_local_post_office_black_24dp"
         app:layout_anchor="@id/mainView"

@@ -104,7 +104,6 @@ public class ChatFragment extends Fragment {
         try {
             getActivity().unregisterReceiver(onNotice);
         } catch (Exception e) {
-
         }
         super.onDestroy();
     }
@@ -114,7 +113,7 @@ public class ChatFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_chat, container, false);
         ButterKnife.bind(this, v);
-        getActivity().setTitle("Send Message");
+        getActivity().setTitle("Send Inquiry");
         lm = new LinearLayoutManager(getActivity());
         mChatDetails = new ArrayList<>();
 
@@ -167,7 +166,6 @@ public class ChatFragment extends Fragment {
 
             } else
                 Toast.makeText(getActivity(), "No Chat history found.", Toast.LENGTH_SHORT).show();
-
         }
         onNotice = new BroadcastReceiver() {
 
@@ -268,7 +266,7 @@ public class ChatFragment extends Fragment {
             } else {
                 emptyView.setVisibility(View.VISIBLE);
                 empty.setImageDrawable(getResources().getDrawable(R.drawable.ic_conversation));
-                emptyText.setText("Start with a new conversation");
+                emptyText.setText("You haven't send any inquiry. Start with new message.");
             }
             chatAdapter.notifyDataSetChanged();
             recyclarView.scrollToPosition(mChatDetails.size() - 1);
@@ -285,7 +283,7 @@ public class ChatFragment extends Fragment {
         String link = FragmentCodes.MAIN_DATABASE + "Firebase/";
 
         new PhpConnect(link, "", getActivity(), 0, new String[]{FragmentCodes.CMDXXX, user_no
-                , "64", escape + "", "view_chat"},
+                , "65", escape + "", "view_chat"},
                 new String[]{"cmdxxx", "user_no", "college_sn", "last_chat_no", "action"}).setListener(new PhpConnect.ConnectOnClickListener() {
             @Override
             public void onConnectListener(String res) {
