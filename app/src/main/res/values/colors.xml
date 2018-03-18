@@ -58,9 +58,14 @@
     <color name="colorAccentBackup">#448AFF</color>
 
     <color name="button_color">#009688</color>
-    <color name="color_primary_transparent">#64009688</color>
+    <color name="color_primary_transparent">#fd79a8</color>
+    <color name="accent_pink">#fd79a8</color>
+    <color name="error_color">@color/color_primary_transparent</color>
     <color name="colorPrimaryLight1">#B3E5FC</color>
     <color name="blur">#e1b0acac</color>
+
+    //sign uo layout
+    <color name = "signUp_txt_color">#F8F8F2</color>
 
     <color name="horizontalLine">#EEEEEE</color>
 

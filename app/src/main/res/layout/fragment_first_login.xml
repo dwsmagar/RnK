@@ -219,7 +219,7 @@
                         android:layout_centerInParent="true"
                         android:layout_marginLeft="2dp"
                         android:text="@string/sign_up"
-                        android:textColor="#ff9ff3"
+                        android:textColor="@color/accent_pink"
                         android:textSize="@dimen/general_text_size"
                         android:textStyle="bold" />
 
