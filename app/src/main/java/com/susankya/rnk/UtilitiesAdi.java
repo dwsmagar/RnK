@@ -204,7 +204,6 @@ public class UtilitiesAdi implements FragmentCodes {
     }
 
     public static String getString(Context context, String attribute) {
-
         SharedPreferences sharedPreferences = context.getSharedPreferences("userinfo", Context.MODE_PRIVATE);
         return sharedPreferences.getString(attribute, "");
     }

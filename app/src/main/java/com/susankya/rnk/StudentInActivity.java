@@ -68,7 +68,6 @@ public class StudentInActivity extends AppCompatActivity implements FragmentCode
                                 databaseNames[i] = databaseName;
                                 collegeNameArray.add(collegeName);
                                 databaseNameArray.add(databaseName);
-
                             }
                             collegeLoaded = true;
 

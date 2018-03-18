@@ -272,7 +272,7 @@ public class UserToUserChatFragment extends Fragment {
             } else {
                 emptyView.setVisibility(View.VISIBLE);
                 empty.setImageDrawable(getResources().getDrawable(R.drawable.ic_conversation));
-                emptyText.setText("Start with a new conversation");
+                emptyText.setText("No chat history found. Start with a new conversation");
             }
             chatAdapter.notifyDataSetChanged();
             recyclarView.scrollToPosition(mUserToUserChatDetails.size() - 1);

@@ -14,8 +14,10 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.iid.FirebaseInstanceId;
 
@@ -45,6 +47,8 @@ public class AdminFirstLoginFragment extends android.support.v4.app.Fragment imp
     Button login_btn;
     @BindView(R.id.signupLayout)
     View signup_layout;
+    @BindView(R.id.image)
+    ImageView imageView;
 
     private String URLboy;
     private SQLiteHelper sqLiteHelper;
@@ -57,7 +61,6 @@ public class AdminFirstLoginFragment extends android.support.v4.app.Fragment imp
     private String kunActivityHo;
     private int userNum;
     private boolean shouldStayLoggedIn = false;
-
 
     public static AdminFirstLoginFragment newInstance(String param1, String param2) {
         AdminFirstLoginFragment fragment = new AdminFirstLoginFragment();
@@ -99,17 +102,22 @@ public class AdminFirstLoginFragment extends android.support.v4.app.Fragment imp
 
         View v = inflater.inflate(R.layout.fragment_first_login, container, false);
         ButterKnife.bind(this, v);
-        loginText.setText("Admin Login");
-        title.setText("Log in to manage your activities.");
+        String account_type = getActivity().getSharedPreferences("account", Context.MODE_PRIVATE).getString("type", "");
+        loginText.setText(account_type + " login");
+        title.setText("Enter your credentials to manage your activities");
         signup_layout.setVisibility(View.GONE);
+        checkType(account_type);
+        Toast.makeText(getActivity(), ""+account_type, Toast.LENGTH_SHORT).show();
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                getActivity().getSharedPreferences("account", Context.MODE_PRIVATE).edit().clear().commit();
                 Intent intent = new Intent(getActivity(), AccountTypeActivity.class);
                 startActivity(intent);
                 getActivity().finish();
             }
         });
+
         getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         login_btn.setOnClickListener(
                 new View.OnClickListener() {
@@ -199,5 +207,21 @@ public class AdminFirstLoginFragment extends android.support.v4.app.Fragment imp
                 }
         );
         return v;
+    }
+
+    private void checkType(String account) {
+        switch (account) {
+            case "reception":
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_girl));
+                break;
+            case "super-admin":
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_manager));
+                break;
+            case "sub-admin":
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_man));
+                break;
+            default:
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_student));
+        }
     }
 }

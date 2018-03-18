@@ -193,7 +193,6 @@ public class NavDrawerActivity extends AppCompatActivity implements FragmentCode
         return previousIndex;
     }
 
-
     public static int getZugad() {
         return zugad;
     }
@@ -201,7 +200,6 @@ public class NavDrawerActivity extends AppCompatActivity implements FragmentCode
     public static void setZugad(int zugada) {
         zugad = zugada;
     }
-
 
     public static ArrayList<question> getSharedQuestions() {
         return sharedQuestions;
@@ -232,11 +230,9 @@ public class NavDrawerActivity extends AppCompatActivity implements FragmentCode
         this.index = index;
     }
 
-
     public void setLoggedIn(boolean loggedIn) {
         this.loggedIn = loggedIn;
     }
-
 
     public void selectItem(int position) {
         shouldresume = true;
@@ -305,7 +301,8 @@ public class NavDrawerActivity extends AppCompatActivity implements FragmentCode
     public Fragment AdminCase(int position) {
         hideSearch();
         switch (position) {
-            case 0: return new IntroductionFragment();
+            case 0:
+                return new IntroductionFragment();
             case 1:
                 return new NoticeListFragment();
             case 2:
@@ -323,23 +320,40 @@ public class NavDrawerActivity extends AppCompatActivity implements FragmentCode
         return RoundedImageView.getCroppedBitmap(b, radius);
     }
 
+    private void checkType(String account, ImageView imageView) {
+        switch (account) {
+            case "reception":
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_girl));
+                break;
+            case "super-admin":
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_manager));
+                break;
+            case "sub-admin":
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_man));
+                break;
+            default:
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_student));
+        }
+    }
+
     public void updateHeader() {
+        String account_type = getSharedPreferences("account", Context.MODE_PRIVATE).getString("type", "");
         imageView = header.findViewById(R.id.admin);
         fullname = header.findViewById(R.id.name);
         username = header.findViewById(R.id.username);
         circle_tv = header.findViewById(R.id.circle_head_tv);
+        circle_tv.setVisibility(View.GONE);
+        imageView.setVisibility(View.VISIBLE);
+        checkType(account_type, imageView);
+        Toast.makeText(app, "" + account_type, Toast.LENGTH_SHORT).show();
 
         if (!Utilities.getUsername(this).isEmpty()) {
             if (type == STUDENT) {
-            circle_tv.setVisibility(View.VISIBLE);
-            imageView.setVisibility(View.GONE);
                 circle_tv.setText(Utilities.getFullname(this).substring(0, 1));
                 username.setText(Utilities.getUsername(this));
                 fullname.setText(Utilities.getFullname(this));
             } else {
-                circle_tv.setVisibility(View.GONE);
-                imageView.setVisibility(View.VISIBLE);
-                fullname.setText("Admin");
+                fullname.setText(account_type.toUpperCase());
                 username.setText("R & K Associates Edu. Consultancy");
             }
 
@@ -779,7 +793,7 @@ public class NavDrawerActivity extends AppCompatActivity implements FragmentCode
     }
 
     private void signout() {
-
+        getSharedPreferences("account", Context.MODE_PRIVATE).edit().clear().commit();
         getSharedPreferences(EnterCodeFragment.SCHOOL_CODE_PREF, Context.MODE_PRIVATE).edit().
                 putString(EnterCodeFragment.SCHOOL_CODE, "").commit();
         File file = app.getFilesDir();
@@ -798,7 +812,6 @@ public class NavDrawerActivity extends AppCompatActivity implements FragmentCode
         getSharedPreferences("userinfo", Context.MODE_PRIVATE).edit().clear().commit();
         //Toast.makeText(getActivity(),"Welcome, "+userInfo.getFullName(),Toast.LENGTH_SHORT).show();
         Intent i = new Intent(app, NavDrawerActivity.class);
-
         SharedPreferences loginTypeSP = getApplicationContext().getSharedPreferences("type", Context.MODE_PRIVATE);
         SharedPreferences.Editor loginTypeET = loginTypeSP.edit();
         loginTypeET.clear();

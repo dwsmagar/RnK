@@ -32,7 +32,7 @@
         android:fontFamily="@font/open_sans"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:text="Change passowrd"
+        android:text="Change password"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="12sp" />

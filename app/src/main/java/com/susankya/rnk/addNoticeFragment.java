@@ -35,6 +35,7 @@ public class addNoticeFragment extends android.support.v4.app.Fragment implement
     private static final String ARG_PARAM2 = "param2";
     private static final String ARG_PARAM3 = "param3";
     private static final String ARG_PARAM4 = "param4";
+    private static final String ARG_PARAM5 = "param5";
 
     @BindView(R.id.spinnercategory_fixed)
     Spinner spinnerCategory;
@@ -56,19 +57,20 @@ public class addNoticeFragment extends android.support.v4.app.Fragment implement
     private static final int PICK_IMAGE = 2, PICKFILE = 3;
     private String mParam1, cat, description_text, current_date, current_time, link, Date, titleText;
     private String mParam2, noticeNumber = "0";
+    private int categoryPos;
     private boolean isEdit = false;
     private String filePath;
     private boolean hasAttachment = false;
     private DateConverter dateconverter;
 
-    public static addNoticeFragment newInstance(String param1, String param2, boolean isEdit, String noticeNum) {
+    public static addNoticeFragment newInstance(String param1, String param2, boolean isEdit, String noticeNum, String category) {
         addNoticeFragment fragment = new addNoticeFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         args.putBoolean(ARG_PARAM3, isEdit);
         args.putString(ARG_PARAM4, noticeNum);
-
+        args.putString(ARG_PARAM5, category);
         fragment.setArguments(args);
         return fragment;
     }
@@ -132,11 +134,23 @@ public class addNoticeFragment extends android.support.v4.app.Fragment implement
             mParam2 = getArguments().getString(ARG_PARAM2);//description
             isEdit = getArguments().getBoolean(ARG_PARAM3);//isEditableMode
             noticeNumber = getArguments().getString(ARG_PARAM4);//NoticeNum
+            if (isEdit)
+                categoryPos = categoryCheck(getArguments().getString(ARG_PARAM5));
         } else {
             mParam1 = mParam2 = "";
             isEdit = false;
             noticeNumber = "0";
         }
+    }
+
+    private int categoryCheck(String text) {
+        int cat = 0;
+        String[] categoryList = getActivity().getResources().getStringArray(R.array.category_list);
+        for (int i = 0; i < categoryList.length; i++) {
+            if (text.equalsIgnoreCase(categoryList[i]))
+                cat = i;
+        }
+        return cat;
     }
 
     @Override
@@ -158,13 +172,20 @@ public class addNoticeFragment extends android.support.v4.app.Fragment implement
         } else {
             getActivity().setTitle("Add Notice");
         }
+
         title = v.findViewById(R.id.title);
         title.setText(mParam1);
         description.setText(mParam2);
-
         String[] array = getActivity().getResources().getStringArray(R.array.category_list);
         ArrayAdapter<String> cs = new ArrayAdapter<String>(getActivity(), R.layout.spinner_item, array);
         spinnerCategory.setAdapter(cs);
+
+        if (isEdit) {
+            title.setEnabled(false);
+            spinnerCategory.setEnabled(false);
+            spinnerCategory.setSelection(categoryPos);
+        }
+
         setHasOptionsMenu(true);
         description = v.findViewById(R.id.description);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -229,7 +250,7 @@ public class addNoticeFragment extends android.support.v4.app.Fragment implement
             }
         } else {
             if (!isEdit) {    //Log.d("TAG", "onHandleIntent: 1"+Utilities.getDatabaseName(getActivity()));
-                new PhpConnect(link, "Publishing notice...", getActivity(), 1, new String[]{CMDXXX, description_text, cat, "64", Date, current_time, titleText}, new String[]{"cmdxxx", "data", "category", "college_sn", "date", "time", "title"}).setListener(new PhpConnect.ConnectOnClickListener() {
+                new PhpConnect(link, "Publishing notice...", getActivity(), 1, new String[]{CMDXXX, description_text, cat, "65", Date, current_time, titleText}, new String[]{"cmdxxx", "data", "category", "college_sn", "date", "time", "title"}).setListener(new PhpConnect.ConnectOnClickListener() {
                     @Override
                     public void onConnectListener(String res) {
                         // Toast.makeText(getActivity(),res,Toast.LENGTH_SHORT).show();
@@ -251,7 +272,7 @@ public class addNoticeFragment extends android.support.v4.app.Fragment implement
                     public void onConnectListener(String res) {
                         Log.d("response", "" + res);
                         if (res.equals("1")) {
-                            Toast.makeText(getActivity().getApplicationContext(), "Notice edited successfully", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity().getApplicationContext(), "Notice edited successfully, swipe down to refresh.", Toast.LENGTH_SHORT).show();
                             description.setText("");
                             title.setText("");
                             getActivity().finish();

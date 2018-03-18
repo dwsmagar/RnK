@@ -9,24 +9,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <com.joanzapata.iconify.widget.IconTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="{ion-ios-arrow-left}"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
+        <!--<com.joanzapata.iconify.widget.IconTextView-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="{ion-ios-arrow-left}"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="24sp" />-->
+
+        <ImageView
+            android:elevation="5dp"
+            android:background="@drawable/admin_img_bg"
+            android:src="@drawable/ic_user_login"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
 
         <TextView
+            android:textSize="10sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Back"
+            android:layout_marginLeft="5dp"
+            android:text="Switch Account"
             android:textAllCaps="true"
             android:textColor="@color/white" />
     </LinearLayout>
@@ -44,6 +53,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/image"
                 android:elevation="5dp"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -57,6 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
+                android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="22sp" />
 

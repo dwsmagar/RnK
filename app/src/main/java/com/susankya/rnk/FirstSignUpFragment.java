@@ -356,7 +356,7 @@ public class FirstSignUpFragment extends android.support.v4.app.Fragment impleme
     void callPhp() {
         String token = FirebaseInstanceId.getInstance().getToken();
         String consultancyplace[] = new String[]{"firstName", "lastName", "userid", "password", "cmdxxx", "college_sn","regId"};
-        String consultancypara[] = new String[]{fName, lName, emailAdd, passStr, CMDXXX, "64",token};
+        String consultancypara[] = new String[]{fName, lName, emailAdd, passStr, CMDXXX, "65",token};
 
         placeholders = consultancyplace;
         parameters = consultancypara;

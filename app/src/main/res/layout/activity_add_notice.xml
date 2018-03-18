@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.susankya.rnk.AddNoticeActivity">
+    android:orientation="vertical">
 
-    <include
-        android:id="@+id/toolbars"
-        layout="@layout/toolbar" />
+    <include layout="@layout/toolbar" />
 
     <FrameLayout
         android:id="@+id/addNoticFrame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbars" />
-</RelativeLayout>
+</LinearLayout>

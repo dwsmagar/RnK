@@ -18,6 +18,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -181,8 +182,8 @@ public class NoticeListFragment extends android.support.v4.app.Fragment implemen
                         reachedBottomOnce = false;
                         allNoticeLoaded = false;
                         mNotices.clear();
+
                         if (Utilities.isConnectionAvailable(getActivity())) {
-                            emptyView.setVisibility(View.GONE);
                             mNoticeList.setVisibility(View.VISIBLE);
                             GetNotices();
                         } else {
@@ -236,14 +237,11 @@ public class NoticeListFragment extends android.support.v4.app.Fragment implemen
 
         if (firstLoad) {
             if (Utilities.isConnectionAvailable(getActivity())) {
-                emptyView.setVisibility(View.GONE);
                 loadingPB.setVisibility(View.VISIBLE);
                 GetNotices();
             } else {
                 emptyView.setVisibility(View.VISIBLE);
-                empty.setVisibility(View.VISIBLE);
                 empty.setImageDrawable(getResources().getDrawable(R.drawable.ic_plug));
-                emptyTextView.setVisibility(View.VISIBLE);
                 emptyTextView.setText("OOPs, out of Connection");
                 loadingPB.setVisibility(View.GONE);
                 reachedBottomOnce = true;
@@ -429,6 +427,7 @@ public class NoticeListFragment extends android.support.v4.app.Fragment implemen
                                             i.putExtra(AddNoticeActivity.TITLE, mNotices.get(position).getTitle());
                                             i.putExtra(AddNoticeActivity.DESCRIPTION, mNotices.get(position).getDescription());
                                             i.putExtra(AddNoticeActivity.NOTICE_NUM, mNotices.get(position).getNotice_num() + "");
+                                            i.putExtra(AddNoticeActivity.CATEGORY, mNotices.get(position).getCategory());
                                             i.putExtra(AddNoticeActivity.ISEDIT, true);
 
                                             startActivity(i);
@@ -470,12 +469,9 @@ public class NoticeListFragment extends android.support.v4.app.Fragment implemen
     }
 
     void manageEmptyiew(ArrayList JA) {
-//        Log.d("TAG", "manageEmptyiew: " + JA.size());
-//        String str = "fssfs";
         if (JA.size() == 0) {
-            empty.setVisibility(View.VISIBLE);
+            emptyView.setVisibility(View.VISIBLE);
             empty.setImageDrawable(getResources().getDrawable(R.drawable.ic_notes));
-            emptyTextView.setVisibility(View.VISIBLE);
             if (Utilities.isAdmin(getActivity())) {
                 emptyTextView.setText("You have not uploaded any notice. Click on the add button below to add your first notice");
             } else {
@@ -483,7 +479,7 @@ public class NoticeListFragment extends android.support.v4.app.Fragment implemen
             }
             loadingPB.setVisibility(View.GONE);
         } else
-            emptyTextView.setVisibility(View.GONE);
+            emptyView.setVisibility(View.GONE);
     }
 
     @Override
@@ -572,7 +568,7 @@ public class NoticeListFragment extends android.support.v4.app.Fragment implemen
                                 //adapter.add(n);
                             }
 
-//                            Log.d("fatal", "" + mNotices.size());
+                            Log.d("fatal", "" + mNotices.size());
                             manageEmptyiew(mNotices);
                             noticeAdapter.notifyDataSetChanged();
 

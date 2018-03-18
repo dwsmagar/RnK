@@ -39,7 +39,7 @@ public class IntroActivity extends AppCompatActivity implements FragmentCodes {
         db = sqLiteHelper.getWritableDatabase();
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         if (getSharedPreferences(NewSettingsFragment.LOGGED_OUt, MODE_PRIVATE).getBoolean(NewSettingsFragment.HASLOGGED_OUt, false)) {
-            startActivity(new Intent(IntroActivity.this, AccountTypeActivity.class));
+            startActivity(new Intent(IntroActivity.this, StudentInActivity.class));
             IntroActivity.this.finish();
         }
         skip = (Button) findViewById(R.id.skipPager);
@@ -47,7 +47,7 @@ public class IntroActivity extends AppCompatActivity implements FragmentCodes {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        startActivity(new Intent(IntroActivity.this, AccountTypeActivity.class));
+                        startActivity(new Intent(IntroActivity.this, StudentInActivity.class));
                         IntroActivity.this.finish();
                     }
                 }
@@ -58,7 +58,7 @@ public class IntroActivity extends AppCompatActivity implements FragmentCodes {
                     @Override
                     public void onClick(View v) {
                         if (viewPager.getCurrentItem() == viewPager.getAdapter().getCount() - 1) {
-                            startActivity(new Intent(IntroActivity.this, AccountTypeActivity.class));
+                            startActivity(new Intent(IntroActivity.this, StudentInActivity.class));
                             IntroActivity.this.finish();
                         }
                         viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
@@ -82,7 +82,6 @@ public class IntroActivity extends AppCompatActivity implements FragmentCodes {
                         .setShade(positionOffset);
 
                 landingBGView.setBackgroundColor(shades.generate());
-
             }
 
             public void onPageSelected(int position) {

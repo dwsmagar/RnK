@@ -253,6 +253,7 @@ public class NoticeViewActivity extends AppCompatActivity implements FragmentCod
         } catch (Exception e) {
             this.finish();
         }
+
         Window window = this.getWindow();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);

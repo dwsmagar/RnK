@@ -112,7 +112,8 @@ public class ChatListFragment extends Fragment {
             } else {
                 //Log.d(TAG, "onCreateView: reached");
                 emptyView.setVisibility(View.VISIBLE);
-                emptyText.setText("No Internet Connection");
+                imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_plug));
+                emptyText.setText("OOPs, out of Connection");
             }
         }
       /*  if(mChatListDetail.size()!=0)

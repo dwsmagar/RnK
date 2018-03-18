@@ -1,6 +1,7 @@
 package com.susankya.rnk;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -24,6 +25,14 @@ public class AccountTypeActivity extends AppCompatActivity implements FragmentCo
     private static final String SAVING_STATE_SLIDER_ANIMATION = "SliderAnimationSavingState";
     private boolean isSliderAnimation = false;
     private static SQLiteDatabase db;
+    @BindView(R.id.stud)
+    TextView stud;
+    @BindView(R.id.receptionist)
+    TextView reception;
+    @BindView(R.id.subadmin)
+    TextView sub_admin;
+    @BindView(R.id.superadmin)
+    TextView super_admin;
     @BindView(R.id.student)
     AppCompatRadioButton student;
     @BindView(R.id.teacher)
@@ -49,6 +58,59 @@ public class AccountTypeActivity extends AppCompatActivity implements FragmentCo
         ButterKnife.bind(this);
         String t = "<font color=\"#333333\">WELCOME TO </font> <font color=\"#1CD36D\">NIMAS EDUCATION</font>";
         welcome.setText(Html.fromHtml(t));
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("account",MODE_PRIVATE);
+        final SharedPreferences.Editor editor = pref.edit();
+
+        stud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editor.putString("type","student");
+                editor.commit();
+                Intent i = new Intent(AccountTypeActivity.this, StudentInActivity.class);
+                getSharedPreferences(FragmentCodes.PUBLIC_SHAREDPREFERENCE, MODE_PRIVATE).edit().putBoolean(IS_ADMIN, false).commit();
+                startActivity(i);
+                finish();
+            }
+        });
+
+        reception.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editor.putString("type","reception");
+                editor.commit();
+               Intent i = new Intent(AccountTypeActivity.this, AdminInActivity.class);
+                getSharedPreferences(FragmentCodes.PUBLIC_SHAREDPREFERENCE, MODE_PRIVATE).edit().putBoolean(IS_ADMIN, true).commit();
+                startActivity(i);
+                finish();
+            }
+        });
+
+        sub_admin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editor.putString("type","sub-admin");
+                editor.commit();
+                Intent i = new Intent(AccountTypeActivity.this, AdminInActivity.class);
+                getSharedPreferences(FragmentCodes.PUBLIC_SHAREDPREFERENCE, MODE_PRIVATE).edit().putBoolean(IS_ADMIN, true).commit();
+                startActivity(i);
+                finish();
+            }
+        });
+
+        super_admin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editor.putString("type","super-admin");
+                editor.commit();
+                Intent i = new Intent(AccountTypeActivity.this, AdminInActivity.class);
+                getSharedPreferences(FragmentCodes.PUBLIC_SHAREDPREFERENCE, MODE_PRIVATE).edit().putBoolean(IS_ADMIN, true).commit();
+                startActivity(i);
+                finish();
+            }
+        });
+
+
+        /*
         group.setOnCheckedChangeListener(
                 new RadioGroup.OnCheckedChangeListener() {
                     @Override
@@ -84,11 +146,10 @@ public class AccountTypeActivity extends AppCompatActivity implements FragmentCo
                         finish();
                     }
                 }
-        );
+        ); */
     }
 
     public void onSaveInstanceState(Bundle outstate) {
-
         if (outstate != null) {
             outstate.putBoolean(SAVING_STATE_SLIDER_ANIMATION, isSliderAnimation);
         }

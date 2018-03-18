@@ -130,10 +130,10 @@ public class ChatFragment extends Fragment {
                     cd.setName("You");
                     cd.setText(msg_text);
                     cd.setUserSn(Utilities.getSN(getActivity()));
-                    cd.setCollegeSn("64");
+                    cd.setCollegeSn("65");
                     cd.setSentBy((Utilities.isAdmin(getActivity())) ? "c" : "u");
                     cd.setStatus("sending");
-                    cd.setUserSn(UtilitiesAdi.giveMeSN(getActivity(), Utilities.getDatabaseName(getActivity())));
+//                    cd.setUserSn(UtilitiesAdi.giveMeSN(getActivity(), Utilities.getDatabaseName(getActivity())));
                     mChatDetails.add(cd);
                     chatAdapter.notifyDataSetChanged();
                     recyclarView.scrollToPosition(mChatDetails.size() - 1);
@@ -331,7 +331,7 @@ public class ChatFragment extends Fragment {
     private void sendMessage(final int indexOfArray) {
         String link = FragmentCodes.MAIN_DATABASE + "Firebase/";
         String sentBy = (Utilities.isAdmin(getActivity())) ? "c" : "u";
-        new PhpConnect(link, "", getActivity(), 0, new String[]{FragmentCodes.CMDXXX, "64"
+        new PhpConnect(link, "", getActivity(), 0, new String[]{FragmentCodes.CMDXXX, "65"
                 , user_no, sentBy, msg_text, "chat"},
                 new String[]{"cmdxxx", "college_sn", "user_no", "sent_by", "text", "action"}).setListener(new PhpConnect.ConnectOnClickListener() {
             @Override

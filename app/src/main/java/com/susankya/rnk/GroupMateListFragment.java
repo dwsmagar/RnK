@@ -20,6 +20,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.joanzapata.iconify.widget.IconTextView;
 import com.susankya.rnk.Adapters.VerticalSpaceItemDecoration;
@@ -133,6 +134,7 @@ public class GroupMateListFragment extends android.support.v4.app.Fragment {
             progress.setVisibility(View.GONE);
             empty.setImageDrawable(getResources().getDrawable(R.drawable.ic_plug));
             emptyText.setText("Oops, out of Connection");
+            setHasOptionsMenu(false);
         }
 
         searchEditText = NavDrawerActivity.getSearchEditText();
@@ -140,25 +142,30 @@ public class GroupMateListFragment extends android.support.v4.app.Fragment {
         searchEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 filterString = charSequence.toString();
                 tempuserINFO = new ArrayList<UserInfo>();
-                for (UserInfo ui : userINFO) {
-                    if (ui.getFullName().toLowerCase().contains(filterString.toLowerCase()))
-                        tempuserINFO.add(ui);
-                }
+                if (!userINFO.isEmpty()) {
+                    for (UserInfo ui : userINFO) {
+                        if (ui.getFullName().toLowerCase().contains(filterString.toLowerCase()))
+                            tempuserINFO.add(ui);
+                    }
 
-                useradapter = new UserAdapter(getActivity(), R.layout.user_list_item_view, tempuserINFO);
-                DividerItemDecoration mDividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
-                        linearLayoutManager.getOrientation());
-                VerticalSpaceItemDecoration verticalSpaceItemDecoration = new VerticalSpaceItemDecoration(8);
-                recyclerView.addItemDecoration(verticalSpaceItemDecoration);
-                //recyclerView.addItemDecoration(mDividerItemDecoration);
-                recyclerView.setAdapter(useradapter);
+                    useradapter = new UserAdapter(getActivity(), R.layout.user_list_item_view, tempuserINFO);
+                    DividerItemDecoration mDividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
+                            linearLayoutManager.getOrientation());
+                    VerticalSpaceItemDecoration verticalSpaceItemDecoration = new VerticalSpaceItemDecoration(8);
+                    recyclerView.addItemDecoration(verticalSpaceItemDecoration);
+                    recyclerView.addItemDecoration(mDividerItemDecoration);
+                    recyclerView.setAdapter(useradapter);
+                }else {
+                    emptyView.setVisibility(View.VISIBLE);
+                    empty.setVisibility(View.GONE);
+                    emptyText.setText("No users found");
+                }
             }
 
             @Override
@@ -189,17 +196,30 @@ public class GroupMateListFragment extends android.support.v4.app.Fragment {
                         progress.setVisibility(View.GONE);
                         emptyText.setText("No students have registered yet");
                     } else {
-                        getActivity().setTitle("Users(" + ja.length() + ")");
                         emptyView.setVisibility(View.GONE);
                         for (int i = 0; i < ja.length(); i++) {
-                            userINFO.add(getuserInfo((JSONObject) ja.get(i)));
+                            UserInfo user = getuserInfo((JSONObject) ja.get(i));
+                            if (UtilitiesAdi.getString(getActivity(), "sn").equals(String.valueOf(user.getUserNumber()))) {
+//                                Toast.makeText(getActivity(), "" + user.getUserNumber()+UtilitiesAdi.getString(getActivity(), "sn"), Toast.LENGTH_SHORT).show();
+                            }
+                            else {
+                                userINFO.add(user);
+                            }
                         }
+                        getActivity().setTitle("Users(" + userINFO.size()+")");
+//                        Toast.makeText(getActivity(), ""+userINFO.size(), Toast.LENGTH_SHORT).show();
+                        if (userINFO.isEmpty()){
+                            emptyView.setVisibility(View.VISIBLE);
+                            empty.setImageDrawable(getResources().getDrawable(R.drawable.ic_graduates));
+                            progress.setVisibility(View.GONE);
+                            emptyText.setText("No students have registered yet");
+                        }
+
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
                     //Log.d("TAG","ERROR "+e.toString());
                 }
-
                 useradapter = new UserAdapter(getActivity(), R.layout.user_list_item_view, userINFO);
                 recyclerView.setAdapter(useradapter);
             }
@@ -209,7 +229,10 @@ public class GroupMateListFragment extends android.support.v4.app.Fragment {
 
     private UserInfo getuserInfo(JSONObject jo) {
         UserInfo ui = new UserInfo();
+
         try {
+//            Toast.makeText(getActivity(), "" + jo.getInt("user_no"), Toast.LENGTH_SHORT).show();
+
             ui.setUserNumber(jo.getInt("user_no"));
             ui.setFirstName(jo.getString("firstName"));
             ui.setLastName(jo.getString("lastName"));
@@ -249,7 +272,7 @@ public class GroupMateListFragment extends android.support.v4.app.Fragment {
 
         public UserHolder(Context c, View v) {
             super(v);
-            ButterKnife.bind(this,v);
+            ButterKnife.bind(this, v);
             view = v;
             v.setOnClickListener(this);
         }
@@ -269,7 +292,6 @@ public class GroupMateListFragment extends android.support.v4.app.Fragment {
         private Context context;
         private int itemResource;
         private List<UserInfo> userInfos;
-
 
         public UserAdapter(Context context, int itemResource, List userinfos) {
             this.context = context;
@@ -298,7 +320,6 @@ public class GroupMateListFragment extends android.support.v4.app.Fragment {
                 @Override
                 public void onClick(View v) {
                     getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, UserToUserChatFragment.newInstance("" + ui.getUserNumber(), ui.getFirstName() + " " + ui.getLastName())).addToBackStack(null).commit();
-
                 }
             });
         }

@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.iid.FirebaseInstanceId;
@@ -47,6 +48,8 @@ public class FirstLoginFragment extends android.support.v4.app.Fragment implemen
     View backArrow;
     @BindView(R.id.login)
     TextView loginText;
+    @BindView(R.id.image)
+    ImageView imageView;
 
     public String dbName;
     private SQLiteHelper sqLiteHelper;
@@ -102,11 +105,14 @@ public class FirstLoginFragment extends android.support.v4.app.Fragment implemen
 
         View v = inflater.inflate(R.layout.fragment_first_login, container, false);
         ButterKnife.bind(this, v);
-        loginText.setText("User Login");
-//
+        SharedPreferences sp =getActivity().getSharedPreferences("account", Context.MODE_PRIVATE);
+        final SharedPreferences.Editor editor = sp.edit();
+        loginText.setText("Student Login");
+        imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_student));
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                editor.clear().commit();
                 Intent intent = new Intent(getActivity(), AccountTypeActivity.class);
                 startActivity(intent);
                 getActivity().finish();
@@ -117,6 +123,8 @@ public class FirstLoginFragment extends android.support.v4.app.Fragment implemen
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        editor.putString("type","student");
+                        editor.commit();
                         String sn = "65";
                         String sName = "R&K Associates";
                         String dbName = "SusankyaNirajshah076@gmail.com";
@@ -148,6 +156,8 @@ public class FirstLoginFragment extends android.support.v4.app.Fragment implemen
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        editor.putString("type","student");
+                        editor.commit();
                         username = username_edit.getText().toString().trim().toLowerCase();
                         password = password_edit.getText().toString().trim();
                         String encodedUsername = "", encodedPassword = "";
@@ -179,6 +189,7 @@ public class FirstLoginFragment extends android.support.v4.app.Fragment implemen
                                                 }
 
                                                 userNum = jO.getInt("user_no");
+
                                                 String firstName = jO.getString("firstName");
                                                 String lastName = jO.getString("lastName");
                                                 userInfo = new UserInfo();

@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,6 +45,8 @@ public class GetAppointmentFragment extends Fragment {
     IconTextView iconTextView;
     @BindView(R.id.swipe_container)
     SwipeRefreshLayout container;
+    @BindView(R.id.empty_img)
+    ImageView imageView;
     private DividerItemDecoration mDividerItemDecoration;
     private LinearLayoutManager layoutManager;
     private boolean first;
@@ -75,9 +78,10 @@ public class GetAppointmentFragment extends Fragment {
                 progressBar.setVisibility(View.GONE);
                 if (response.isSuccessful()) {
                     if (response.body().isEmpty()) {
-                        iconTextView.setText("{md-group}");
                         emptyView.setVisibility(View.VISIBLE);
-                        emptyText.setText("No appointments.");
+                        imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_reunion1));
+//                        iconTextView.setText("{md-group}");
+                        emptyText.setText("No appointments lists.");
                     } else {
                         emptyView.setVisibility(View.GONE);
 
@@ -136,7 +140,8 @@ public class GetAppointmentFragment extends Fragment {
         } else {
             recyclerView.setVisibility(View.GONE);
             emptyView.setVisibility(View.VISIBLE);
-            iconTextView.setText("{mdi-wifi-off}");
+//            iconTextView.setText("{mdi-wifi-off}");
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_plug));
             emptyText.setText("OOPS, out of connection");
         }
 
@@ -157,7 +162,8 @@ public class GetAppointmentFragment extends Fragment {
                 } else {
                     recyclerView.setVisibility(View.GONE);
                     emptyView.setVisibility(View.VISIBLE);
-                    iconTextView.setText("{mdi-wifi-off}");
+//                    iconTextView.setText("{mdi-wifi-off}");
+                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_plug));
                     emptyText.setText("OOPS, out of connection");
                     container.setRefreshing(false);
                 }

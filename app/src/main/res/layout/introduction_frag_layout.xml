@@ -220,9 +220,12 @@
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_margin="10dp"
-        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_google_maps"
+       app:backgroundTint="#00000000"
+        app:elevation="0dp"
+        android:translationZ="0dp"
         app:borderWidth="0dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:layout_gravity="bottom|right|end" />
 </android.support.design.widget.CoordinatorLayout>

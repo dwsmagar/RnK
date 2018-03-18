@@ -5,11 +5,11 @@
         <item name="android:windowAllowReturnTransitionOverlap">true</item>
         <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
         <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/button_color</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
     <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
@@ -18,5 +18,4 @@
         <item name="android:colorControlHighlight">@color/white</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
     </style>
-
 </resources>
