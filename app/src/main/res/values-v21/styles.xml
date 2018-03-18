@@ -6,7 +6,7 @@
         <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
         <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/button_color</item>
+        <item name="colorAccent">@color/accent_pink</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowTranslucentNavigation">true</item>
@@ -19,4 +19,8 @@
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
     </style>
 
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#6F3662</item>
+        <item name="android:textSize">12sp</item>
+    </style>
 </resources>

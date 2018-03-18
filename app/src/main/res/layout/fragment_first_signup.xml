@@ -76,7 +76,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColorHint="@color/white">
+                    android:textColorHint="@color/white"
+                    app:errorTextAppearance="@style/error_appearance"
+                    app:hintTextAppearance="@color/accent_pink">
 
                     <EditText
                         android:id="@+id/firstName"
@@ -89,7 +91,7 @@
                         android:imeOptions="actionNext"
                         android:inputType="textCapSentences"
                         android:nextFocusRight="@id/lastName"
-                        android:textColor="@color/white"
+                        android:textColor="@color/signUp_txt_color"
                         android:textColorHint="@color/white"
                         android:textSize="@dimen/small_txt_size" />
                 </android.support.design.widget.TextInputLayout>
@@ -99,6 +101,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    app:errorTextAppearance="@style/error_appearance"
+                    app:hintTextAppearance="@color/accent_pink"
                     android:textColorHint="@color/white">
 
                     <EditText
@@ -112,7 +116,7 @@
                         android:imeOptions="actionNext"
                         android:inputType="textCapWords"
                         android:nextFocusDown="@id/emailAddress"
-                        android:textColor="@color/white"
+                        android:textColor="@color/signUp_txt_color"
                         android:textColorHint="@color/white"
                         android:textSize="@dimen/small_txt_size" />
                 </android.support.design.widget.TextInputLayout>
@@ -123,6 +127,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintTextAppearance="@color/accent_pink"
                 android:textColorHint="@color/white">
 
                 <EditText
@@ -145,10 +151,12 @@
                 android:id="@+id/password_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintTextAppearance="@color/accent_pink"
                 android:textColorHint="@color/white"
                 android:visibility="visible"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/colorAccent">
+                app:passwordToggleTint="@color/accent_pink">
 
                 <EditText
                     android:id="@+id/password"
@@ -160,7 +168,7 @@
                     android:imeOptions="actionNext"
                     android:inputType="textPassword"
                     android:nextFocusForward="@id/re_password"
-                    android:textColor="@color/white"
+                    android:textColor="@color/signUp_txt_color"
                     android:textColorHint="@color/white"
                     android:textSize="@dimen/small_txt_size" />
             </android.support.design.widget.TextInputLayout>
@@ -169,10 +177,12 @@
                 android:id="@+id/confirm_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintTextAppearance="@color/accent_pink"
                 android:textColorHint="@color/white"
                 android:visibility="visible"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/colorAccent">
+                app:passwordToggleTint="@color/accent_pink">
 
                 <EditText
                     android:id="@+id/re_password"
@@ -183,7 +193,7 @@
                     android:hint="@string/hint_re_password"
                     android:imeOptions="actionDone"
                     android:inputType="textPassword"
-                    android:textColor="@color/white"
+                    android:textColor="@color/signUp_txt_color"
                     android:textColorHint="@color/white"
                     android:textSize="@dimen/small_txt_size" />
             </android.support.design.widget.TextInputLayout>
@@ -193,6 +203,8 @@
                 android:id="@+id/mobile_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintTextAppearance="@color/accent_pink"
                 android:textColorHint="@color/white"
                 android:visibility="gone">
 
@@ -207,7 +219,7 @@
                     android:inputType="phone"
                     android:nextFocusForward="@id/location"
                     android:textColor="@color/white"
-                    android:textColorHint="@color/white"
+                    android:textColorHint="@color/signUp_txt_color"
                     android:textSize="@dimen/small_txt_size"
                     android:visibility="gone" />
             </android.support.design.widget.TextInputLayout>
@@ -253,6 +265,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintTextAppearance="@color/accent_pink"
                 android:textColorHint="@color/white"
                 android:visibility="gone">
 
@@ -268,7 +282,7 @@
                     android:maxLines="2"
                     android:minLines="1"
                     android:paddingLeft="5dp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/signUp_txt_color"
                     android:textColorHint="@color/white"
                     android:textSize="@dimen/small_txt_size"
                     android:visibility="gone" />

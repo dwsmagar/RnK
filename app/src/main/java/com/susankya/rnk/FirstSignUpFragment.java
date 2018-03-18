@@ -257,6 +257,7 @@ public class FirstSignUpFragment extends android.support.v4.app.Fragment impleme
 
                         if (emailAdd.isEmpty() || emailAdd.length() == 0) {
                             email_layout.setError("This field is empty");
+                          //  email_layout.setErrorTextAppearance(getResources().getColor(R.id.error_color));
                             emailErr = true;
                         } else if (!usernameValidator.validate(emailAdd)) {
                             email_layout.setError("Not a valid email address");
