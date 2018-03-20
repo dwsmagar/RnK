@@ -345,7 +345,7 @@ public class NavDrawerActivity extends AppCompatActivity implements FragmentCode
         circle_tv.setVisibility(View.GONE);
         imageView.setVisibility(View.VISIBLE);
         checkType(account_type, imageView);
-        Toast.makeText(app, "" + account_type, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(app, "" + account_type, Toast.LENGTH_SHORT).show();
 
         if (!Utilities.getUsername(this).isEmpty()) {
             if (type == STUDENT) {

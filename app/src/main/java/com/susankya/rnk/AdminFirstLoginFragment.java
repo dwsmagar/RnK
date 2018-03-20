@@ -107,7 +107,7 @@ public class AdminFirstLoginFragment extends android.support.v4.app.Fragment imp
         title.setText("Enter your credentials to manage your activities");
         signup_layout.setVisibility(View.GONE);
         checkType(account_type);
-        Toast.makeText(getActivity(), ""+account_type, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getActivity(), ""+account_type, Toast.LENGTH_SHORT).show();
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

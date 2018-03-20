@@ -121,14 +121,14 @@ public class NoticeListFragment extends android.support.v4.app.Fragment implemen
         mParam1 = "a";
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        // Set title
-        prevSizeOfArray = 0;
-        sizeOfArray = 0;
-        // getActivity().setTitle("Notice");
-    }
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+//        // Set title
+//        prevSizeOfArray = 0;
+//        sizeOfArray = 0;
+//        // getActivity().setTitle("Notice");
+//    }
 
     private NoticeAdapter noticeAdapter;
 
@@ -249,15 +249,24 @@ public class NoticeListFragment extends android.support.v4.app.Fragment implemen
             }
             firstLoad = false;
         } else {
-            mNoticeList.setVisibility(View.VISIBLE);
-            emptyView.setVisibility(View.GONE);
-            loadingPB.setVisibility(View.GONE);
-            if (((NavDrawerActivity) getActivity()).getArrayList() != null)
-                mNotices = ((NavDrawerActivity) getActivity()).getArrayList();
-            noticeAdapter = new NoticeAdapter(getActivity(), R.layout.notice_list, mNotices);
-            mNoticeList.setAdapter(noticeAdapter);
-            manageEmptyiew(mNotices);
+            if (Utilities.isConnectionAvailable(getActivity())) {
+                loadingPB.setVisibility(View.GONE);
+                mNoticeList.setVisibility(View.VISIBLE);
+                emptyView.setVisibility(View.GONE);
+                loadingPB.setVisibility(View.GONE);
+                if (((NavDrawerActivity) getActivity()).getArrayList() != null)
+                    mNotices = ((NavDrawerActivity) getActivity()).getArrayList();
+                noticeAdapter = new NoticeAdapter(getActivity(), R.layout.notice_list, mNotices);
+                mNoticeList.setAdapter(noticeAdapter);
+                manageEmptyiew(mNotices);
+            }else {
+                emptyView.setVisibility(View.VISIBLE);
+                empty.setImageDrawable(getResources().getDrawable(R.drawable.ic_plug));
+                emptyTextView.setText("OOPs, out of Connection");
+                loadingPB.setVisibility(View.GONE);
+            }
         }
+
         registerForContextMenu(mNoticeList);
 
         if (sourceCode == 1) {
