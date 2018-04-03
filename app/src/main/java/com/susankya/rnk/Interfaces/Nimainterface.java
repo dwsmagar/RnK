@@ -1,5 +1,7 @@
-package com.susankya.rnk.Fragments;
+package com.susankya.rnk.Interfaces;
 
+import com.susankya.rnk.Fragments.Appointment;
+import com.susankya.rnk.Fragments.Eligibility;
 import com.susankya.rnk.Models.AppliedUser;
 import com.susankya.rnk.Models.EventItem;
 import com.susankya.rnk.Sms;
@@ -32,11 +34,11 @@ public interface Nimainterface {
     Call<Sms> creditLeft(@Query("token") String token);
 
     @GET("events/")
-    Call<List<EventItem>> getEvents();
+    Call<List<EventItem>> getEvents(@Query("branch") Integer branch);
 
     @Multipart
     @POST("events/")
-    Call<ResponseBody> postEvent(@Part("name") RequestBody name, @Part("description") RequestBody description,
+    Call<ResponseBody> postEvent(@Part("name") RequestBody name,@Part("branch") Integer branch, @Part("description") RequestBody description,
                                  @Part("price") RequestBody price, @Part("organized_by") RequestBody organized_by,
                                  @Part("date") RequestBody date, @Part("time") RequestBody time, @Part MultipartBody.Part picture,
                                  @Part("location") RequestBody location);
@@ -46,7 +48,7 @@ public interface Nimainterface {
     Call<ResponseBody> postAppointment(@Body Appointment appointment);
 
     @GET("appointments/")
-    Call<List<Appointment>> getAppointments();
+    Call<List<Appointment>> getAppointments(@Query("branch") Integer branch);
 
     @Headers("Content-Type: application/json")
     @POST("eligibility/")

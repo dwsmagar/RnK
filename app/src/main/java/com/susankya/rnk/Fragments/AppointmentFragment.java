@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.joanzapata.iconify.widget.IconTextView;
 import com.susankya.rnk.ImmortalApplication;
+import com.susankya.rnk.Interfaces.Nimainterface;
 import com.susankya.rnk.R;
 import com.susankya.rnk.Utilities;
 
@@ -90,6 +91,7 @@ public class AppointmentFragment extends android.support.v4.app.Fragment {
     private String timeValue = "";
     private int LENGTH = 7;
     private int MAX_LENGTH = 10;
+    private int BRANCH_ID = 65;
     ArrayAdapter<String> spinnerArrayAdapter;
 
     public AppointmentFragment() {
@@ -226,10 +228,10 @@ public class AppointmentFragment extends android.support.v4.app.Fragment {
         String mobile = mobileNo.getText().toString().trim();
         String address = addressEdit.getText().toString().trim();
         String email = emailEdit.getText().toString().trim();
-        String evidenceOfId = evendenceNo.getText().toString().trim();
+        String evidenceOfIdNo = evendenceNo.getText().toString().trim();
         String message = messageEdit.getText().toString().trim();
         String purposeVisit = spPurposeOfVisit.getSelectedItem().toString();
-        String evidenceId = spEvidence.getSelectedItem().toString();
+        String evidenceOfId = spEvidence.getSelectedItem().toString();
         String appointmentStr = spAppointment.getSelectedItem().toString();
 
         if (firstName.getText().toString().trim().isEmpty()) {
@@ -317,14 +319,15 @@ public class AppointmentFragment extends android.support.v4.app.Fragment {
         if (!error) {
             Appointment appointmentData = new Appointment();
             appointmentData.full_name = fullname;
+            appointmentData.branch = BRANCH_ID;
             appointmentData.telephone_no = telephone;
             appointmentData.mobile_no = mobile;
             appointmentData.address = address;
             appointmentData.email = email;
-            appointmentData.evidence_of_id_number = evidenceOfId;
+            appointmentData.evidence_of_id = evidenceOfId;
             appointmentData.message = message;
             appointmentData.purpose_of_visit = purposeVisit;
-            appointmentData.evidence_of_id = evidenceId;
+            appointmentData.evidence_of_id_number = evidenceOfIdNo;
             appointmentData.appointment = appointmentStr;
             appointmentData.date = dateValue;
             appointmentData.time = timeValue;

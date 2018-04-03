@@ -60,25 +60,26 @@ public class EventDescActivity extends AppCompatActivity {
         }
         getDetail();
     }
-
     private void getDetail() {
         Bundle details = getIntent().getExtras();
         String[] splittedDate = null;
-        String unsplittedDate = formateDate(details.getString("date"));
+        String unsplittedDate = formatDate(details.getString("date"));
         try {
             splittedDate = unsplittedDate.split(" ");
         } catch (Exception e) {
         }
         organizer.setText(details.getString("organized_by"));
         try {
-        event_day.setText(splittedDate[2]);
-        }catch (Exception e){}
-try {
-        event_month.setText(splittedDate[1]);
-}catch (Exception e){}
+            event_day.setText(splittedDate[2]);
+        } catch (Exception e) {
+        }
+        try {
+            event_month.setText(splittedDate[1]);
+        } catch (Exception e) {
+        }
         event_name.setText(details.getString("name"));
         event_date.setText(details.getString("date"));
-        event_time.setText(timeFormatter(details.getString("time")));
+        event_time.setText(details.getString("time"));
         event_location.setText(details.getString("location"));
         event_desc.setText(details.getString("description"));
         if (Integer.parseInt(details.getString("price")) == 0)
@@ -99,22 +100,26 @@ try {
         return true;
     }
 
-    private String formateDate(String dateStr) {
+    private String formatDate(String dateStr) {
+        //Toast.makeText(context, ""+dateStr, Toast.LENGTH_SHORT).show();
         Date MyDate = null;
-        String obtainedDAte = null;
         SimpleDateFormat newDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat newDateFormat1 = new SimpleDateFormat("yyyy/MM/dd");
         try {
-            MyDate = newDateFormat.parse(dateStr);
+            if(dateStr.contains("-"))
+                MyDate = newDateFormat.parse(dateStr);
+            else
+                MyDate = newDateFormat1.parse(dateStr);
         } catch (ParseException e) {
             e.printStackTrace();
         }
         newDateFormat.applyPattern("E MMM dd yyyy");
+        String obtainedDate = null;
         try {
-            obtainedDAte = newDateFormat.format(MyDate);
+            obtainedDate = newDateFormat.format(MyDate);
         } catch (Exception e) {
         }
-
-        return obtainedDAte;
+        return obtainedDate;
     }
 
     private String timeFormatter(String inputTime) {

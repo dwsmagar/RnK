@@ -21,6 +21,7 @@ import com.susankya.rnk.Activities.AppliedUserDetailActivity;
 import com.susankya.rnk.Adapters.AppliedUserAdapter;
 import com.susankya.rnk.Adapters.VerticalSpaceItemDecoration;
 import com.susankya.rnk.ImmortalApplication;
+import com.susankya.rnk.Interfaces.Nimainterface;
 import com.susankya.rnk.Models.AppliedUser;
 import com.susankya.rnk.R;
 import com.susankya.rnk.Utilities;

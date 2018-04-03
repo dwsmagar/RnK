@@ -1,9 +1,13 @@
 package com.susankya.rnk.Fragments;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Appointment {
 
-    public int id;
+    public Integer id;
     public String full_name;
+    public Integer branch;
     public String address;
     public String telephone_no;
     public String mobile_no;
@@ -12,10 +16,11 @@ public class Appointment {
     public String evidence_of_id;
     public String evidence_of_id_number;
     public String appointment;
-    public String time;
     public String date;
+    public String time;
     public String message;
     public String created_date;
+    public Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     public Integer getId() {
         return id;
@@ -23,6 +28,10 @@ public class Appointment {
 
     public String getFull_name() {
         return full_name;
+    }
+
+    public Integer getBranch() {
+        return branch;
     }
 
     public String getAddress() {
@@ -57,12 +66,12 @@ public class Appointment {
         return appointment;
     }
 
-    public String getTime() {
-        return time;
-    }
-
     public String getDate() {
         return date;
+    }
+
+    public String getTime() {
+        return time;
     }
 
     public String getMessage() {
@@ -71,5 +80,9 @@ public class Appointment {
 
     public String getCreated_date() {
         return created_date;
+    }
+
+    public Map<String, Object> getAdditionalProperties() {
+        return additionalProperties;
     }
 }

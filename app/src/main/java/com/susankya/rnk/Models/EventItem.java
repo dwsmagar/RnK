@@ -1,82 +1,39 @@
 package com.susankya.rnk.Models;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import java.util.HashMap;
+import java.util.Map;
 
 public class EventItem {
-    @SerializedName("url")
-    @Expose
-    public String url;
-    @SerializedName("name")
-    @Expose
+    public Integer id;
     public String name;
-    @SerializedName("unique_code")
-    @Expose
-    public Integer uniqueCode;
-    @SerializedName("barcode")
-    @Expose
+    public Integer branch;
+    public Integer unique_code ;
     public String barcode;
-    @SerializedName("description")
-    @Expose
     public String description;
-    @SerializedName("price")
-    @Expose
     public Integer price;
-    @SerializedName("organized_by")
-    @Expose
-    public String organizedBy;
-    @SerializedName("date")
-    @Expose
+    public String organized_by;
     public String date;
-    @SerializedName("time")
-    @Expose
     public String time;
-    @SerializedName("picture")
-    @Expose
     public String picture;
-    @SerializedName("location")
-    @Expose
     public String location;
-    @SerializedName("created_on")
-    @Expose
-    public String createdOn;
-    @SerializedName("updated_on")
-    @Expose
-    public String updatedOn;
+    public String created_on;
+    public String updated_on;
+    public Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    public int eventBanner;
-
-    public EventItem(String name, String date, String time, String picture, String location) {
-        this.name = name;
-        this.date = date;
-        this.time = time;
-        this.location = location;
-    }
-
-    public EventItem(String name, String description, Integer price, String organized_by, String date, String time, String picture, String location) {
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.organizedBy = organized_by;
-        this.date = date;
-        this.time = time;
-        this.picture = picture;
-        this.location = location;
-    }
-
-    public EventItem() {
-    }
-
-    public String getUrl() {
-        return url;
+    public Integer getId() {
+        return id;
     }
 
     public String getName() {
         return name;
     }
 
-    public Integer getUniqueCode() {
-        return uniqueCode;
+    public Integer getBranch() {
+        return branch;
+    }
+
+    public Integer getUnique_code() {
+        return unique_code;
     }
 
     public String getBarcode() {
@@ -91,8 +48,8 @@ public class EventItem {
         return price;
     }
 
-    public String getOrganizedBy() {
-        return organizedBy;
+    public String getOrganized_by() {
+        return organized_by;
     }
 
     public String getDate() {
@@ -111,15 +68,15 @@ public class EventItem {
         return location;
     }
 
-    public String getCreatedOn() {
-        return createdOn;
+    public String getCreated_on() {
+        return created_on;
     }
 
-    public String getUpdatedOn() {
-        return updatedOn;
+    public String getUpdated_on() {
+        return updated_on;
     }
 
-    public int getEventBanner() {
-        return eventBanner;
+    public Map<String, Object> getAdditionalProperties() {
+        return additionalProperties;
     }
 }

@@ -210,7 +210,6 @@
         <item>@drawable/ic_old_megaphone_with_button</item>
         <item>@drawable/ic_calendar1</item>
         <item>@drawable/ic_meeting</item>
-        <item>@drawable/ic_conversation_with_text_lines</item>
         <item>@drawable/ic_reunion</item>
     </array>
 
@@ -224,12 +223,11 @@
 
     <string-array name="nav_tiles_student">
         <item>Home</item>
-        <item>View Profile</item>
-        <item>Notices</item>
-        <item>Events</item>
+        <item>View Your Profile</item>
+        <item>Check Notices</item>
+        <item>See Upcoming Events</item>
         <item>Make An Appointment</item>
-        <item>Chat</item>
-        <item>Inquiry</item>
+        <item>Send Us Your Inquiry</item>
     </string-array>
 
     <string-array name="nav_tiles_admin">
@@ -380,17 +378,18 @@
     <string name="slogan">\"Think for the development and start doing it\"</string>
 
     // Nimas
-    <string name="intro"><body style="\text-align:justify;\">NIMAS Education is a licensed and approved educational consultancy by the Government of Nepal, Ministery of Industry, Company of Registrar, Ministry of Education and Minstry of Finance, Inland Revenue Department as well
+    <string name="intro"><body style="\text-align:justify;\">R &amp; K Associates is a licensed and approved educational consultancy by the Government of Nepal, Ministery of Industry, Company of Registrar, Ministry of Education and Minstry of Finance, Inland Revenue Department as well
 as an ISO 9001:2008 certified company in Nepal who specializes in overseas education, immigration services and quality teaching in entrance perparation. Our specialized team has been advising students for their higher education
         overseas plans since its establishment. We are located in Kathmandu- capital city and the educational hub of the country.</body> </string>
-    <string name="copyright_claim">Copyright © 2018 Nimas Education. All Rights Reserved Powered by Susankya Tech Pvt.Ltd</string>
+    <string name="copyright_claim">Copyright © 2018 R &amp; K Associates. All Rights Reserved Powered by Susankya Tech Pvt.Ltd</string>
     <string name="location">Bagbazar, Kathmandu, Nepal <b>(Opposite to PK Campus)</b></string>
     <string name="contact">+977-01-4167542</string>
-    <string name="email">info@nimaseducation.com</string>
-    <string name="skype">nimas.edu.np</string>
-    <string name="web">www.nimaseducation.com</string>
-    <string name="twitter">\@nimaseducation</string>
-    <string name="nima">nimas education</string>
+    <string name="email">info@rkassociates.com.np</string>
+    <string name="skype">rkassociates.edu.np</string>
+    <string name="web">www.rkassociates.com</string>
+    <string name="twitter">\@rkassociates</string>
+    <string name="nima">R &amp; K Associates</string>
+    <string name="rk">R &amp; K &#160;</string>
     <string name="iso_certified">An ISO 9001:2008 Certified Company</string>
     <string name="servicetxt"></string>
     <string name="locationtitle"><font color="#333333">LOCATION &amp;</font> <font color="#1CD36D">MORE INFO</font></string>

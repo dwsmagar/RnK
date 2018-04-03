@@ -32,7 +32,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
     private List<EventItem> eventsList;
     private Context context;
     private final OnItemClickListener listener;
-    private String[] splittedDate;
+    private String[] splittedDate = null;
 
     public EventsAdapter(List<EventItem> eventsList, Context context, OnItemClickListener listener) {
         this.eventsList = eventsList;
@@ -52,7 +52,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
 
     @Override
     public void onBindViewHolder(EventsViewHolder holder, final int position) {
-        String unsplittedDate = formateDate(eventsList.get(position).getDate());
+        String unsplittedDate = formatDate(eventsList.get(position).getDate());
         try {
             splittedDate = unsplittedDate.split(" ");
         } catch (Exception e) {
@@ -67,7 +67,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
         } catch (Exception e) {
         }
         holder.eventLocation.setText(eventsList.get(position).getLocation());
-        holder.organizer.setText(eventsList.get(position).getOrganizedBy());
+        holder.organizer.setText(eventsList.get(position).getOrganized_by());
         Picasso.with(context).load(eventsList.get(position).getPicture()).fit().error(R.drawable.ic_warning).
                 placeholder(R.drawable.ic_gallery)
                 .into(holder.imageView);
@@ -88,7 +88,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
                                 detail.putString("name", eventsList.get(position).getName());
                                 detail.putString("description", eventsList.get(position).getDescription());
                                 detail.putString("price", String.valueOf(eventsList.get(position).getPrice()));
-                                detail.putString("organized_by", eventsList.get(position).getOrganizedBy());
+                                detail.putString("organized_by", eventsList.get(position).getOrganized_by());
                                 detail.putString("date", eventsList.get(position).getDate());
                                 detail.putString("time", eventsList.get(position).getTime());
                                 detail.putString("imageUrl", eventsList.get(position).getPicture());
@@ -162,11 +162,16 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
         }
     }
 
-    private String formateDate(String dateStr) {
+    private String formatDate(String dateStr) {
+        //Toast.makeText(context, ""+dateStr, Toast.LENGTH_SHORT).show();
         Date MyDate = null;
         SimpleDateFormat newDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat newDateFormat1 = new SimpleDateFormat("yyyy/MM/dd");
         try {
+            if(dateStr.contains("-"))
             MyDate = newDateFormat.parse(dateStr);
+            else
+            MyDate = newDateFormat1.parse(dateStr);
         } catch (ParseException e) {
             e.printStackTrace();
         }

@@ -21,6 +21,7 @@ import com.joanzapata.iconify.widget.IconTextView;
 import com.susankya.rnk.Activities.AppointmentDetailDialogFragment;
 import com.susankya.rnk.Adapters.AppointmentAdapter;
 import com.susankya.rnk.ImmortalApplication;
+import com.susankya.rnk.Interfaces.Nimainterface;
 import com.susankya.rnk.R;
 import com.susankya.rnk.Utilities;
 
@@ -72,7 +73,7 @@ public class GetAppointmentFragment extends Fragment {
         else
             progressBar.setVisibility(View.GONE);
         Nimainterface nimainterface = ImmortalApplication.getRetrofit().create(Nimainterface.class);
-        nimainterface.getAppointments().enqueue(new Callback<List<Appointment>>() {
+        nimainterface.getAppointments(65).enqueue(new Callback<List<Appointment>>() {
             @Override
             public void onResponse(Call<List<Appointment>> call, Response<List<Appointment>> response) {
                 progressBar.setVisibility(View.GONE);

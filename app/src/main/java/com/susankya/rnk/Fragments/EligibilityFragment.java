@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import com.joanzapata.iconify.widget.IconTextView;
 import com.susankya.rnk.ImmortalApplication;
+import com.susankya.rnk.Interfaces.Nimainterface;
 import com.susankya.rnk.R;
 import com.susankya.rnk.Utilities;
 

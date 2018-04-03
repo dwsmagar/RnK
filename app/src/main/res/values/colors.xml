@@ -41,6 +41,7 @@
     <color name="colorTransparent">#00000000</color>
     <color name="colorGrey">#424242</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteLight">#FBE9E7</color>
 
     //event form layout
     <color name = "eventText">@color/primary_text</color>
@@ -54,7 +55,8 @@
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="windowBackground">#FFFFFF</color>
     <color name="navigationBarColor">#000000</color>
-    <color name="colorAccent">#2BD36D</color>
+    <color name="colorAccent">#F79F1F</color>
+    <color name="colorGreen">#2BD36D</color>
     <color name="colorAccentBackup">#448AFF</color>
 
     <color name="button_color">#009688</color>

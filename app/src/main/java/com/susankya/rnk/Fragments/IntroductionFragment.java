@@ -29,7 +29,7 @@ public class IntroductionFragment extends Fragment {
         View view = inflater.inflate(R.layout.introduction_frag_layout, container, false);
         getActivity().setTitle(R.string.app_name);
         ButterKnife.bind(this, view);
-        String t = "<font color=\"#333333\">LOCATION &amp;</font> <font color=\"#1CD36D\">MORE INFO</font>";
+        String t = "<font color=\"#333333\">LOCATION &amp;</font> <font color=\"#F79F1F\">MORE INFO</font>";
         title1.setText(Html.fromHtml(t));
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

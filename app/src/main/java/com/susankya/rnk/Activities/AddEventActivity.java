@@ -33,7 +33,7 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.susankya.rnk.Fragments.EventsFragment;
-import com.susankya.rnk.Fragments.Nimainterface;
+import com.susankya.rnk.Interfaces.Nimainterface;
 import com.susankya.rnk.ImmortalApplication;
 import com.susankya.rnk.R;
 import com.susankya.rnk.Utilities;
@@ -309,8 +309,10 @@ public class AddEventActivity extends AppCompatActivity implements EasyPermissio
                         String hourStr = String.valueOf(hourOfDay);
                         String minStr = String.valueOf(minute);
                         String timeStr = hourStr + ":" + minStr;
-                        eventTime.setText(timeFormatter(timeStr));
-                        timeValue = timeStr;
+                        timeValue = timeFormatter(timeStr);
+                        eventTime.setText(timeValue);
+                        //eventTime.setText(timeStr);
+                        //timeValue = timeStr;
                         eventTime.setTextColor(getResources().getColor(R.color.secondary_text));
                     }
                 },
@@ -349,10 +351,11 @@ public class AddEventActivity extends AppCompatActivity implements EasyPermissio
         RequestBody description = RequestBody.create(MediaType.parse("text/plain"), des);
         RequestBody organized = RequestBody.create(MediaType.parse("text/plain"), organizeValue);
         RequestBody date = RequestBody.create(MediaType.parse("text/plain"), date_value);
-        RequestBody time = RequestBody.create(MediaType.parse("text/plain"), "03-03");
+        //RequestBody time = RequestBody.create(MediaType.parse("text/plain"), "03-03");
+        RequestBody time = RequestBody.create(MediaType.parse("text/plain"), time_value);
         RequestBody location = RequestBody.create(MediaType.parse("text/plain"), location_value);
         Nimainterface nimainterface = ImmortalApplication.getRetrofit().create(Nimainterface.class);
-        nimainterface.postEvent(name, description, price, organized, date, time, body, location).enqueue(new Callback<ResponseBody>() {
+        nimainterface.postEvent(name, 65, description, price, organized, date, time, body, location).enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 dialog.dismiss();

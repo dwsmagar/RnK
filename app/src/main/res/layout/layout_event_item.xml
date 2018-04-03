@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
+    android:background="@drawable/event_bg"
     android:elevation="1dp"
     android:orientation="vertical"
-    android:padding="@dimen/widget_margin">
+    android:padding="1dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,7 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
-            android:src="@drawable/mindhsare" />
+            android:src="@drawable/mindhsare"
+            android:padding="0dp"/>
     </RelativeLayout>
 
     <TextView
@@ -91,6 +92,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_marginRight="5dp"
                     android:text="Discussion "
+                    android:textStyle="bold"
                     android:textColor="@color/black" />
 
                 <com.joanzapata.iconify.widget.IconTextView
@@ -173,8 +175,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:text="Organizer"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="11sp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>

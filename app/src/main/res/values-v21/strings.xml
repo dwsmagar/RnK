@@ -16,7 +16,6 @@
         <item>@drawable/ic_old_megaphone_with_button</item>
         <item>@drawable/ic_calendar1</item>
         <item>@drawable/ic_meeting</item>
-        <item>@drawable/ic_conversation_with_text_lines</item>
         <item>@drawable/ic_reunion</item>
     </array>
 
@@ -30,12 +29,11 @@
 
     <string-array name="nav_tiles_student">
         <item>Home</item>
-        <item>View Profile</item>
-        <item>Notices</item>
-        <item>Events</item>
+        <item>View Your Profile</item>
+        <item>Check Notices</item>
+        <item>See Upcoming Events</item>
         <item>Make An Appointment</item>
-        <item>Chat</item>
-        <item>Inquiry</item>
+        <item>Send Us Your Inquiry</item>
     </string-array>
 
     <string-array name="nav_tiles_admin">

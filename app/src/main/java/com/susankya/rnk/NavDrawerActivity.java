@@ -10,12 +10,8 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -48,13 +44,11 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.joanzapata.iconify.IconDrawable;
-import com.joanzapata.iconify.fonts.IoniconsIcons;
 import com.susankya.rnk.Fragments.AppointmentFragment;
 import com.susankya.rnk.Fragments.EventsFragment;
 import com.susankya.rnk.Fragments.GetAppointmentFragment;
 import com.susankya.rnk.Fragments.IntroductionFragment;
-import com.susankya.rnk.Fragments.Nimainterface;
+import com.susankya.rnk.Interfaces.Nimainterface;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -273,18 +267,18 @@ public class NavDrawerActivity extends AppCompatActivity implements FragmentCode
             case 4: {
                 return new AppointmentFragment();
             }
-            case 5:
-                //   Toast.makeText(getApplicationContext(),Utilities.getSN(getApplicationContext())+ UtilitiesAdi.giveMeSN(getApplicationContext(), Utilities.getDatabaseName(getApplicationContext())),Toast.LENGTH_SHORT).show();
-                //  return ChatFragment.newInstance(Utilities.getSN(getApplicationContext()), UtilitiesAdi.giveMeSN(getApplicationContext(), Utilities.getDatabaseName(getApplicationContext())),Utilities.getCollegeName(getApplicationContext()));
-                if (!(Utilities.getBlocked(getApplicationContext()) == 0)) {
-                    Snackbar.make(motherView, "You have been blocked by the admin.", Snackbar.LENGTH_LONG).show();
-                    return null;
-                }
-               /* return ChatFragment.newInstance(Utilities.getSN(getApplicationContext()),
-                        UtilitiesAdi.giveMeSN(getApplicationContext(), Utilities.getDatabaseName(getApplicationContext())),
-                        Utilities.getInstitution(getApplicationContext()));*/
-                return new StudentChatListFragment();
-            case 6: {
+//            case 5:
+//                //   Toast.makeText(getApplicationContext(),Utilities.getSN(getApplicationContext())+ UtilitiesAdi.giveMeSN(getApplicationContext(), Utilities.getDatabaseName(getApplicationContext())),Toast.LENGTH_SHORT).show();
+//                //  return ChatFragment.newInstance(Utilities.getSN(getApplicationContext()), UtilitiesAdi.giveMeSN(getApplicationContext(), Utilities.getDatabaseName(getApplicationContext())),Utilities.getCollegeName(getApplicationContext()));
+//                if (!(Utilities.getBlocked(getApplicationContext()) == 0)) {
+//                    Snackbar.make(motherView, "You have been blocked by the admin.", Snackbar.LENGTH_LONG).show();
+//                    return null;
+//                }
+//               /* return ChatFragment.newInstance(Utilities.getSN(getApplicationContext()),
+//                        UtilitiesAdi.giveMeSN(getApplicationContext(), Utilities.getDatabaseName(getApplicationContext())),
+//                        Utilities.getInstitution(getApplicationContext()));*/
+//                return new StudentChatListFragment();
+            case 5: {
                 if (!(Utilities.getBlocked(getApplicationContext()) == 0)) {
                     Snackbar.make(motherView, "You have been blocked by the admin.", Snackbar.LENGTH_LONG).show();
                     return null;

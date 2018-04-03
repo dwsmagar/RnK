@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.joanzapata.iconify.widget.IconTextView;
-import com.susankya.rnk.Fragments.Nimainterface;
+import com.susankya.rnk.Interfaces.Nimainterface;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

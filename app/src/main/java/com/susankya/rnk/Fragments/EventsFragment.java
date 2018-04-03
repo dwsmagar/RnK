@@ -22,6 +22,7 @@ import com.susankya.rnk.Activities.EventDescActivity;
 import com.susankya.rnk.Adapters.EventsAdapter;
 import com.susankya.rnk.Adapters.VerticalSpaceItemDecoration;
 import com.susankya.rnk.ImmortalApplication;
+import com.susankya.rnk.Interfaces.Nimainterface;
 import com.susankya.rnk.Models.EventItem;
 import com.susankya.rnk.R;
 import com.susankya.rnk.Utilities;
@@ -76,7 +77,7 @@ public class EventsFragment extends Fragment {
             progressBar.setVisibility(View.GONE);
 
         Nimainterface nimainterface = ImmortalApplication.getRetrofit().create(Nimainterface.class);
-        nimainterface.getEvents().enqueue(new Callback<List<EventItem>>() {
+        nimainterface.getEvents(65).enqueue(new Callback<List<EventItem>>() {
             @Override
             public void onResponse(Call<List<EventItem>> call, Response<List<EventItem>> response) {
                 progressBar.setVisibility(View.GONE);
@@ -96,12 +97,12 @@ public class EventsFragment extends Fragment {
                                 detail.putString("name", item.getName());
                                 detail.putString("description", item.getDescription());
                                 detail.putString("price", item.getPrice().toString());
-                                detail.putString("organized_by", item.getOrganizedBy());
+                                detail.putString("organized_by", item.getOrganized_by());
                                 detail.putString("date", item.getDate());
                                 detail.putString("time", item.getTime());
                                 detail.putString("imageUrl", item.getPicture());
                                 detail.putString("location", item.getLocation());
-                                detail.putString("created_date", item.getCreatedOn());
+                                detail.putString("created_date", item.getCreated_on());
                                 // calling intent
                                 Intent intent = new Intent(getActivity(), EventDescActivity.class);
                                 intent.putExtras(detail);

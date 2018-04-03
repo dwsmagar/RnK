@@ -12,7 +12,7 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/button_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">

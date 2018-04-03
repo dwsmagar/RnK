@@ -23,7 +23,7 @@
             android:textColor="@color/white"
             android:textSize="26sp"
             android:textStyle="bold"
-            android:visibility="gone" />
+            android:visibility="visible" />
 
         <ImageView
             android:elevation="5dp"
@@ -33,14 +33,18 @@
             android:layout_above="@id/main_container"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp"
-            android:src="@drawable/ic_user_login" />
+            android:src="@drawable/ic_user_login"
+            android:visibility="gone"/>
 
         <LinearLayout
             android:id="@+id/main_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
 
             <TextView
                 android:layout_marginBottom="10dp"
@@ -50,47 +54,51 @@
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
                 android:textAllCaps="false"
-                android:text="Choose the Account Type"
-                android:textColor="@color/white"
-                android:textSize="22sp" />
+                android:text="Choose Your Account Type"
+                android:textColor="@color/colorWhiteLight"
+                android:textSize="16sp" />
 
             <TextView
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="8dp"
                 android:id="@+id/stud"
                 android:background="@drawable/ac_btn"
-                android:textColor="@color/white"
+                android:textColor="@color/colorWhiteLight"
                 android:gravity="center"
-                android:text="Student"
+                android:text="Student Login"
+                android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 
             <TextView
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="8dp"
                 android:id="@+id/receptionist"
                 android:background="@drawable/ac_btn"
-                android:textColor="@color/white"
+                android:textColor="@color/colorWhiteLight"
                 android:gravity="center"
-                android:text="Receptionist"
+                android:text="Receptionist Login"
+                android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 
             <TextView
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="8dp"
                 android:id="@+id/subadmin"
                 android:background="@drawable/ac_btn"
-                android:textColor="@color/white"
+                android:textColor="@color/colorWhiteLight"
                 android:gravity="center"
-                android:text="Sub-Admin"
+                android:text="Sub-Admin Login "
+                android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 
             <TextView
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="8dp"
                 android:id="@+id/superadmin"
                 android:background="@drawable/ac_btn"
-                android:textColor="@color/white"
+                android:textColor="@color/colorWhiteLight"
                 android:gravity="center"
-                android:text="Super-Admin"
+                android:text="Super-Admin Login"
+                android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 

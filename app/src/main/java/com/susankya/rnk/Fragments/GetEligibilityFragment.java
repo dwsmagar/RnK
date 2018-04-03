@@ -20,6 +20,7 @@ import com.joanzapata.iconify.widget.IconTextView;
 import com.susankya.rnk.Activities.EligibilityDetailDialogFragment;
 import com.susankya.rnk.Adapters.EligibiltyAdapter;
 import com.susankya.rnk.ImmortalApplication;
+import com.susankya.rnk.Interfaces.Nimainterface;
 import com.susankya.rnk.R;
 import com.susankya.rnk.Utilities;
 
